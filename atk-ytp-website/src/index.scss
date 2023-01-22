@@ -18,17 +18,12 @@ $dot-space: 62px;
   font-weight: 400;
   height: 100vh;
   box-sizing: border-box;
-  border-width: 4px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, $red, $blue) 1;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 	background:
 		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
 		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
 		$dot-color;
-	background-size: $dot-space $dot-space;
+    background-size: $dot-space $dot-space;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -36,17 +31,22 @@ $dot-space: 62px;
   -webkit-text-size-adjust: 100%;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  
+  margin: 0;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: .75;
 }
 
 @media (prefers-color-scheme: light) {

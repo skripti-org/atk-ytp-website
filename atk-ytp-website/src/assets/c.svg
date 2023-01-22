@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg>
 <svg
   data-animation-duration="20s"
   viewBox="0 0 100 100"
@@ -27,10 +29,10 @@
     </clipPath>
   </defs>
   <style>
-    /* <![CDATA[ */
+    <![CDATA[ */
       .svg-11-c-line-group {
         animation: svg-11-c-move-anim 20s ease-in-out infinite;
-        z-index: 50;
+        
       }
       
       @keyframes svg-11-c-move-anim {
@@ -62,7 +64,7 @@
         }
       }
       
-    /* ]]> */
+    /* ]]> 
   </style>
   <g
     class="svg-11-c-g"
