@@ -4,7 +4,10 @@ $bg-color: #070707;
 $dot-color: hsl(256,33,70);
 $red: #C90123;
 $blue: #007BFF;
-
+$red50: #c901227a;
+$blue50: #007bff77;
+$dot-size: 1px;
+$dot-space: 62px;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -22,7 +25,12 @@ $blue: #007BFF;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-image: linear-gradient(to bottom, $red, $blue) 1;
+    border-image: linear-gradient(to bottom, $red50, $blue50, transparent) 1;
+    background:
+        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+        $dot-color;
+    background-size: $dot-space $dot-space;
 }
 
 .hero-content {
@@ -36,6 +44,8 @@ $blue: #007BFF;
     height: 100%;
     left: 0;
     border: 0px;
+    opacity: 60%;
+    
 }
 
 h1.a {
