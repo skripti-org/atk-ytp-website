@@ -12,6 +12,28 @@ $dot-space: 62px;
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+.hero-container {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    border-image: linear-gradient(to bottom, $red50, $blue50, transparent) 1;
+    background:
+        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+        $dot-color;
+    background-size: $dot-space $dot-space;
+}
+
 .text-scroller-container {
     transform: skew(10deg, -1deg);
     position: absolute;
@@ -29,26 +51,6 @@ $dot-space: 62px;
     left: 0;
     bottom: 0; 
     margin-bottom: -50px;
-}
-
-.hero-container {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    border-width: 4px;
-    border-style: solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-image: linear-gradient(to bottom, $red50, $blue50, transparent) 1;
-    background:
-        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-        $dot-color;
-    background-size: $dot-space $dot-space;
 }
 
 .hero-content {
