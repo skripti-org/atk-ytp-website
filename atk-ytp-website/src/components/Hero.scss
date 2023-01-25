@@ -13,7 +13,7 @@ $dot-space: 62px;
   box-sizing: border-box;
 }
 .text-scroller-container {
-    transform: skew(5deg, -2.5deg);
+    transform: skew(10deg, -1deg);
     position: absolute;
     height: 100px;
     width: 100%;
@@ -22,12 +22,13 @@ $dot-space: 62px;
 }
 
 .bottom-text-scroller-container {
-    transform: skew(5deg, 2.5deg);
+    transform: skew(-10deg, 1deg);
     position: absolute;
     height: 100px; 
     width:100%;
     left: 0;
     bottom: 0; 
+    margin-bottom: -50px;
 }
 
 .hero-container {
@@ -80,6 +81,7 @@ h1.b {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 900;
+    color: white;
     font-size: 3.5rem;
     letter-spacing: 0.005em;
     text-transform: uppercase;

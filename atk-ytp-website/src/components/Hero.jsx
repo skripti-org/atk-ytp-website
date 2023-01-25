@@ -8,7 +8,6 @@ const Hero = () => {
             <div className='text-scroller-container'>
                 <TextScroller/>
             </div>
-            
             <iframe className="hero-image" src="https://cables.gl/view/63418132a1293e86e06c980a"></iframe>
                 <div className="hero-content">
                     <h1 className='a'>ATK-YTP</h1>
