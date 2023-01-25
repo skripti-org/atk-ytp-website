@@ -2,6 +2,8 @@ $bg-color: #070707;
 $dot-color: hsl(256,33,70);
 $red: #C90123;
 $blue: #007BFF;
+$dot-size: 1px;
+$dot-space: 62px;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -16,6 +18,11 @@ $blue: #007BFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background:
+  linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+  linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+  $dot-color;
+background-size: $dot-space $dot-space;
 }
 
 body {

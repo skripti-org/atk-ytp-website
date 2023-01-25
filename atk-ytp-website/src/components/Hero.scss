@@ -12,6 +12,23 @@ $dot-space: 62px;
 *, *::before, *::after {
   box-sizing: border-box;
 }
+.text-scroller-container {
+    transform: skew(5deg, -2.5deg);
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bottom-text-scroller-container {
+    transform: skew(5deg, 2.5deg);
+    position: absolute;
+    height: 100px; 
+    width:100%;
+    left: 0;
+    bottom: 0; 
+}
 
 .hero-container {
     position: fixed;
@@ -35,7 +52,6 @@ $dot-space: 62px;
 
 .hero-content {
     position: relative;
-
 }
 
 .hero-image {
@@ -45,12 +61,12 @@ $dot-space: 62px;
     left: 0;
     border: 0px;
     opacity: 60%;
-    
 }
 
 h1.a {
     font-family: 'Syne';
     font-style: normal;
+    color: white;
     font-weight: 900;
     font-size: 10rem;
     letter-spacing: 0.005em;
