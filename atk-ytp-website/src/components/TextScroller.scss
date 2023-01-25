@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 
+.wrapper {
+  background-color: red;
+  text-align: center;
+}
+
+
 .marquee {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
+    color: white;
+    width: 100%;
+  
   }
   
   .marquee span {
@@ -13,29 +22,28 @@
     animation: marquee 25s linear infinite;
     font-family: 'Syne';
     font-style: normal;
-    color: white;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 2rem;
     letter-spacing: 0.005em;
     text-transform: uppercase;
+
   }
   
   .marquee2 span {
     animation-delay: 12.5s;
     font-family: 'Syne';
     font-style: normal;
-    color: white;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 2rem;
     letter-spacing: 0.005em;
     text-transform: uppercase;
   }
   
   @keyframes marquee {
     0% {
-      transform: translate(0, 0);
+      transform: translate(0%, 0%);
     }
     100% {
-      transform: translate(-100%, 0);
+      transform: translate(-100%, 0%);
     }
   }
