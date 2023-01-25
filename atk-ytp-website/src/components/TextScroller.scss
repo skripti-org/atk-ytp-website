@@ -1,48 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 
-.wrapper {
-  background-color: red;
-  text-align: center;
+.scroll {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
+.scroll-left {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrollTextLeft 35s infinite linear;
+  display: inline-block;
+}
 
-.marquee {
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
-    color: white;
-    width: 100%;
-    top: 0;
+.scroll-right {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrollTextRight 35s infinite linear;
+  display: inline-block;
+}
+
+span {
+  font-family: 'Syne';
+  font-weight: 500;
+  font-size: 2.5rem;
+  display: inline-block;
+  padding: 0;
+  -webkit-text-stroke: .5px white;
+  color: transparent;
+}
+
+@keyframes scrollTextLeft {
+  from {
+    transform: translateX(0%);
   }
-  
-  .marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 30s linear infinite;
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2rem;
-    letter-spacing: 0.005em;
-    text-transform: uppercase;
+  to {
+    transform: translateX(-50%);
   }
-  
-  .marquee2 span {
-    animation-delay: 15s;
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2rem;
-    letter-spacing: 0.005em;
-    text-transform: uppercase;
+}
+
+@keyframes scrollTextRight {
+  from {
+    transform: translateX(-50%);
   }
-  
-  @keyframes marquee {
-    0% {
-      transform: translate(0%, 0%);
-    }
-    100% {
-      transform: translate(-100%, 0%);
-    }
+  to {
+    transform: translateX(0%);
   }
+}

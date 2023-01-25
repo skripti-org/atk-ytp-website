@@ -6,7 +6,7 @@ const Hero = () => {
         
         <div className='hero-container'>
             <div className='text-scroller-container'>
-                <TextScroller/>
+                <TextScroller scrollDirection={"left"}/>
             </div>
             <iframe className="hero-image" src="https://cables.gl/view/63418132a1293e86e06c980a"></iframe>
                 <div className="hero-content">
@@ -14,7 +14,7 @@ const Hero = () => {
                     <h1 className='b'>JOENSUU</h1>
             </div>
             <div className='bottom-text-scroller-container'>
-                <TextScroller/>
+                <TextScroller scrollDirection={"right"}/>
             </div>
         </div>
  

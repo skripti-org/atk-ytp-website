@@ -1,15 +1,22 @@
 import './TextScroller.scss'
 
-const TextScroller = () => {
+const TextScroller = ({scrollDirection}) => {
     return (
-        <div class="wrapper">
-            <p class="marquee">
-                <span>&nbsp;ATK-YTP JOENSUU 18.10.2023 - ATK YTP JOENSUU 18.10.2023 - ATK YTP JOENSUU 18.10.2023 -&nbsp;</span>
-            </p>
-            <p class="marquee marquee2">
-                <span>&nbsp;ATK-YTP JOENSUU 18.10.2023 - ATK YTP JOENSUU 18.10.2023 - ATK YTP JOENSUU 18.10.2023 -&nbsp;</span>
-            </p>
-        </div>
+        <>
+            <div className="scroll">
+                {scrollDirection === "left" ? 
+                    <div className="scroll-left">
+                            <span>ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 •&nbsp;</span>
+                            <span>ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 •&nbsp;</span>
+                    </div>
+                    :
+                    <div className="scroll-right">
+                            <span>ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 •&nbsp;</span>
+                            <span>ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 • ATK-YTP JOENSUU 11.-13.10.2023 •&nbsp;</span>
+                    </div>
+            }
+            </div>
+        </>
     )
 }
 
