@@ -12,21 +12,31 @@ $dot-space: 62px;
 *, *::before, *::after {
   box-sizing: border-box;
 }
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, $red50, $blue50, transparent) 1;
 
+}
 .hero-container {
     position: absolute;
+
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
-    border-width: 4px;
-    border-style: solid;
     display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    border-image: linear-gradient(to bottom, $red50, $blue50, transparent) 1;
     background:
         linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
         linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
@@ -34,24 +44,25 @@ $dot-space: 62px;
     background-size: $dot-space $dot-space;
 }
 
-.text-scroller-container {
-    transform: skew(10deg, -1deg);
+.top-text-scroller-container {
+   
     position: absolute;
     height: 100px;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .bottom-text-scroller-container {
-    transform: skew(-10deg, 1deg);
     position: absolute;
     height: 100px; 
     width:100%;
     left: 0;
     bottom: 0; 
-    margin-bottom: -50px;
+    margin-bottom: -55px;
 }
+
 
 .hero-content {
     position: relative;
@@ -66,7 +77,35 @@ $dot-space: 62px;
     opacity: 60%;
 }
 
-h1.a {
+h1 {
+	&::before, &::after {
+		position: fixed;
+		inset: 0;
+		z-index: -1;
+		--grad: 
+			radial-gradient(at 30%, 
+					red, #{rgba(red, .2)} 50%, transparent 10%);
+		--mask: var(--grad), var(--grad), var(--grad);
+		-webkit-mask: var(--mask);
+		-webkit-mask-composite: source-in;
+						mask: var(--mask);
+						mask-composite: intersect;
+		mix-blend-mode: color;
+		content: ''
+	}
+	
+	&::before {
+		background: #000;
+		filter: url(#f)
+	}
+	
+	&::after {
+		background: linear-gradient(90deg, purple, navy 20%, aqua);
+	}
+    
+}
+
+.a {
     font-family: 'Syne';
     font-style: normal;
     color: white;
@@ -76,10 +115,10 @@ h1.a {
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
     mix-blend-mode: difference;
-    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
-h1.b {
+.b {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 900;
@@ -89,9 +128,20 @@ h1.b {
     text-transform: uppercase;
     font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
     mix-blend-mode: difference;
-    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 
 
-
+      
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+
+p {
+    font-family: 'Syne';
+    font-style: normal;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
+    mix-blend-mode: difference;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
+}

@@ -7,6 +7,7 @@ $dot-space: 62px;
 
 *, *::before, *::after {
   box-sizing: border-box;
+
 }
 
 :root {
@@ -28,4 +29,8 @@ $dot-space: 62px;
 h1 {
   font-size: 3.2em;
   line-height: .75;
+}
+
+body {
+  margin: 0;
 }
