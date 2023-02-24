@@ -24,14 +24,14 @@
   display: inline-block;
 }
 
-span {
+.scroll-text {
   font-family: 'Syne';
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: inline-block;
   padding: 0;
   
-  color: rgb(220, 220, 220);
+  color: rgba(220, 220, 220, 0.374);
 }
 
 @keyframes scrollTextLeft {

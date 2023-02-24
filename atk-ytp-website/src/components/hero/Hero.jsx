@@ -13,17 +13,13 @@ const Hero = () => {
                     <div className="hero-content">
                         <h1 className='a'>ATK-YTP</h1>
                         <h1 className='b'>JOENSUU</h1>
-                        
-                </div>
+                    </div>
                 <div className='bottom-text-scroller-container'>
                     <TextScroller scrollDirection={"right"}/>
                 </div>
                 <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
             </div>
         </div>
-
-        
- 
     )
 }
 
