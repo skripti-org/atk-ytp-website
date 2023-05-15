@@ -3,6 +3,7 @@ import { useCountdown } from '../../hooks/useCountdown';
 
 import './Counter.scss'
 import TimeDisplay from './TimeDisplay';
+import Card from './Card'
 
 const ExpiredNotice = () => {
   return (
@@ -30,12 +31,15 @@ const Counter = ({ targetDate }) => {
     return <ExpiredNotice />;
   } else {
     return (
-      <Timer
-        days={days}
-        hours={hours}
-        minutes={minutes}
-        seconds={seconds}
-      />
+      <Card>
+        <Timer
+          days={days}
+          hours={hours}
+          minutes={minutes}
+          seconds={seconds}
+        />
+      </Card>
+
     );
   }
 };

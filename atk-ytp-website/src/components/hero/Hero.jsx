@@ -1,26 +1,37 @@
 import Counter from './Counter'
-import './Hero.scss'
-import TextScroller from './TextScroller'
+
 
 const Hero = () => {
-    return (
-        <div className='hero'> 
-            <div className='hero-container'>
-                <div className='top-text-scroller-container'>
-                    <TextScroller scrollDirection={"left"}/>
-                </div>
-                <iframe className="hero-image" src="https://cables.gl/view/63418132a1293e86e06c980a"></iframe>
-                    <div className="hero-content">
-                        <h1 className='a'>ATK-YTP</h1>
-                        <h1 className='b'>JOENSUU</h1>
-                    </div>
-                <div className='bottom-text-scroller-container'>
-                    <TextScroller scrollDirection={"right"}/>
-                </div>
-                <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
-            </div>
+    
+  return (
+    <section
+      id="home"
+      className={`flex lg:flex-row flex-col py-16`}
+    >
+      <div
+        className={`flex justify-center items-start flex-col px-16`}
+      >
+        <div className="hero-content">
+            <h1 className='font-sans font-extrabold text-8xl'>ATK-YTP</h1>
+            <h1 className='font-sans font-extrabold text-2xl'>JOENSUU</h1>
         </div>
-    )
-}
+      </div>
 
-export default Hero
+      <div
+        className={`flex justify-center items-center my-10 relative`}
+      >
+        <div className="hero-content">
+
+            <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
+            
+        </div>
+
+    
+      </div>
+
+      
+    </section>
+  );
+};
+
+export default Hero;
