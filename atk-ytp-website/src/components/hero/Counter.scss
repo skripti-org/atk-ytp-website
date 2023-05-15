@@ -24,11 +24,6 @@
   
   }
 
-  span {
-    font-family: 'Syne';
-    font-weight: 500;
-    font-size: 2.5rem;
-  }
   
   .show-counter .countdown-link {
     
@@ -47,8 +42,8 @@
   }
   
   .show-counter .countdown {
-    line-height: 1.25rem;
-    padding: 0 0.75rem 0 0.75rem;
+    line-height: 1.5rem;
+    padding: 0 1rem 0 2rem;
     align-items: center;
     display: flex;
     flex-direction: column;

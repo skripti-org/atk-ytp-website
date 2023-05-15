@@ -1,15 +1,14 @@
 import Counter from './Counter'
 
-
 const Hero = () => {
     
   return (
     <section
       id="home"
-      className={`flex lg:flex-row flex-col py-16`}
+      className={`flex h-[75vh] lg:flex-row flex-col py-4 items-center`}
     >
       <div
-        className={`flex-1 justify-center items-start flex-col px-16`}
+        className={`flex justify-center items-start flex-col text-center px-5`}
       >
         <div className="hero-content">
             <h1 className='font-sans font-extrabold text-8xl'>ATK-YTP</h1>
@@ -18,7 +17,7 @@ const Hero = () => {
       </div>
 
       <div
-        className={`flex justify-center items-center my-10 relative`}
+        className={`flex justify-center align-center items-center my-10 relative px-5`}
       >
         <div className="hero-content">
 

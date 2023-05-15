@@ -1,6 +1,5 @@
 import React from 'react';
 import { useCountdown } from '../../hooks/useCountdown';
-
 import './Counter.scss'
 import TimeDisplay from './TimeDisplay';
 import Card from './Card'
@@ -32,12 +31,19 @@ const Counter = ({ targetDate }) => {
   } else {
     return (
       <Card>
-        <Timer
-          days={days}
-          hours={hours}
-          minutes={minutes}
-          seconds={seconds}
-        />
+        <div className='pb-4'>
+            <h2 className='font-sans border-b-2 font-light'>YTP STARTS IN</h2>
+          </div>
+        <div className='flex'>
+          
+            <Timer
+            days={days}
+            hours={hours}
+            minutes={minutes}
+            seconds={seconds}
+          />
+        </div>
+        
       </Card>
 
     );
