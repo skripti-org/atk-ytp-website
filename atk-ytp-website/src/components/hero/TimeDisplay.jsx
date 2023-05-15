@@ -1,11 +1,10 @@
 import React from 'react';
-import './TimeDisplay.scss'
 
 const TimeDisplay = ({ value, type, isDanger }) => {
   return (
     <div className={isDanger ? 'countdown danger' : 'countdown'}>
-      <p>{value}</p>
-      <span>{type}</span>
+      <p className='font-sans font-extrabold text-md'>{value}</p>
+      <span className='font-sans text-xs'>{type}</span>
     </div>
   );
 };
