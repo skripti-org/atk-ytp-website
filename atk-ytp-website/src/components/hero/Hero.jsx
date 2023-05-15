@@ -9,7 +9,7 @@ const Hero = () => {
       className={`flex lg:flex-row flex-col py-16`}
     >
       <div
-        className={`flex justify-center items-start flex-col px-16`}
+        className={`flex-1 justify-center items-start flex-col px-16`}
       >
         <div className="hero-content">
             <h1 className='font-sans font-extrabold text-8xl'>ATK-YTP</h1>
