@@ -3,34 +3,20 @@ import Counter from './Counter'
 const Hero = () => {
     
   return (
-    <section
-      id="home"
-      className={`flex h-[75vh] lg:flex-row flex-col py-4 items-center`}
-    >
-      <div
-        className={`flex justify-center items-start flex-col text-center px-5`}
-      >
-        <div className="hero-content">
-            <h1 className='font-sans font-extrabold text-8xl'>ATK-YTP</h1>
-            <h1 className='font-sans font-extrabold text-2xl'>JOENSUU</h1>
+    <section className="transparent py-16 h-[75vh]">
+      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-evenly">
+        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 className='font-sans font-extrabold xl:text-9xl text-5xl mix-blend-difference'>ATK-YTP</h1>
+            <h1 className='font-sans font-extrabold xl:text-3xl text-xs mix-blend-difference'>JOENSUU</h1>
+        </div>
+        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
         </div>
       </div>
-
-      <div
-        className={`flex justify-center align-center items-center my-10 relative px-5`}
-      >
-        <div className="hero-content">
-
-            <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
-            
-        </div>
-
-    
-      </div>
-
-      
-    </section>
-  );
+  </section>
+  
+  )
+  
 };
 
 export default Hero;
