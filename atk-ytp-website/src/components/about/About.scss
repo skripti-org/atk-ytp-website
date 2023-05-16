@@ -5,7 +5,7 @@ $blue: #007BFF;
 $red50: #c901227a;
 $blue50: #007bff77;
 
-.slideshow-container{
+.slideshow-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ $blue50: #007bff77;
     content: 'SANOTTUA';
     position: absolute;
     top: 25%;
-    
+
     font-family: 'Syne';
     font-style: normal;
     color: white;
@@ -41,7 +41,7 @@ $blue50: #007bff77;
     font-size: 3rem;
     letter-spacing: 0.005em;
     text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
+    font-feature-settings: 'pnum'on, 'lnum'on, 'case'on;
     mix-blend-mode: difference;
     text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
 }
@@ -63,7 +63,7 @@ $blue50: #007bff77;
     margin: 15px 7px 0px;
     background-color: #c4c4c4;
 }
-  
+
 .slideshowDot.active {
-    background-color: #c901227a;;
+    background-color: #c901227a;
 }

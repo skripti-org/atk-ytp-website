@@ -3,13 +3,15 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $bg-color: #070707;
-$dot-color: hsl(256,33,70);
+$dot-color: hsl(256, 33, 70);
 $red: #C90123;
 $blue: #007BFF;
 $dot-size: 1px;
 $dot-space: 62px;
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 
 }
@@ -35,8 +37,8 @@ h1 {
   line-height: .75;
 }
 
-body { 
-	max-width: 1280px; 
-	margin: 0 auto; 
-	float: none; 
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  float: none;
 }
