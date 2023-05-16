@@ -5,11 +5,8 @@ import Hero from './components/hero/Hero';
 function App() {
   return (
     <div className='App'>
-      {' <YtpHelmet /> '}
       <Navbar />
       <Hero />
-
-      <canvas id='webgl-canvas'></canvas>
     </div>
   );
 }
