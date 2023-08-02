@@ -3,7 +3,7 @@ import React from 'react';
 const TimeDisplay = ({ value, type, isDanger }) => {
   return (
     <div className={isDanger ? 'countdown danger' : 'countdown'}>
-      <p className='font-sans font-extrabold text-md'>{value}</p>
+      <p className='text-md font-sans font-extrabold'>{value}</p>
       <span className='font-body text-sm'>{type}</span>
     </div>
   );

@@ -37,7 +37,7 @@ const About = () => {
         {slides.map((slide, index) => (
           <div
             className='slide'
-            key={index}
+            key={slide}
             style={{
               ...styles.slide,
               left: index === currentSlide ? 0 : '-300%',
@@ -50,7 +50,7 @@ const About = () => {
       <div className='slideshowDots'>
         {slides.map((_, idx) => (
           <div
-            key={idx}
+            key={_}
             className={`slideshowDot${currentSlide === idx ? ' active' : ''}`}
             onClick={() => {
               setCurrentSlide(idx);

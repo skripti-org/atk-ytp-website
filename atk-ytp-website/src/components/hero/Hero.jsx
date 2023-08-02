@@ -1,22 +1,25 @@
-import Counter from './Counter'
+import React from 'react';
 
 const Hero = () => {
-    
   return (
-    <section className="transparent py-16 h-[75vh]">
-      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-evenly">
-        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className='font-sans font-extrabold xl:text-9xl text-5xl mix-blend-difference'>ATK-YTP</h1>
-            <h1 className='font-sans font-extrabold xl:text-3xl text-xs mix-blend-difference'>JOENSUU</h1>
+    <section className='transparent h-[75vh] py-16'>
+      <div className='container mx-auto flex flex-col justify-center p-6 sm:py-12 lg:flex-row lg:justify-evenly lg:py-24'>
+        <div className='flex flex-col justify-center rounded-sm p-6 text-center lg:max-w-md lg:text-left xl:max-w-lg'>
+          <h1 className='font-sans text-5xl font-extrabold mix-blend-difference xl:text-9xl'>
+            ATK-YTP
+          </h1>
+          <h1 className='font-sans text-xs font-extrabold mix-blend-difference xl:text-3xl'>
+            JOENSUU
+          </h1>
         </div>
-        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-        <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
+        {/*
+        <div className='xl:h-112 2xl:h-128 mt-8 flex h-72 items-center justify-center p-6 sm:h-80 lg:mt-0 lg:h-96'>
+          <Counter targetDate={new Date('2023-10-18T10:00:00Z').getTime()} />
         </div>
+        */}
       </div>
-  </section>
-  
-  )
-  
+    </section>
+  );
 };
 
 export default Hero;

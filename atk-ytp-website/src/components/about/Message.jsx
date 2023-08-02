@@ -1,12 +1,13 @@
-import './Message.scss'
+import React from 'react';
+import './Message.scss';
 
 const Message = ({ msg, writer }) => {
-    return (
-            <div className="message-container">
-                <p className='msg'>{msg}</p>
-                <p className='writer'>{writer}</p>
-            </div>
-        )   
-    }
-  
-  export default Message
+  return (
+    <div className='message-container'>
+      <p className='msg'>{msg}</p>
+      <p className='writer'>{writer}</p>
+    </div>
+  );
+};
+
+export default Message;

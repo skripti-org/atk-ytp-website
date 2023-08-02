@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/navigation/Navbar';
 import Hero from './components/hero/Hero';
 
 function App() {
@@ -7,7 +7,6 @@ function App() {
     <div className='App'>
       <Navbar />
       <Hero />
-      
     </div>
   );
 }

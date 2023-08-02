@@ -16,7 +16,6 @@ $blue50: #007bff77;
     border-width: 4px;
     border-style: solid;
     border-image: linear-gradient(to top, $red50, $blue50, transparent) 1;
-
 }
 
 .slide-container {
@@ -48,7 +47,6 @@ $blue50: #007bff77;
 
 .slideshowDots {
     text-align: center;
-    bottom: 0%;
     position: absolute;
     width: 100%;
     bottom: 0;

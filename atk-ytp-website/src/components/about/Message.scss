@@ -13,12 +13,12 @@
     font-size: 1.5rem;
     letter-spacing: 0.005em;
     text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
+    font-feature-settings: 'pnum'on, 'lnum'on, 'case'on;
     mix-blend-mode: difference;
     text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
-.msg::before{
+.msg::before {
     content: open-quote;
 }
 
@@ -35,7 +35,7 @@
     font-size: 1rem;
     letter-spacing: 0.005em;
     text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'case' on;
+    font-feature-settings: 'pnum'on, 'lnum'on, 'case'on;
     mix-blend-mode: difference;
     text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
 }
