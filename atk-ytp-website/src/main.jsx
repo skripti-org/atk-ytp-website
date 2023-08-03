@@ -6,7 +6,25 @@ import { MantineProvider } from '@mantine/core';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MantineProvider theme={{ colorScheme: 'dark' }}>
+    <MantineProvider
+      theme={{
+        colorScheme: 'dark',
+        colors: {
+          'triangle-yellow': [
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+          ],
+        },
+      }}
+    >
       <App />
     </MantineProvider>
   </React.StrictMode>,

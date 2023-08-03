@@ -86,11 +86,11 @@ export default function Footer({ links }: FooterSimpleProps) {
         </Anchor>
       </Container>
 
-      <Divider my='sm' size='xs' color='yellow' />
+      <Divider my='sm' size='xs' color='triangle-yellow' />
 
-      <Divider my='sm' size='md' color='yellow' />
+      <Divider my='sm' size='md' color='triangle-yellow' />
 
-      <Divider my='sm' size='xl' color='yellow' />
+      <Divider my='sm' size='xl' color='triangle-yellow' />
     </div>
   );
 }
