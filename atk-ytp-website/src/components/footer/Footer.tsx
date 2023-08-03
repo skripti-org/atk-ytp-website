@@ -19,7 +19,6 @@ import {
 const useStyles = createStyles((theme) => ({
   footer: {
     background: theme.colors.dark[9],
-    marginTop: rem(120),
     borderTop: `${rem(3)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.gray[0] : theme.colors.gray[2]
     }`,
@@ -88,7 +87,9 @@ export default function Footer({ links }: FooterSimpleProps) {
       </Container>
 
       <Divider my='sm' size='xs' color='yellow' />
+
       <Divider my='sm' size='md' color='yellow' />
+
       <Divider my='sm' size='xl' color='yellow' />
     </div>
   );

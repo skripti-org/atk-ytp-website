@@ -3,6 +3,7 @@ import Navbar from './components/navigation/Navbar';
 import Hero from './components/hero/Hero';
 import FAQ from './components/faq/Faq';
 import Footer from './components/footer/Footer';
+import SponsorGrid from './components/sponsors/Sponsors';
 
 function App() {
   const footerLinks = [
@@ -30,7 +31,11 @@ function App() {
 
       <Hero />
 
+      {/*
       <FAQ />
+      */}
+
+      <SponsorGrid />
 
       <Footer links={footerLinks} />
     </div>
