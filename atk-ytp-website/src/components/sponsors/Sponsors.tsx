@@ -1,5 +1,6 @@
 import { createStyles, Image, Container, AspectRatio, Grid, Card } from '@mantine/core';
 import React from 'react';
+import PageSection from '../layout/PageSection';
 
 const sponsors = [
   {
@@ -46,8 +47,10 @@ export default function SponsorGrid() {
   ));
 
   return (
-    <Container p='xl'>
-      <Grid gutter='xs'>{cards}</Grid>
-    </Container>
+    <PageSection title='Yhteistyökumppanit'>
+      <Container>
+        <Grid gutter='xs'>{cards}</Grid>
+      </Container>
+    </PageSection>
   );
 }
