@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400;500;600;700;800&display=swap');
 $bg-color: #070707;
-$dot-color: #E7FF50;
-$red: #C90123;
-$blue: #007BFF;
+$dot-color: #e7ff50;
+$red: #c90123;
+$blue: #007bff;
 $dot-size: 1px;
 $dot-space: 62px;
 
@@ -24,16 +24,14 @@ $dot-space: 62px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
+  background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
   background-size: $dot-space $dot-space;
 }
 
 h1 {
   font-size: 3.2em;
-  line-height: .75;
+  line-height: 0.75;
 }
 
 body {

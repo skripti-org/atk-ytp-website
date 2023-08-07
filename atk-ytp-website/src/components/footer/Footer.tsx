@@ -8,6 +8,7 @@ import {
   ActionIcon,
   Space,
   Divider,
+  Text,
 } from '@mantine/core';
 import {
   IconBrandInstagram,
@@ -64,7 +65,7 @@ export default function Footer({ links }: FooterSimpleProps) {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        ATK-YTP &apos;23
+        <Text weight='800'>ATK-YTP &apos;23</Text>
         <Group className={classes.links}>{items}</Group>
         <Group spacing={0} className={classes.links} position='right' noWrap>
           <ActionIcon size='lg'>
@@ -90,7 +91,7 @@ export default function Footer({ links }: FooterSimpleProps) {
 
       <Divider my='sm' size='md' color='triangle-yellow' />
 
-      <Divider my='sm' size='xl' color='triangle-yellow' />
+      <Divider mt='sm' size='xl' color='triangle-yellow' />
     </div>
   );
 }

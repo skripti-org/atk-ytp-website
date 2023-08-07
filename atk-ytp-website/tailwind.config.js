@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  corePlugins: {
+    preflight: false,
+  },
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      'sans': ['Syne'],
-      'serif': ['ui-serif', 'Georgia',],
-      'mono': ['ui-monospace', 'SFMono-Regular',],
-      'display': ['Oswald',],
-      'body': ["Roboto"],
-    }
+      sans: ['Syne'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+      display: ['Oswald'],
+      body: ['Roboto'],
+    },
   },
   plugins: [],
-}
+};

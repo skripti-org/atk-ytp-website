@@ -12,7 +12,7 @@ const qas = [
 const FAQ = () => {
   return (
     <PageSection title='FAQ'>
-      <Accordion variant='separated' radius='xs' defaultValue='customization'>
+      <Accordion variant='separated' radius='0'>
         {qas.map((qa) => {
           return (
             <Accordion.Item key={qa[Q]} value={qa[Q]}>

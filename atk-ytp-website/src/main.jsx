@@ -8,6 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <MantineProvider
       theme={{
+        fontFamily: 'Syne, sans',
         colorScheme: 'dark',
         colors: {
           'triangle-yellow': [
