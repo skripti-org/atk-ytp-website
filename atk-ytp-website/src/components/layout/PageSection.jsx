@@ -3,8 +3,8 @@ import React from 'react';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    marginTop: theme.spacing.xl,
-    marginBottom: theme.spacing.xl,
+    marginTop: '3rem',
+    marginBottom: '3rem',
   },
   title: {
     marginBottom: theme.spacing.xl,
