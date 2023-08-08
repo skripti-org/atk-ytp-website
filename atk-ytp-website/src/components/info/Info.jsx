@@ -1,7 +1,8 @@
 import React from 'react';
 import PageSection from '../layout/PageSection';
-import { Anchor } from '@mantine/core';
+import { Anchor, Alert } from '@mantine/core';
 import Paragraph from '../layout/Paragraph';
+import { IconAlertCircle } from '@tabler/icons-react';
 
 export default function Info() {
   return (
@@ -22,6 +23,9 @@ export default function Info() {
           >
             tai metrolla.
           </Anchor>
+          <Alert radius={0} icon={<IconAlertCircle size='1rem' />} title='Vinkki!' variant='filled'>
+            Vältä ruuhkat ja saavu Joensuuhun jo 500 päivää ennen tapahtumaa!
+          </Alert>
         </Paragraph>
 
         <Paragraph title='Kartta'></Paragraph>
