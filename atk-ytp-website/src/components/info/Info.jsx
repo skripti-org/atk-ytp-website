@@ -28,7 +28,21 @@ export default function Info() {
           </Alert>
         </Paragraph>
 
-        <Paragraph title='Kartta'></Paragraph>
+        {/*Juholle terkkuja, päräytin tähän tämmösen karttapalvelu-upotuksen testiin millanen oli serverilläkin.
+         En muotoillu ennen kun lyödään lukkoon napataanko tää vai Leaflet
+        */}
+
+        <Paragraph title='Kartta'>
+        <iframe
+        class="map"
+        width="100%"
+        height="500vh" // Aika raju bro :D
+        frameborder="0"
+        allowfullscreen
+        src="https://framacarte.org/m/162105/" />
+
+
+        </Paragraph>
 
         <Paragraph title='Linkkivinkkejä'></Paragraph>
       </PageSection>
