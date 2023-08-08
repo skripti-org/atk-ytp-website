@@ -39,17 +39,24 @@ const useStyles = createStyles((theme) => ({
     textDecoration: 'none',
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontWeight: 500,
+    fontFamily: theme.fontFamily,
     fontSize: theme.fontSizes.sm,
 
     [theme.fn.smallerThan('sm')]: {
       height: rem(42),
       display: 'flex',
-      alignItems: 'center',
-      width: '100%',
-    },
+      fontSize: '2rem',
 
+      padding: '2rem',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      ...theme.fn.hover({
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      }),
+    },
     ...theme.fn.hover({
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      borderBottom: '1rem #E7FF50',
     }),
   },
 
@@ -66,7 +73,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   dropdownFooter: {
-    backgroundColor: theme.colorScheme === 'yellow' ? theme.colors.dark[7] : theme.colors.gray[0],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
     margin: `calc(${theme.spacing.md} * -1)`,
     marginTop: theme.spacing.sm,
     padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
@@ -85,7 +92,6 @@ const useStyles = createStyles((theme) => ({
   hiddenDesktop: {
     [theme.fn.largerThan('sm')]: {
       display: 'none',
-      background: '#E7FF50',
     },
   },
 }));
@@ -96,7 +102,7 @@ export default function HeaderMegaMenu() {
 
   return (
     <Box pb={120}>
-      <Header height={60} px='md'>
+      <Header height={60} px='md' sx={{ backgroundColor: 'black', borderBottom: 0 }}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center'>
             <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
@@ -125,30 +131,26 @@ export default function HeaderMegaMenu() {
         opened={drawerOpened}
         onClose={closeDrawer}
         size='100%'
+        title={
+          <a href='https://www.atk-ytp.org/' className='flex items-center'>
+            <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
+              <Text weight='800'>ATK-YTP &apos;23</Text>
+            </span>
+          </a>
+        }
         padding='md'
         className={classes.hiddenDesktop}
         zIndex={1000000}
       >
-        <a href='https://www.atk-ytp.org/' className='flex items-center'>
-          <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
-            <Text weight='800'>ATK-YTP &apos;23</Text>
-          </span>
-        </a>
         <ScrollArea h={`calc(100vh - ${rem(60)})`} mx='-md'>
           <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
           <a href='#' className={classes.link}>
             Info
           </a>
-          <UnstyledButton className={classes.link}>
-            <Center inline>
-              <Box component='span' mr={5}>
-                Majoitus
-              </Box>
-              <IconChevronDown size={16} color={theme.fn.primaryColor()} />
-            </Center>
-          </UnstyledButton>
-          <Collapse></Collapse>
+          <a href='#' className={classes.link}>
+            Majoitus
+          </a>
           <a href='#' className={classes.link}>
             Ohjelma
           </a>

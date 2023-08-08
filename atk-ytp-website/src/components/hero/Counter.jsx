@@ -31,9 +31,6 @@ const Counter = ({ targetDate }) => {
   } else {
     return (
       <Card>
-        <div className='pb-4'>
-          <h2 className='border-b-2 font-sans font-light'>YTP STARTS IN</h2>
-        </div>
         <div className='flex'>
           <Timer days={days} hours={hours} minutes={minutes} seconds={seconds} />
         </div>
