@@ -1,7 +1,7 @@
 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
         path {
-                animation: 2s linear infinite both triangle-animation;
+                animation: 5s linear infinite both triangle-animation;
                 transform-origin: 50% 50%;
           }
       
