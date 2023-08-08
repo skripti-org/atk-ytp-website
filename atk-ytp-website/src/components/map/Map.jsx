@@ -7,13 +7,13 @@ import React from 'react';
 export default function Map() {
   const playerIcon = new Icon({
     iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/ad/Icon_2.gif',
-    iconSize: [20, 20],
+    iconSize: [40, 40],
   });
 
   function CustomIcon({ iconUrl }) {
     return new Icon({
       iconUrl: iconUrl,
-      iconSize: [20, 20],
+      iconSize: [40, 40],
     });
   }
 
