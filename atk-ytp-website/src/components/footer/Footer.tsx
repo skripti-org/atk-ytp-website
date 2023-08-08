@@ -15,9 +15,15 @@ import {
   IconBrandYoutube,
   IconBrandTwitter,
   IconBrandTelegram,
+  IconBrandMinecraft,
 } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
+  wrapper: {
+    [theme.fn.smallerThan('md')]: {
+      padding: 0,
+    },
+  },
   footer: {
     background: theme.colors.dark[9],
     borderTop: `${rem(3)} solid ${
@@ -62,42 +68,49 @@ export default function Footer({ links }: FooterSimpleProps) {
     </Anchor>
   ));
 
+  //TODO pitäiskö footerin olla 100% leveydeltään ja sit siinä ois vaan tuo sisällön leveys rajattu et ne ois keskellä?
+
   return (
-    <div className={classes.footer}>
-      <Container className={classes.inner}>
-        <Text weight='800'>ATK-YTP &apos;23</Text>
-        <Group className={classes.links}>{items}</Group>
-        <Group spacing={0} className={classes.links} position='right' noWrap>
-          <ActionIcon size='lg'>
-            <IconBrandTwitter size='1.05rem' stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size='lg'>
-            <IconBrandYoutube size='1.05rem' stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size='lg'>
-            <IconBrandInstagram size='1.05rem' stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size='lg'>
-            <IconBrandTelegram size='1.05rem' stroke={1.5} />
-          </ActionIcon>
-        </Group>
-        <Space h='md' />
-        <Anchor<'a'> color='white' key='Skripti ry' href='https://www.skripti.org' size='sm'>
-          Skripti ry
-        </Anchor>
+    <Container className={classes.wrapper}>
+      <Container sx={{ padding: 0 }} className={classes.footer}>
+        <Container className={classes.inner}>
+          <Text weight='800'>ATK-YTP &apos;23</Text>
+          <Group className={classes.links}>{items}</Group>
+          <Group spacing={0} className={classes.links} position='right' noWrap>
+            <ActionIcon size='lg'>
+              <IconBrandTwitter size='1.05rem' stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon size='lg'>
+              <IconBrandYoutube size='1.05rem' stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon size='lg'>
+              <IconBrandInstagram size='1.05rem' stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon size='lg'>
+              <IconBrandTelegram size='1.05rem' stroke={1.5} />
+            </ActionIcon>
+            <ActionIcon size='lg'>
+              <IconBrandMinecraft size='1.05rem' stroke={1.5} />
+            </ActionIcon>
+          </Group>
+          <Space h='md' />
+          <Anchor<'a'> color='white' key='Skripti ry' href='https://www.skripti.org' size='sm'>
+            Skripti ry
+          </Anchor>
+        </Container>
+
+        <Divider my='sm' size='xs' color='triangle-yellow' />
+
+        <Divider my='sm' size='sm' color='triangle-yellow' />
+
+        <Divider my='sm' size='md' color='triangle-yellow' />
+
+        <Divider my='sm' size='lg' color='triangle-yellow' />
+
+        <Divider my='sm' size='xl' color='triangle-yellow' />
+
+        <Divider mt='sm' size={10} color='triangle-yellow' />
       </Container>
-
-      <Divider my='sm' size='xs' color='triangle-yellow' />
-
-      <Divider my='sm' size='sm' color='triangle-yellow' />
-
-      <Divider my='sm' size='md' color='triangle-yellow' />
-
-      <Divider my='sm' size='lg' color='triangle-yellow' />
-
-      <Divider my='sm' size='xl' color='triangle-yellow' />
-
-      <Divider mt='sm' size={10} color='triangle-yellow' />
-    </div>
+    </Container>
   );
 }

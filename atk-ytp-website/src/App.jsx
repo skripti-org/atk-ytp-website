@@ -39,13 +39,15 @@ function App() {
 
       <Hero />
 
-      <Info />
+      <main>
+        <Info />
 
-      <Schedule />
+        <Schedule />
 
-      <FAQ />
+        <FAQ />
 
-      <SponsorGrid />
+        <SponsorGrid />
+      </main>
 
       <Footer links={footerLinks} />
     </div>
