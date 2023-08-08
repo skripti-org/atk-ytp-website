@@ -89,9 +89,15 @@ export default function Footer({ links }: FooterSimpleProps) {
 
       <Divider my='sm' size='xs' color='triangle-yellow' />
 
+      <Divider my='sm' size='sm' color='triangle-yellow' />
+
       <Divider my='sm' size='md' color='triangle-yellow' />
 
-      <Divider mt='sm' size='xl' color='triangle-yellow' />
+      <Divider my='sm' size='lg' color='triangle-yellow' />
+
+      <Divider my='sm' size='xl' color='triangle-yellow' />
+
+      <Divider mt='sm' size={10} color='triangle-yellow' />
     </div>
   );
 }
