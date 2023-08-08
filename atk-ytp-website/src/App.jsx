@@ -7,6 +7,7 @@ import SponsorGrid from './components/sponsors/Sponsors';
 import { Helmet } from 'react-helmet';
 import Info from './components/info/Info';
 import Schedule from './components/schedule/Schedule';
+import Map from './components/map/Map';
 
 function App() {
   const footerLinks = [
@@ -44,6 +45,7 @@ function App() {
 
         <Schedule />
 
+        <Map />
         <FAQ />
 
         <SponsorGrid />

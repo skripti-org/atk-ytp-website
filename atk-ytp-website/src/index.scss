@@ -39,3 +39,13 @@ body {
   margin: 0 auto;
   float: none;
 }
+
+/* --- (4) Leaflet container with map dimensions (other properties optional) --- */
+
+.leaflet-container {
+  display: flex;
+  height: 500px;
+}
+.leaflet-control-attribution {
+  font-size: 10px;
+}
