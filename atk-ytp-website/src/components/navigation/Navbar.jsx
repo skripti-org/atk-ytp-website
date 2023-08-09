@@ -85,7 +85,7 @@ export default function HeaderMegaMenu() {
 
   return (
     <Box>
-      <Header height={60} px='md' sx={{ backgroundColor: 'black', borderBottom: 0 }}>
+      <Header height={60} px='md' sx={{ backgroundColor: 'transparent', borderBottom: 0 }}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center'>
             <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
