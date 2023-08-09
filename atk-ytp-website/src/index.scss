@@ -3,6 +3,23 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@layer base {
+  .font-outline-2 {
+    text-shadow:
+    0.5px 1px 0 black,
+    1.5px 1.5px 0 #ff9adf,
+  -1.5px 1.5px 0 #ff9adf,  
+   1.5px 1.5px 0 #ff9adf,
+   -1.5px 1.5px 0 #ff9adf,
+    1.5px 1.5px 0 #ff9adf;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px #ff9adf;
+  }
+}
+
 $bg-color: #070707;
 $dot-color: #e7ff50;
 $red: #c90123;

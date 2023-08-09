@@ -104,13 +104,13 @@ export default function HeaderMegaMenu() {
               Info
             </a>
             <a href='#' className={classes.link}>
-              Majoitus
+              Aikataulu
             </a>
             <a href='#' className={classes.link}>
-              Ohjelma
+              Kartta
             </a>
             <a href='#' className={classes.link}>
-              Jotain
+              Yhteistyökumppanit
             </a>
           </Group>
           <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
@@ -140,13 +140,13 @@ export default function HeaderMegaMenu() {
             Info
           </a>
           <a href='#' className={classes.link}>
-            Majoitus
+            Aikataulu
           </a>
           <a href='#' className={classes.link}>
-            Ohjelma
+            Kartta
           </a>
           <a href='#' className={classes.link}>
-            Jotain
+            Yhteistyökumppanit
           </a>
 
           <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />

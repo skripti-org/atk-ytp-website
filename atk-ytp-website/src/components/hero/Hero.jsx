@@ -7,16 +7,15 @@ const Hero = () => {
     <section className='h-[100vh] py-2 grid'>
       <div className='container mx-auto flex flex-col justify-center py-20 lg:flex-row lg:justify-evenly xl:py-36'>
         <div className='flex flex-col justify-center rounded-sm p-6 text-center lg:max-w-md xl:max-w-lg'>
-          <span className='m-0 font-sans text-7xl font-extrabold mix-blend-difference sm:text-9xl'>
+          <span className='m-0 font-sans text-7xl font-extrabold sm:text-9xl relative'>
             ATK YTP 
-            <span className='text-3xl'>
-            '23
-            </span >
+            <h1 className='font-outline-2 text-gray-100 font-serif text-6xl sm:text-7xl -skew-y-6 absolute sm:top-40 sm:left-0 sm:right-0 underline top-16 left-0 right-0'>
+             Joensuu city
+            </h1> 
           </span >
-          <h1 className='font-sans text-sm mix-blend-difference sm:text-3xl'>
+
+          <h1 className='font-sans text-sm mix-blend-difference sm:text-3xl mt-12'>
             18-19.10.2023
-            <br />
-            JOENSUU
           </h1>
           <Container color='black'>
             <Button

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   corePlugins: {
     preflight: false,
@@ -7,7 +8,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ['Syne'],
-      serif: ['ui-serif', 'Georgia'],
+      serif: ['Pacifico'],
       mono: ['ui-monospace', 'SFMono-Regular'],
       display: ['Oswald'],
       body: ['Roboto'],

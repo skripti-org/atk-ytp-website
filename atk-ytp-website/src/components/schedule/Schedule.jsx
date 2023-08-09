@@ -20,7 +20,7 @@ export default function Schedule() {
               fz="xl"
               fw={800}
             >
-            Pe 18.10.
+            Ke 18.10.
           </Text>
           <Divider my='sm' color={'gray.8'} />
           <Text>
@@ -36,7 +36,7 @@ export default function Schedule() {
               fz="xl"
               fw={800}
             >
-            La 19.10.
+            To 19.10.
             
           </Text>
           <Divider my='sm' color={'gray.8'} />
