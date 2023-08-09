@@ -12,20 +12,20 @@ import Map from './components/map/Map';
 function App() {
   const footerLinks = [
     {
-      link: '#',
+      link: '#info',
       label: 'Info',
     },
     {
       link: '#',
-      label: 'Majoitus',
+      label: 'Aikataulu',
     },
     {
       link: '#',
-      label: 'Ohjelma',
+      label: 'Kartta',
     },
     {
       link: '#',
-      label: 'Jotain',
+      label: 'Yhteistyökumppanit',
     },
   ];
 
@@ -45,7 +45,6 @@ function App() {
 
         <Schedule />
 
-        
         <FAQ />
 
         <SponsorGrid />

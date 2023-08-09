@@ -7,13 +7,8 @@
 
 @layer base {
   .font-outline-2 {
-    text-shadow:
-    0.5px 1px 0 black,
-    1.5px 1.5px 0 #ff9adf,
-  -1.5px 1.5px 0 #ff9adf,  
-   1.5px 1.5px 0 #ff9adf,
-   -1.5px 1.5px 0 #ff9adf,
-    1.5px 1.5px 0 #ff9adf;
+    text-shadow: 0.5px 1px 0 black, 1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf,
+      1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf, 1.5px 1.5px 0 #ff9adf;
   }
   .font-outline-4 {
     -webkit-text-stroke: 4px #ff9adf;
@@ -52,7 +47,7 @@ h1 {
 }
 
 body {
-  max-width: 1280px;
+  //max-width: 1280px;
   margin: 0 auto;
   float: none;
 }

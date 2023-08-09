@@ -19,11 +19,6 @@ import {
 } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
-  wrapper: {
-    [theme.fn.smallerThan('md')]: {
-      padding: 0,
-    },
-  },
   footer: {
     background: theme.colors.dark[9],
     borderTop: `${rem(3)} solid ${
@@ -68,11 +63,9 @@ export default function Footer({ links }: FooterSimpleProps) {
     </Anchor>
   ));
 
-  //TODO pitäiskö footerin olla 100% leveydeltään ja sit siinä ois vaan tuo sisällön leveys rajattu et ne ois keskellä?
-
   return (
-    <Container className={classes.wrapper}>
-      <Container sx={{ padding: 0 }} className={classes.footer}>
+    <div className={classes.footer}>
+      <Container>
         <Container className={classes.inner}>
           <Text weight='800'>ATK-YTP &apos;23</Text>
           <Group className={classes.links}>{items}</Group>
@@ -98,19 +91,19 @@ export default function Footer({ links }: FooterSimpleProps) {
             Skripti ry
           </Anchor>
         </Container>
-
-        <Divider my='sm' size='xs' color='triangle-yellow' className='bounce' />
-
-        <Divider my='sm' size='sm' color='triangle-yellow' className='bounce2' />
-
-        <Divider my='sm' size='md' color='triangle-yellow' className='bounce3' />
-
-        <Divider my='sm' size='lg' color='triangle-yellow' className='bounce4' />
-
-        <Divider my='sm' size='xl' color='triangle-yellow' className='bounce5' />
-
-        <Divider mt='sm' size={10} color='triangle-yellow' />
       </Container>
-    </Container>
+
+      <Divider my='sm' size='xs' color='triangle-yellow' className='bounce' />
+
+      <Divider my='sm' size='sm' color='triangle-yellow' className='bounce2' />
+
+      <Divider my='sm' size='md' color='triangle-yellow' className='bounce3' />
+
+      <Divider my='sm' size='lg' color='triangle-yellow' className='bounce4' />
+
+      <Divider my='sm' size='xl' color='triangle-yellow' className='bounce5' />
+
+      <Divider mt='sm' size={10} color='triangle-yellow' />
+    </div>
   );
 }
