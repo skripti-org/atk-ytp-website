@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { EffectComposer, DepthOfField, Bloom, Vignette, Noise } from '@react-three/postprocessing';
+import { Canvas, useFrame, extend } from '@react-three/fiber';
 import './Canvas.scss';
+
+extend({ EffectComposer, DepthOfField });
 
 function Sphere() {
   const radius = Math.min(window.innerWidth, 100);
@@ -23,9 +26,21 @@ function Sphere() {
 
 export default function BgCanvas() {
   return (
-    <Canvas className='bgCanvas' camera={{ position: [0, 0, 200], rotation: [0, 0, 0.4] }}>
+    <Canvas
+      className='bgCanvas'
+      camera={{ position: [0, 0, 200], rotation: [0, 0, 0.4] }}
+      antialias={true}
+    >
       <ambientLight />
+
       <Sphere />
+
+      <EffectComposer>
+        <DepthOfField focusDistance={1} focalLength={0.02} bokehScale={2} height={480} />
+        <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={300} />
+        <Noise opacity={0.02} />
+        <Vignette eskil={false} offset={0.1} darkness={1.1} />
+      </EffectComposer>
     </Canvas>
   );
 }
