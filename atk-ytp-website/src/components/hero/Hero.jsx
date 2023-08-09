@@ -17,13 +17,13 @@ const Hero = () => {
             </h1>
           </span>
 
-          <h1 className='mt-12 font-sans text-sm mix-blend-difference sm:text-3xl'>
-            18-19.10.2023
-          </h1>
+          <h1 className='mt-12 font-sans text-sm sm:text-3xl'>18-19.10.2023</h1>
           <Container color='black'>
             <Button
               color='triangle-yellow'
               radius='xl'
+              component='a'
+              href='#info'
               rightIcon={<IconArrowElbowRight />}
               styles={(theme) => ({
                 root: {
