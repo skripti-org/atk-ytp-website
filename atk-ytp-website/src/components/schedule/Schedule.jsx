@@ -1,6 +1,6 @@
 import React from 'react';
 import PageSection from '../layout/PageSection';
-import { Container, Flex, Paper, Text } from '@mantine/core';
+import { Container, Divider, Flex, Paper, Text } from '@mantine/core';
 
 export default function Schedule() {
   return (
@@ -22,6 +22,7 @@ export default function Schedule() {
             >
             Pe 18.10.
           </Text>
+          <Divider my='sm' color={'gray.8'} />
           <Text>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet molestias dolor quo, aspernatur labore provident maiores iste commodi qui voluptas enim quia atque. Molestias accusantium reiciendis aliquam in harum labore.
           </Text>
@@ -35,8 +36,10 @@ export default function Schedule() {
               fz="xl"
               fw={800}
             >
-            Pe 19.10.
+            La 19.10.
+            
           </Text>
+          <Divider my='sm' color={'gray.8'} />
           <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente odit architecto, esse tenetur fuga cum, inventore porro voluptas natus qui dolor numquam fugit quo dolores magnam exercitationem! Dolorem, suscipit?
           </Text>

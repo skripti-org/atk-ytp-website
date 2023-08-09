@@ -13,6 +13,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 
 const useStyles = createStyles((theme) => ({
+
   link: {
     display: 'flex',
     alignItems: 'center',
@@ -40,6 +41,9 @@ const useStyles = createStyles((theme) => ({
     },
     ...theme.fn.hover({
       borderBottom: '1rem #E7FF50',
+      backgroundColor: '#E7FF50',
+      color: '#070707',
+
     }),
   },
 
@@ -69,13 +73,16 @@ const useStyles = createStyles((theme) => ({
   hiddenMobile: {
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
+      
     },
+    
   },
 
   hiddenDesktop: {
     [theme.fn.largerThan('sm')]: {
       display: 'none',
-    },
+      
+    }
   },
 }));
 
@@ -121,11 +128,12 @@ export default function HeaderMegaMenu() {
             </span>
           </a>
         }
+       
         padding='md'
         className={classes.hiddenDesktop}
         zIndex={1000000}
       >
-        <ScrollArea h={`calc(100vh - ${rem(60)})`} mx='-md'>
+
           <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
           <a href='#' className={classes.link}>
@@ -142,7 +150,7 @@ export default function HeaderMegaMenu() {
           </a>
 
           <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
-        </ScrollArea>
+  
       </Drawer>
     </Box>
   );
