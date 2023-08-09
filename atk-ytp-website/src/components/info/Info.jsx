@@ -43,7 +43,29 @@ export default function Info() {
 
         </Paragraph>
 
-        <Paragraph title='Linkkivinkkejä'></Paragraph>
+        <Paragraph title='Linkkejä'>
+          <Anchor
+              href='https://jojo.joensuu.fi/liput-ja-hinnat'
+              target='_blank'
+            >
+            Joukkoliikenne JoJo
+          </Anchor>
+          <br />
+          <Anchor
+              href=''
+              target='_blank'
+            >
+            ATK-YTP Telegram
+          </Anchor>
+          <br />
+          <Anchor
+              href=''
+              target='_blank'
+            >
+            Skripti ry
+          </Anchor>
+        </Paragraph>
+        
       </PageSection>
     </div>
   );

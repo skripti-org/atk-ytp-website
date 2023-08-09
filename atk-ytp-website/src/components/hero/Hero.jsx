@@ -4,12 +4,15 @@ import { IconArrowElbowRight } from '@tabler/icons-react';
 import Counter from './Counter';
 const Hero = () => {
   return (
-    <section className='h-[100vh] py-2'>
+    <section className='h-[100vh] py-2 grid'>
       <div className='container mx-auto flex flex-col justify-center py-20 lg:flex-row lg:justify-evenly xl:py-36'>
         <div className='flex flex-col justify-center rounded-sm p-6 text-center lg:max-w-md xl:max-w-lg'>
-          <h1 className='m-0 font-sans text-7xl font-extrabold mix-blend-difference sm:text-9xl'>
-            ATK YTP
-          </h1>
+          <span className='m-0 font-sans text-7xl font-extrabold mix-blend-difference sm:text-9xl'>
+            ATK YTP 
+            <span className='text-3xl'>
+            '23
+            </span >
+          </span >
           <h1 className='font-sans text-sm mix-blend-difference sm:text-3xl'>
             18-19.10.2023
             <br />
@@ -31,7 +34,7 @@ const Hero = () => {
           </Container>
         </div>
       </div>
-      <div className='xl:h-112 2xl:h-128 flex h-72 items-center justify-center px-4 sm:h-80 lg:mt-0 lg:h-3'>
+      <div className='flex items-center justify-center px-4 self-end mb-16'>
         <Counter targetDate={new Date('2023-10-18T10:00:00Z').getTime()} />
       </div>
     </section>
