@@ -9,7 +9,7 @@ const Hero = () => {
         <div className='flex flex-col justify-center rounded-sm p-6 text-center lg:max-w-md xl:max-w-lg'>
           <span className='m-0 font-sans text-7xl font-extrabold sm:text-9xl relative'>
             ATK YTP 
-            <h1 className='font-outline-2 text-gray-100 font-serif text-6xl sm:text-7xl -skew-y-6 absolute sm:top-40 sm:left-0 sm:right-0 underline top-16 left-0 right-0'>
+            <h1 className='font-outline-2 text-gray-100 font-serif text-6xl sm:text-7xl -skew-y-6 absolute sm:top-40 sm:left-0 sm:right-0 underline underline-offset-8 top-16 left-0 right-0'>
              Joensuu city
             </h1> 
           </span >
