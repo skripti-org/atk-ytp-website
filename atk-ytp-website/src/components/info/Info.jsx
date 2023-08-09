@@ -6,8 +6,8 @@ import { IconAlertCircle } from '@tabler/icons-react';
 
 export default function Info() {
   return (
-    <>
-      {/* Eetulle terkkuja et siirsin sen keltasen taustan tuonne pagesectioniin :D jos ihmettelet minne hävis */}
+    <div id="info">
+    {/*ainakin väliaikaisesti <> -> <div id="info", että saa navigaation linkin pelittämään testinä.>*/}
       <PageSection title='Info'>
         <Paragraph title='Majoitus'>
           Nukutaan jos nukutaan.
@@ -28,10 +28,6 @@ export default function Info() {
           </Alert>
         </Paragraph>
 
-        {/*Juholle terkkuja, päräytin tähän tämmösen karttapalvelu-upotuksen testiin millanen oli serverilläkin.
-         En muotoillu ennen kun lyödään lukkoon napataanko tää vai Leaflet
-        */}
-
         <Paragraph title='Kartta'>
         <iframe
         class="map"
@@ -46,6 +42,6 @@ export default function Info() {
 
         <Paragraph title='Linkkivinkkejä'></Paragraph>
       </PageSection>
-    </>
+    </div>
   );
 }

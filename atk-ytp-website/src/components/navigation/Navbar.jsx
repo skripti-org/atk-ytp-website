@@ -93,7 +93,7 @@ export default function HeaderMegaMenu() {
             </span>
           </a>
           <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
-            <a href='#' className={classes.link}>
+            <a href='#info' className={classes.link}>
               Info
             </a>
             <a href='#' className={classes.link}>
