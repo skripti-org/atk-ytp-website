@@ -3,7 +3,6 @@ import { Accordion, Blockquote } from '@mantine/core';
 import PageSection from '../layout/PageSection';
 import HighlightSection from '../layout/HighlightSection';
 import { Carousel } from '@mantine/carousel';
-import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 const Q = 0;
 const A = 1;
 const qas = [
