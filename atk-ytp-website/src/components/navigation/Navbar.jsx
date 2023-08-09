@@ -60,7 +60,7 @@ const useStyles = createStyles((theme) => ({
     margin: `calc(${theme.spacing.md} * -1)`,
     marginTop: theme.spacing.sm,
     padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
-    paddingBottom: theme.spacing.xl,
+
     borderTop: `${rem(1)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
     }`,
@@ -84,7 +84,7 @@ export default function HeaderMegaMenu() {
   const { classes, theme } = useStyles();
 
   return (
-    <Box pb={120}>
+    <Box>
       <Header height={60} px='md' sx={{ backgroundColor: 'black', borderBottom: 0 }}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center'>

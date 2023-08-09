@@ -2,15 +2,7 @@ import React from 'react';
 import { useCountdown } from '../../hooks/useCountdown';
 import './Counter.scss';
 import TimeDisplay from './TimeDisplay';
-import Card from './Card';
-
-const ExpiredNotice = () => {
-  return (
-    <div className='expired-notice'>
-      <span>atk ytp is here :D</span>
-    </div>
-  );
-};
+import { Paper } from '@mantine/core';
 
 const Timer = ({ days, hours, minutes, seconds }) => {
   return (
@@ -26,15 +18,13 @@ const Timer = ({ days, hours, minutes, seconds }) => {
 const Counter = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-  if (days + hours + minutes + seconds <= 0) {
-    return <ExpiredNotice />;
-  } else {
+  if (days + hours + minutes + seconds > 0) {
     return (
-      <Card>
+      <Paper shadow='md' p='md' radius={'xl'}>
         <div className='flex'>
           <Timer days={days} hours={hours} minutes={minutes} seconds={seconds} />
         </div>
-      </Card>
+      </Paper>
     );
   }
 };
