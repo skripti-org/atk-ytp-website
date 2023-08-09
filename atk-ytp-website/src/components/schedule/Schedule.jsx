@@ -20,7 +20,7 @@ export default function Schedule() {
               fz="xl"
               fw={800}
             >
-            Perjantai
+            Pe 18.10.
           </Text>
           <Text>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet molestias dolor quo, aspernatur labore provident maiores iste commodi qui voluptas enim quia atque. Molestias accusantium reiciendis aliquam in harum labore.
@@ -35,7 +35,7 @@ export default function Schedule() {
               fz="xl"
               fw={800}
             >
-            Lauantai
+            Pe 19.10.
           </Text>
           <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente odit architecto, esse tenetur fuga cum, inventore porro voluptas natus qui dolor numquam fugit quo dolores magnam exercitationem! Dolorem, suscipit?
