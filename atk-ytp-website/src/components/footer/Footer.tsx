@@ -99,15 +99,15 @@ export default function Footer({ links }: FooterSimpleProps) {
           </Anchor>
         </Container>
 
-        <Divider my='sm' size='xs' color='triangle-yellow' />
+        <Divider my='sm' size='xs' color='triangle-yellow' className='bounce' />
 
-        <Divider my='sm' size='sm' color='triangle-yellow' />
+        <Divider my='sm' size='sm' color='triangle-yellow' className='bounce2' />
 
-        <Divider my='sm' size='md' color='triangle-yellow' />
+        <Divider my='sm' size='md' color='triangle-yellow' className='bounce3' />
 
-        <Divider my='sm' size='lg' color='triangle-yellow' />
+        <Divider my='sm' size='lg' color='triangle-yellow' className='bounce4' />
 
-        <Divider my='sm' size='xl' color='triangle-yellow' />
+        <Divider my='sm' size='xl' color='triangle-yellow' className='bounce5' />
 
         <Divider mt='sm' size={10} color='triangle-yellow' />
       </Container>

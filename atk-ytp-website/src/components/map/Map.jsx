@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer, WMSTileLayer, Marker, useMap, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import PageSection from '../layout/PageSection';
 import React from 'react';
 import './Legend.css'
 
