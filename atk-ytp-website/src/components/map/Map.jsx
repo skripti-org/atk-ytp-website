@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer, WMSTileLayer, Marker, useMap, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import PageSection from '../layout/PageSection';
 import React from 'react';
 
 export default function Map() {
@@ -69,25 +68,23 @@ export default function Map() {
   }
 
   return (
-
-      <section className='map-component'>
-        <div className='map'>
-          <MapContainer
-            center={[62.602079226, 29.759679275]}
-            zoom={15}
-            scrollWheelZoom={true}
-            zoomControl={true}
-            style={{ flex: 1, width: '100%' }}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
-            />
-            <LocationMarker />
-            <Markers />
-          </MapContainer>
-        </div>
-      </section>
-
+    <section className='map-component'>
+      <div className='map'>
+        <MapContainer
+          center={[62.602079226, 29.759679275]}
+          zoom={15}
+          scrollWheelZoom={true}
+          zoomControl={true}
+          style={{ flex: 1, width: '100%' }}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+          />
+          <LocationMarker />
+          <Markers />
+        </MapContainer>
+      </div>
+    </section>
   );
 }
