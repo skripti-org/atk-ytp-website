@@ -9,6 +9,8 @@ const A = 1;
 const qas = [
   ['ATK-YTP?', 'Automaattisen tietojenkäsittelyn yhteistoimintapäivät'],
   ['Joensuu?', 'Idässä.'],
+  ['Rastikierros', 'Illalla.'],
+  ['Majoitus', 'Kouluilla.'],
 ];
 const quotes = [
   {

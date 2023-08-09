@@ -3,7 +3,7 @@ import PageSection from '../layout/PageSection';
 import { Anchor, Alert } from '@mantine/core';
 import Paragraph from '../layout/Paragraph';
 import { IconAlertCircle } from '@tabler/icons-react';
-
+import Map from '../map/Map';
 export default function Info() {
   return (
     <div id="info">
@@ -29,14 +29,17 @@ export default function Info() {
         </Paragraph>
 
         <Paragraph title='Kartta'>
-        <iframe
-        class="map"
-        width="100%"
-        height="500vh" // Aika raju bro :D
-        frameborder="0"
-        allowfullscreen
-        src="https://framacarte.org/m/162105/" />
+        <Map />
+          {/* Eetun testi
+            <iframe
+            class="map"
+            width="100%"
+            height="500vh" // Aika raju bro :D
+            frameborder="0"
+            allowfullscreen
+            src="https://framacarte.org/m/162105/" />
 
+          */}
 
         </Paragraph>
 

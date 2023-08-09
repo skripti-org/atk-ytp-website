@@ -45,7 +45,7 @@ function App() {
 
         <Schedule />
 
-        <Map />
+        
         <FAQ />
 
         <SponsorGrid />

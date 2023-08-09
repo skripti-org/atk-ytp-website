@@ -69,7 +69,7 @@ export default function Map() {
   }
 
   return (
-    <PageSection title='Kartta'>
+
       <section className='map-component'>
         <div className='map'>
           <MapContainer
@@ -88,6 +88,6 @@ export default function Map() {
           </MapContainer>
         </div>
       </section>
-    </PageSection>
+
   );
 }
