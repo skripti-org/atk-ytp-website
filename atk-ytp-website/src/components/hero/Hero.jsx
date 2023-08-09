@@ -15,7 +15,7 @@ const Hero = () => {
           </span >
 
           <h1 className='font-sans text-sm mix-blend-difference sm:text-3xl mt-12'>
-            18-19.10.2023
+            18.-19.10.2023
           </h1>
           <Container color='black'>
             <Button
