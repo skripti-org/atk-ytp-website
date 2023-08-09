@@ -16,7 +16,7 @@
     "@tabler/icons-react": "^2.30.0",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.6",
-    "embla-carousel-react": "^8.0.0-rc11",
+    "embla-carousel-react": "^7.0.0",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
