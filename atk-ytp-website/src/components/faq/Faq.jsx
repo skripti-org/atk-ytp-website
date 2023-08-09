@@ -12,8 +12,8 @@ const qas = [
 ];
 const quotes = [
   {
-    text: 'Life is like an npm install - you never know what you are going to get.',
-    person: 'Juuso Paakkunainen',
+    text: 'Nautin Joensuusta',
+    person: 'Idän susi',
   },
   {
     text: 'Kunnon kusipaskakännit ja vetoja',
@@ -23,10 +23,7 @@ const quotes = [
     text: 'Wine if fine, but whiskey is quicker.',
     person: 'Hank Moody',
   },
-  {
-    text: 'Nautin Joensuusta',
-    person: 'Idän susi',
-  },
+
 ];
 const FAQ = () => {
   return (
