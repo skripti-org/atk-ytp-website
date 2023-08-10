@@ -132,7 +132,7 @@ export default function Map() {
             zoom={15}
             scrollWheelZoom={true}
             zoomControl={true}
-            style={{ flex: 1, width: '100%' }}
+            style={{ flex: 1, width: '100%', zIndex: 0 }}
           >
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

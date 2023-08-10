@@ -71,6 +71,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   hiddenMobile: {
+    
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
       
@@ -79,10 +80,32 @@ const useStyles = createStyles((theme) => ({
   },
 
   hiddenDesktop: {
+
     [theme.fn.largerThan('sm')]: {
       display: 'none',
       
-    }
+    },
+    
+  },
+  
+  nav: {
+    [theme.fn.smallerThan('sm')]: {
+      position: 'fixed',
+      bottom: 0,
+      left: 0,
+      width: '100%',
+      zIndex: 1000,
+      borderBottom: 0,
+      top: 'calc(100vh - 60px)', // Adjust the 60px based on your header height
+      background: 'rgba(0, 0, 0, 0.6)',
+      boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+      backdropFilter: 'blur(7px)',
+      WebkitBackdropFilter: 'blur(7px)',
+      
+      borderTop: '1px solid rgba(255, 255, 255, 0.18)',
+    },
+    backgroundColor: 'transparent',
+    borderBottom: 0,
   },
 }));
 
@@ -91,8 +114,8 @@ export default function HeaderMegaMenu() {
   const { classes, theme } = useStyles();
 
   return (
-    <Box>
-      <Header height={60} px='md' sx={{ backgroundColor: 'transparent', borderBottom: 0 }}>
+    <Box className='relative'>
+      <Header height={60} px='md' sx={classes.nav}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center'>
             <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
@@ -121,34 +144,30 @@ export default function HeaderMegaMenu() {
         opened={drawerOpened}
         onClose={closeDrawer}
         size='100%'
-        title={
-          <a href='https://www.atk-ytp.org/' className='flex items-center'>
-            <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
-              <Text weight='800'>ATK-YTP &apos;23</Text>
-            </span>
-          </a>
-        }
-       
+        closeButtonProps={{display: "none"}}
         padding='md'
         className={classes.hiddenDesktop}
-        zIndex={1000000}
+        zIndex={900}
+        overlayColor="#E7FF50"
+        height="100%"
+       
       >
 
           <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
-
-          <a href='#' className={classes.link}>
-            Info
-          </a>
-          <a href='#' className={classes.link}>
-            Aikataulu
-          </a>
-          <a href='#' className={classes.link}>
-            Kartta
-          </a>
-          <a href='#' className={classes.link}>
-            Yhteistyökumppanit
-          </a>
-
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <a href='#' className={classes.link}>
+                Info
+              </a>
+              <a href='#' className={classes.link}>
+                Aikataulu
+              </a>
+              <a href='#' className={classes.link}>
+                Kartta
+              </a>
+              <a href='#' className={classes.link}>
+                Yhteistyökumppanit
+              </a>
+          </div>
           <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
   
       </Drawer>
