@@ -117,8 +117,8 @@ export default function HeaderMegaMenu() {
     <Box className='relative'>
       <Header height={60} px='md' sx={classes.nav}>
         <Group position='apart' sx={{ height: '100%' }}>
-          <a href='https://www.atk-ytp.org/' className='flex items-center'>
-            <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
+          <a href='https://www.atk-ytp.org/' className='flex items-center no-underline'>
+            <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white no-underline'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
           </a>
