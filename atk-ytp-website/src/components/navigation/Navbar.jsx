@@ -13,7 +13,6 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 
 const useStyles = createStyles((theme) => ({
-
   link: {
     display: 'flex',
     alignItems: 'center',
@@ -43,7 +42,6 @@ const useStyles = createStyles((theme) => ({
       borderBottom: '1rem #E7FF50',
       backgroundColor: '#E7FF50',
       color: '#070707',
-
     }),
   },
 
@@ -71,23 +69,17 @@ const useStyles = createStyles((theme) => ({
   },
 
   hiddenMobile: {
-    
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
-      
     },
-    
   },
 
   hiddenDesktop: {
-
     [theme.fn.largerThan('sm')]: {
       display: 'none',
-      
     },
-    
   },
-  
+
   nav: {
     [theme.fn.smallerThan('sm')]: {
       position: 'fixed',
@@ -96,12 +88,12 @@ const useStyles = createStyles((theme) => ({
       width: '100%',
       zIndex: 1000,
       borderBottom: 0,
-      top: 'calc(100vh - 60px)', // Adjust the 60px based on your header height
+      top: 'calc(100vh - 60px)',
       background: 'rgba(0, 0, 0, 0.6)',
       boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       backdropFilter: 'blur(7px)',
       WebkitBackdropFilter: 'blur(7px)',
-      
+
       borderTop: '1px solid rgba(255, 255, 255, 0.18)',
     },
     backgroundColor: 'transparent',
@@ -118,7 +110,7 @@ export default function HeaderMegaMenu() {
       <Header height={60} px='md' sx={classes.nav}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center no-underline'>
-            <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white no-underline'>
+            <span className='self-center whitespace-nowrap text-2xl font-semibold no-underline dark:text-white'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
           </a>
@@ -144,32 +136,29 @@ export default function HeaderMegaMenu() {
         opened={drawerOpened}
         onClose={closeDrawer}
         size='100%'
-        closeButtonProps={{display: "none"}}
+        closeButtonProps={{ display: 'none' }}
         padding='md'
         className={classes.hiddenDesktop}
         zIndex={900}
-        overlayColor="#E7FF50"
-        height="100%"
-       
+        overlayColor='#E7FF50'
+        height='100%'
       >
-
-          <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <a href='#' className={classes.link}>
-                Info
-              </a>
-              <a href='#' className={classes.link}>
-                Aikataulu
-              </a>
-              <a href='#' className={classes.link}>
-                Kartta
-              </a>
-              <a href='#' className={classes.link}>
-                Yhteistyökumppanit
-              </a>
-          </div>
-          <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
-  
+        <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <a href='#' className={classes.link}>
+            Info
+          </a>
+          <a href='#' className={classes.link}>
+            Aikataulu
+          </a>
+          <a href='#' className={classes.link}>
+            Kartta
+          </a>
+          <a href='#' className={classes.link}>
+            Yhteistyökumppanit
+          </a>
+        </div>
+        <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
       </Drawer>
     </Box>
   );

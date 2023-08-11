@@ -13,6 +13,9 @@
   .font-outline-4 {
     -webkit-text-stroke: 4px #ff9adf;
   }
+  .hero-grid-rows {
+    grid-template-rows: 50% 25% 25%;
+  }
 }
 
 $bg-color: #070707;
