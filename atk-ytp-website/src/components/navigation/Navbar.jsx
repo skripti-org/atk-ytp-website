@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
       height: rem(42),
       display: 'flex',
       fontSize: '2rem',
-
+      color: '#070707',
       padding: '2rem',
       alignItems: 'center',
       justifyContent: 'center',
@@ -137,27 +137,44 @@ export default function HeaderMegaMenu() {
         onClose={closeDrawer}
         size='100%'
         closeButtonProps={{ display: 'none' }}
-        padding='md'
-        className={classes.hiddenDesktop}
+        classNames={{ root: classes.hiddenDesktop }}
         zIndex={900}
-        overlayColor='#E7FF50'
         height='100%'
+        styles={(theme) => ({
+          content: {
+            background: '#E7FF50',
+            color: '#070707',
+            display: 'flex',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            height: '100%',
+            flexDirection: 'column',
+            alignItems: 'center',
+            margin: 'auto',
+          },
+          body: {
+            padding: 0,
+          },
+          header: {
+            background: '#E7FF50',
+          },
+        })}
       >
         <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <a href='#' className={classes.link}>
-            Info
-          </a>
-          <a href='#' className={classes.link}>
-            Aikataulu
-          </a>
-          <a href='#' className={classes.link}>
-            Kartta
-          </a>
-          <a href='#' className={classes.link}>
-            Yhteistyökumppanit
-          </a>
-        </div>
+
+        <a href='#' className={classes.link}>
+          Info
+        </a>
+        <a href='#' className={classes.link}>
+          Aikataulu
+        </a>
+        <a href='#' className={classes.link}>
+          Kartta
+        </a>
+        <a href='#' className={classes.link}>
+          Yhteistyökumppanit
+        </a>
+
         <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
       </Drawer>
     </Box>
