@@ -118,13 +118,13 @@ export default function HeaderMegaMenu() {
             <a href='#info' className={classes.link}>
               Info
             </a>
-            <a href='#' className={classes.link}>
+            <a href='#aikataulu' className={classes.link}>
               Aikataulu
             </a>
-            <a href='#' className={classes.link}>
+            <a href='#kartta' className={classes.link}>
               Kartta
             </a>
-            <a href='#' className={classes.link}>
+            <a href='#yhteistyokumppanit' className={classes.link}>
               Yhteistyökumppanit
             </a>
           </Group>

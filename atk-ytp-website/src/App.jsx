@@ -16,15 +16,15 @@ function App() {
       label: 'Info',
     },
     {
-      link: '#',
+      link: '#aikataulu',
       label: 'Aikataulu',
     },
     {
-      link: '#',
+      link: '#kartta',
       label: 'Kartta',
     },
     {
-      link: '#',
+      link: '#yhteistyokumppanit',
       label: 'Yhteistyökumppanit',
     },
   ];
@@ -44,6 +44,8 @@ function App() {
         <Info />
 
         <Schedule />
+        
+        <Map />
 
         <FAQ />
 
