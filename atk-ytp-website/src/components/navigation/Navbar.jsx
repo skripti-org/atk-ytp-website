@@ -94,10 +94,10 @@ const useStyles = createStyles((theme) => ({
       backdropFilter: 'blur(7px)',
       WebkitBackdropFilter: 'blur(7px)',
 
-      borderTop: '1px solid rgba(255, 255, 255, 0.18)',
+      borderTop: '1px solid rgba(255, 255, 255, 1)',
     },
     backgroundColor: 'transparent',
-    borderBottom: 0,
+    borderBottom: '1px solid rgba(255, 255, 255, 1)',
   },
 }));
 

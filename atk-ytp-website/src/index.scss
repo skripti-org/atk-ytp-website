@@ -10,9 +10,11 @@
     text-shadow: 0.5px 1px 0 black, 1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf,
       1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf, 1.5px 1.5px 0 #ff9adf;
   }
+
   .font-outline-2-title {
     -webkit-text-stroke: 4px black;
   }
+
   .hero-grid-rows {
     grid-template-rows: 50% 20% 20%;
   }
@@ -47,6 +49,15 @@ $dot-space: 62px;
 h1 {
   font-size: 3.2em;
   line-height: 0.75;
+}
+
+.h-borders {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.event-main {
+  background: rgba(231, 255, 80, 1);
+  color: black;
 }
 
 body {
@@ -90,9 +101,11 @@ body {
   48% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-2px);
   }
+
   52% {
     transform: translateY(0);
   }

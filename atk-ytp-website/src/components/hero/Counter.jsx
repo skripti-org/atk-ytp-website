@@ -7,10 +7,10 @@ import { Paper } from '@mantine/core';
 const Timer = ({ days, hours, minutes, seconds }) => {
   return (
     <div className='show-counter'>
-      <TimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
-      <TimeDisplay value={hours} type={'Hours'} isDanger={false} />
-      <TimeDisplay value={minutes} type={'Minutes'} isDanger={false} />
-      <TimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
+      <TimeDisplay value={days} type={'Päivää'} isDanger={days <= 3} />
+      <TimeDisplay value={hours} type={'Tuntia'} isDanger={false} />
+      <TimeDisplay value={minutes} type={'Minuuttia'} isDanger={false} />
+      <TimeDisplay value={seconds} type={'Sekuntia'} isDanger={false} />
     </div>
   );
 };

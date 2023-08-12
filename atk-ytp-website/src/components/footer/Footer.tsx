@@ -103,7 +103,7 @@ export default function Footer({ links }: FooterSimpleProps) {
 
       <Divider my='sm' size='xl' color='triangle-yellow' className='bounce5' />
 
-      <Divider mt='sm' size={10} color='triangle-yellow' />
+      <Divider mt='sm' mb='3.75rem' size={10} color='triangle-yellow' />
     </div>
   );
 }

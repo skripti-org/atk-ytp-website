@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Text } from '@mantine/core';
+import { Button, Container } from '@mantine/core';
 import { IconArrowElbowRight } from '@tabler/icons-react';
 import Counter from './Counter';
 import BgCanvas from './Canvas';
@@ -12,7 +12,7 @@ const Hero = () => {
         <Container className='flex flex-col items-center justify-center rounded-sm text-center lg:max-w-md xl:max-w-lg'>
           <span className='relative m-0 font-sans text-7xl font-extrabold sm:text-9xl'>
             ATK YTP
-            <h1 className='font-outline-2 absolute left-0 right-0 top-16 -skew-y-6 font-serif text-6xl text-gray-100 underline underline-offset-8 sm:left-0 sm:right-0 sm:top-40 sm:text-7xl'>
+            <h1 className='font-outline-2 absolute inset-x-0 top-16 -skew-y-6 font-serif text-6xl text-gray-100 underline underline-offset-8 sm:inset-x-0 sm:top-40 sm:text-7xl'>
               Joensuu city
             </h1>
           </span>
@@ -27,7 +27,7 @@ const Hero = () => {
           component='a'
           href='#info'
           rightIcon={<IconArrowElbowRight />}
-          styles={(theme) => ({
+          styles={() => ({
             root: {
               color: 'black',
             },
