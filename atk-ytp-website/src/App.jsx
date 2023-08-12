@@ -10,6 +10,8 @@ import Schedule from './components/schedule/Schedule';
 import Map from './components/map/Map';
 
 function App() {
+
+  {/*Nää ei ite asiassa toimi vielä D:*/}
   const footerLinks = [
     {
       link: '#info',

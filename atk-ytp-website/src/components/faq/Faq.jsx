@@ -6,10 +6,12 @@ import { Carousel } from '@mantine/carousel';
 const Q = 0;
 const A = 1;
 const qas = [
-  ['ATK-YTP?', 'Automaattisen tietojenkäsittelyn yhteistoimintapäivät'],
+  ['ATK-YTP?', 'Automaattisen tietojenkäsittelyn yhteistoimintapäivät.'],
   ['Joensuu?', 'Idässä.'],
-  ['Rastikierros', 'Illalla.'],
-  ['Majoitus', 'Kouluilla.'],
+  ['Ravintola?', 'Mikko.'],
+  ['Kolmio?', 'Kulmikas.'],
+  ['Rastikierros?', 'Illalla.'],
+  ['Majoitus?', 'Kouluilla.'],
 ];
 const quotes = [
   {
