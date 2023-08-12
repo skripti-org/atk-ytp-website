@@ -43,6 +43,12 @@ const useStyles = createStyles((theme) => ({
       marginTop: theme.spacing.md,
     },
   },
+
+  divider: {
+    [theme.fn.smallerThan('sm')]: {
+      marginBottom: '3.75rem',
+    },
+  },
 }));
 
 interface FooterSimpleProps {
@@ -103,7 +109,7 @@ export default function Footer({ links }: FooterSimpleProps) {
 
       <Divider my='sm' size='xl' color='triangle-yellow' className='bounce5' />
 
-      <Divider mt='sm' mb='3.75rem' size={10} color='triangle-yellow' />
+      <Divider mt='sm' size={10} color='triangle-yellow' className={classes.divider} />
     </div>
   );
 }

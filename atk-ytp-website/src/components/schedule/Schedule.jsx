@@ -115,7 +115,7 @@ export default function Schedule() {
           gap={{ base: 'sm', sm: 'lg' }}
           justify={{ sm: 'center' }}
         >
-          <Paper shadow='xl' radius='0' p='xl' withBorder>
+          <Paper shadow='xl' radius='0' p='xl' withBorder className='flex-1'>
             <Text
               variant='gradient'
               gradient={{ from: '#FFEC99', to: '#e7ff50', deg: 45 }}
@@ -130,7 +130,7 @@ export default function Schedule() {
             {getProgram(wed)}
           </Paper>
 
-          <Paper shadow='xl' radius='0' p='xl' withBorder>
+          <Paper shadow='xl' radius='0' p='xl' withBorder className='flex-1'>
             <Text
               variant='gradient'
               gradient={{ from: '#FFEC99', to: '#e7ff50', deg: 45 }}
