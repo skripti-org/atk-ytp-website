@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 import Info from './components/info/Info';
 import Schedule from './components/schedule/Schedule';
 import Map from './components/map/Map';
+import Credits from './components/credits/Credits';
 
 function App() {
 
@@ -52,6 +53,8 @@ function App() {
         <FAQ />
 
         <SponsorGrid />
+
+        <Credits />
       </main>
 
       <Footer links={footerLinks} />
