@@ -13,7 +13,7 @@ import Credits from './components/credits/Credits';
 function App() {
 
   {/*Nää ei ite asiassa toimi vielä D:*/}
-  const footerLinks = [
+  const links = [
     {
       link: '#info',
       label: 'Info',
@@ -39,7 +39,7 @@ function App() {
         <meta name='description' content='ATK-YTP 23 Joensuussa!' />
       </Helmet>
 
-      <Navbar />
+      <Navbar links={links} />
 
       <Hero />
 
@@ -57,7 +57,7 @@ function App() {
         <Credits />
       </main>
 
-      <Footer links={footerLinks} />
+      <Footer links={links} />
     </div>
   );
 }

@@ -101,7 +101,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function HeaderMegaMenu() {
+export default function HeaderMegaMenu({ links }) {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const { classes, theme } = useStyles();
 
@@ -115,18 +115,13 @@ export default function HeaderMegaMenu() {
             </span>
           </a>
           <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
-            <a href='#info' className={classes.link}>
-              Info
-            </a>
-            <a href='#aikataulu' className={classes.link}>
-              Aikataulu
-            </a>
-            <a href='#kartta' className={classes.link}>
-              Kartta
-            </a>
-            <a href='#yhteistyokumppanit' className={classes.link}>
-              Yhteistyökumppanit
-            </a>
+            {links.map((link) => {
+              return (
+                <a key={link} href={link.link} className={classes.link}>
+                  {link.label}
+                </a>
+              );
+            })}
           </Group>
           <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
         </Group>
@@ -140,7 +135,7 @@ export default function HeaderMegaMenu() {
         classNames={{ root: classes.hiddenDesktop }}
         zIndex={900}
         height='100%'
-        styles={(theme) => ({
+        styles={() => ({
           content: {
             background: '#E7FF50',
             color: '#070707',
@@ -162,18 +157,13 @@ export default function HeaderMegaMenu() {
       >
         <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
-        <a href='#' className={classes.link}>
-          Info
-        </a>
-        <a href='#' className={classes.link}>
-          Aikataulu
-        </a>
-        <a href='#' className={classes.link}>
-          Kartta
-        </a>
-        <a href='#' className={classes.link}>
-          Yhteistyökumppanit
-        </a>
+        {links.map((link) => {
+          return (
+            <a key={link} href={link.link} className={classes.link}>
+              {link.label}
+            </a>
+          );
+        })}
 
         <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
       </Drawer>
