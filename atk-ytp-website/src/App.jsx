@@ -8,23 +8,26 @@ import { Helmet } from 'react-helmet';
 import Info from './components/info/Info';
 import Schedule from './components/schedule/Schedule';
 import Map from './components/map/Map';
+import Credits from './components/credits/Credits';
 
 function App() {
+
+  {/*Nää ei ite asiassa toimi vielä D:*/}
   const footerLinks = [
     {
       link: '#info',
       label: 'Info',
     },
     {
-      link: '#',
+      link: '#aikataulu',
       label: 'Aikataulu',
     },
     {
-      link: '#',
+      link: '#kartta',
       label: 'Kartta',
     },
     {
-      link: '#',
+      link: '#yhteistyokumppanit',
       label: 'Yhteistyökumppanit',
     },
   ];
@@ -44,10 +47,14 @@ function App() {
         <Info />
 
         <Schedule />
+        
+        <Map />
 
         <FAQ />
 
         <SponsorGrid />
+
+        <Credits />
       </main>
 
       <Footer links={footerLinks} />

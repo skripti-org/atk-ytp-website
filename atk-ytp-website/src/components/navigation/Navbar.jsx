@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
       height: rem(42),
       display: 'flex',
       fontSize: '2rem',
-
+      color: '#070707',
       padding: '2rem',
       alignItems: 'center',
       justifyContent: 'center',
@@ -88,7 +88,7 @@ const useStyles = createStyles((theme) => ({
       width: '100%',
       zIndex: 1000,
       borderBottom: 0,
-      top: 'calc(100vh - 60px)', // Adjust the 60px based on your header height
+      top: 'calc(100vh - 60px)',
       background: 'rgba(0, 0, 0, 0.6)',
       boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       backdropFilter: 'blur(7px)',
@@ -110,7 +110,7 @@ export default function HeaderMegaMenu() {
       <Header height={60} px='md' sx={classes.nav}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center no-underline'>
-            <span className='self-center whitespace-nowrap text-2xl font-semibold text-white no-underline'>
+            <span className='self-center whitespace-nowrap text-2xl font-semibold no-underline dark:text-white'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
           </a>
@@ -118,13 +118,13 @@ export default function HeaderMegaMenu() {
             <a href='#info' className={classes.link}>
               Info
             </a>
-            <a href='#' className={classes.link}>
+            <a href='#aikataulu' className={classes.link}>
               Aikataulu
             </a>
-            <a href='#' className={classes.link}>
+            <a href='#kartta' className={classes.link}>
               Kartta
             </a>
-            <a href='#' className={classes.link}>
+            <a href='#yhteistyokumppanit' className={classes.link}>
               Yhteistyökumppanit
             </a>
           </Group>
@@ -141,27 +141,44 @@ export default function HeaderMegaMenu() {
         onClose={closeDrawer}
         size='100%'
         closeButtonProps={{ display: 'none' }}
-        padding='md'
-        className={classes.hiddenDesktop}
+        classNames={{ root: classes.hiddenDesktop }}
         zIndex={900}
-        overlayColor='#E7FF50'
         height='100%'
+        styles={(theme) => ({
+          content: {
+            background: '#E7FF50',
+            color: '#070707',
+            display: 'flex',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            height: '100%',
+            flexDirection: 'column',
+            alignItems: 'center',
+            margin: 'auto',
+          },
+          body: {
+            padding: 0,
+          },
+          header: {
+            background: '#E7FF50',
+          },
+        })}
       >
         <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <a href='#' className={classes.link}>
-            Info
-          </a>
-          <a href='#' className={classes.link}>
-            Aikataulu
-          </a>
-          <a href='#' className={classes.link}>
-            Kartta
-          </a>
-          <a href='#' className={classes.link}>
-            Yhteistyökumppanit
-          </a>
-        </div>
+
+        <a href='#' className={classes.link}>
+          Info
+        </a>
+        <a href='#' className={classes.link}>
+          Aikataulu
+        </a>
+        <a href='#' className={classes.link}>
+          Kartta
+        </a>
+        <a href='#' className={classes.link}>
+          Yhteistyökumppanit
+        </a>
+
         <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
       </Drawer>
     </Box>

@@ -47,10 +47,12 @@ export default function SponsorGrid() {
   ));
 
   return (
+    <div id="yhteistyokumppanit">
     <PageSection title='Yhteistyökumppanit'>
       <Container>
         <Grid gutter='xs'>{cards}</Grid>
       </Container>
     </PageSection>
+    </div>
   );
 }

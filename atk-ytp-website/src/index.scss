@@ -10,8 +10,11 @@
     text-shadow: 0.5px 1px 0 black, 1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf,
       1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf, 1.5px 1.5px 0 #ff9adf;
   }
-  .font-outline-4 {
-    -webkit-text-stroke: 4px #ff9adf;
+  .font-outline-2-title {
+    -webkit-text-stroke: 4px black;
+  }
+  .hero-grid-rows {
+    grid-template-rows: 50% 20% 20%;
   }
 }
 

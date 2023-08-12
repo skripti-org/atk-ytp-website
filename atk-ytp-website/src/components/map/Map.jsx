@@ -3,6 +3,7 @@ import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import './Legend.css'
+import PageSection from '../layout/PageSection';
 
 export default function Map() {
 
@@ -124,7 +125,8 @@ export default function Map() {
   }
 
   return (
-
+    <div id="kartta">
+    <PageSection title='Kartta'>
       <section className='map-component'>
         <div className='map'>
           <MapContainer
@@ -145,6 +147,7 @@ export default function Map() {
           </MapContainer>
         </div>
       </section>
-
+    </PageSection>
+    </div>
   );
 }
