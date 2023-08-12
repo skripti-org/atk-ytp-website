@@ -110,7 +110,7 @@ export default function HeaderMegaMenu() {
       <Header height={60} px='md' sx={classes.nav}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center no-underline'>
-            <span className='self-center whitespace-nowrap text-2xl font-semibold no-underline dark:text-white'>
+            <span className='self-center whitespace-nowrap text-2xl font-semibold text-white no-underline'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
           </a>
@@ -128,11 +128,7 @@ export default function HeaderMegaMenu() {
               Yhteistyökumppanit
             </a>
           </Group>
-          <Burger
-            opened={drawerOpened}
-            onClick={toggleDrawer}
-            className={classes.hiddenDesktop}
-          />
+          <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
         </Group>
       </Header>
 
