@@ -6,8 +6,6 @@ import BgCanvas from './Canvas';
 const Hero = () => {
   return (
     <section className='hero-grid-rows grid h-screen grid-cols-1'>
-      <BgCanvas />
-
       <div className='container mx-auto flex flex-col justify-center py-8 lg:flex-row lg:justify-evenly xl:py-36'>
         <Container className='flex flex-col items-center justify-center rounded-sm text-center lg:max-w-md xl:max-w-lg'>
           <span className='relative m-0 font-sans text-7xl font-extrabold sm:text-9xl'>

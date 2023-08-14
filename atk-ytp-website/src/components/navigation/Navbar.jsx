@@ -10,7 +10,7 @@ import {
   rem,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -88,7 +88,7 @@ const useStyles = createStyles((theme) => ({
       width: '100%',
       zIndex: 1000,
       borderBottom: 0,
-      top: 'calc(100vh - 60px)',
+      top: 'calc(env(safe-area-inset-bottom)) - 60px',
       background: 'rgba(0, 0, 0, 0.6)',
       boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       backdropFilter: 'blur(7px)',
@@ -159,7 +159,7 @@ export default function HeaderMegaMenu({ links }) {
 
         {links.map((link) => {
           return (
-            <a key={link} href={link.link} className={classes.link}>
+            <a key={link} href={link.link} className={classes.link} onClick={toggleDrawer}>
               {link.label}
             </a>
           );
