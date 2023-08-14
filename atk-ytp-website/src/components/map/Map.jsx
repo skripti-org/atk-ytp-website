@@ -10,9 +10,9 @@ import {
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import React, { useEffect, useState } from 'react';
-import './Legend.css';
 import PageSection from '../layout/PageSection';
 import { useRef } from 'react';
+import { IconInfoCircleFilled } from '@tabler/icons-react';
 
 const playerIcon = new Icon({
   iconUrl: 'https://sampwiki.blast.hk/wroot/images2/3/3e/Icon_3.gif',
@@ -91,22 +91,44 @@ function LocationMarker() {
   );
 }
 const Legend = () => {
+  const [showLegend, setShowLegend] = useState(false);
+
+  const toggleLegend = () => {
+    setShowLegend(!showLegend); // Step 2
+  };
+
   const legendStyle = {
     backgroundColor: '#1A1B1E',
     textAlign: 'left',
     borderRadius: '5px',
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
-    zIndex: 900,
     minWidth: '15%',
     minHeight: '25%',
-    position: 'absolute',
-    top: 0,
-    right: 0,
     margin: '1rem',
     color: 'white',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    cursor: 'pointer',
+  };
+
+  const infoContainer = {
+    display: showLegend ? 'none' : 'flex',
+    backgroundColor: '#1A1B1E',
+    textAlign: 'left',
+    borderRadius: '5px',
+    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
+    zIndex: 1000,
+    width: '2.5rem',
+    height: '2.5rem',
+    margin: '1rem',
+    color: 'white',
+    display: 'flex',
+    cursor: 'pointer',
+
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   };
 
   const types = [
@@ -129,22 +151,43 @@ const Legend = () => {
   ];
 
   return (
-    <div className='legend px-4' style={legendStyle}>
-      <div className='py-2 text-center font-sans'>
-        <strong>Info</strong>
-      </div>
-      <div className='flex flex-1 flex-col justify-center py-2'>
-        {types.map((type, index) => {
-          return (
-            <div className='flex items-center'>
-              <div>
-                <img src={type.iconUrl} alt={type.type} width={20} style={{ marginRight: '5px' }} />
-              </div>
-              <div className='font-sans'>{type.type}</div>
-            </div>
-          );
-        })}
-      </div>
+    <div className='leaflet-top leaflet-right'>
+      {showLegend ? (
+        <div
+          className='legend leaflet-control-zoom leaflet-control-container leaflet-control px-4'
+          style={legendStyle}
+          onClick={toggleLegend}
+        >
+          <div className='py-2 text-center font-sans'>
+            <strong className=''>Info</strong>
+          </div>
+          <div className='flex flex-1 flex-col justify-center py-2'>
+            {types.map((type, index) => {
+              return (
+                <div className='flex items-center'>
+                  <div>
+                    <img
+                      src={type.iconUrl}
+                      alt={type.type}
+                      width={20}
+                      style={{ marginRight: '5px' }}
+                    />
+                  </div>
+                  <div className='font-sans'>{type.type}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ) : (
+        <div
+          className='leaflet-control-zoom leaflet-control-container leaflet-control'
+          style={infoContainer}
+          onClick={toggleLegend}
+        >
+          <IconInfoCircleFilled />
+        </div>
+      )}
     </div>
   );
 };
@@ -182,7 +225,6 @@ export default function Map() {
               <LocationMarker />
               <Markers />
               <Legend />
-              <SetViewOnClick animateRef={animateRef} />
             </MapContainer>
           </div>
         </section>

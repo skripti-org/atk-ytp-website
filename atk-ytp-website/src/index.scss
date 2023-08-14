@@ -66,8 +66,6 @@ body {
   float: none;
 }
 
-/* --- (4) Leaflet container with map dimensions (other properties optional) --- */
-
 .leaflet-container {
   display: flex;
   height: min(500px, 80vh);
