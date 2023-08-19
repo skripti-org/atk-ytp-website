@@ -117,7 +117,7 @@ export default function HeaderMegaMenu({ links }) {
           <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
             {links.map((link) => {
               return (
-                <a key={link} href={link.link} className={classes.link}>
+                <a key={`navbar-${link.label}`} href={link.link} className={classes.link}>
                   {link.label}
                 </a>
               );
@@ -159,7 +159,7 @@ export default function HeaderMegaMenu({ links }) {
 
         {links.map((link) => {
           return (
-            <a key={link} href={link.link} className={classes.link} onClick={toggleDrawer}>
+            <a key={`menu-${link.label}`} href={link.link} className={classes.link} onClick={toggleDrawer}>
               {link.label}
             </a>
           );

@@ -37,7 +37,7 @@ export default function Info() {
           >
             tai metrolla.
           </Anchor>
-          <Alert radius={0} icon={<IconAlertCircle size='1rem' />} title='Vinkki!' variant='filled'>
+          <Alert radius={0} icon={<IconAlertCircle />} title='Vinkki!' variant='filled'>
             Vältä ruuhkat ja saavu Joensuuhun jo 500 päivää ennen tapahtumaa!
           </Alert>
         </Paragraph>

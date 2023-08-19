@@ -1,6 +1,7 @@
 import React from 'react';
 import PageSection from '../layout/PageSection';
 import { Divider, Flex, Paper, Table, Text } from '@mantine/core';
+import { nanoid } from 'nanoid';
 
 export default function Schedule() {
   function getProgram(day) {
@@ -14,7 +15,7 @@ export default function Schedule() {
         </thead>
         <tbody>
           {day.map((event) => (
-            <tr key={event.activity} className={event.main ? 'event-main' : null}>
+            <tr key={nanoid()} className={/*event.main ? 'event-main' : null*/ ''}>
               <td>{timeToString(event.time)}</td>
               <td>{event.activity}</td>
             </tr>

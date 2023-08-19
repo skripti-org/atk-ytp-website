@@ -6,7 +6,7 @@ import {
   useMap,
   Popup,
   useMapEvent,
-} from 'react-leaflet'
+} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import React, { useState } from 'react';
 import PageSection from '../layout/PageSection';
@@ -40,7 +40,7 @@ function Markers() {
   ];
   return (
     markers.length > 0 &&
-    markers.map((marker, index) => {
+    markers.map((marker) => {
       return (
         <Marker
           eventHandlers={{
@@ -48,7 +48,7 @@ function Markers() {
               map.setView(marker.coordinates, 20);
             },
           }}
-          key={index}
+          key={marker.coordinates}
           position={marker.coordinates}
           icon={CustomIcon({ iconUrl: marker.iconUrl })}
         >
@@ -72,7 +72,10 @@ function LocationMarker() {
   }, [map]);
 
   return position === null ? null : (
-    <Marker position={position} icon={CustomIcon({iconUrl:'https://sampwiki.blast.hk/wroot/images2/3/3e/Icon_3.gif'})}>
+    <Marker
+      position={position}
+      icon={CustomIcon({ iconUrl: 'https://sampwiki.blast.hk/wroot/images2/3/3e/Icon_3.gif' })}
+    >
       <Popup>Olet tässä :D</Popup>
     </Marker>
   );
@@ -111,7 +114,6 @@ export default function Map() {
               <LocationMarker />
               <Markers />
               <Legend />
-   
             </MapContainer>
           </div>
         </section>

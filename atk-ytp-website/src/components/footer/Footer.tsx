@@ -60,7 +60,7 @@ export default function Footer({ links }: FooterSimpleProps) {
   const items = links.map((link) => (
     <Anchor<'a'>
       color='white'
-      key={link.label}
+      key={`footer-${link.label}`}
       href={link.link}
       onClick={(event) => event.preventDefault()}
       size='sm'
@@ -77,19 +77,19 @@ export default function Footer({ links }: FooterSimpleProps) {
           <Group className={classes.links}>{items}</Group>
           <Group spacing={0} className={classes.links} position='right' noWrap>
             <ActionIcon size='lg'>
-              <IconBrandTwitter size='1.05rem' stroke={1.5} />
+              <IconBrandTwitter stroke={1.5} />
             </ActionIcon>
             <ActionIcon size='lg'>
-              <IconBrandYoutube size='1.05rem' stroke={1.5} />
+              <IconBrandYoutube stroke={1.5} />
             </ActionIcon>
             <ActionIcon size='lg'>
-              <IconBrandInstagram size='1.05rem' stroke={1.5} />
+              <IconBrandInstagram stroke={1.5} />
             </ActionIcon>
             <ActionIcon size='lg'>
-              <IconBrandTelegram size='1.05rem' stroke={1.5} />
+              <IconBrandTelegram stroke={1.5} />
             </ActionIcon>
             <ActionIcon size='lg'>
-              <IconBrandMinecraft size='1.05rem' stroke={1.5} />
+              <IconBrandMinecraft stroke={1.5} />
             </ActionIcon>
           </Group>
           <Space h='md' />

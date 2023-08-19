@@ -44,7 +44,7 @@ export default function BgCanvas() {
     <Canvas
       className='bgCanvas'
       camera={{ position: [0, 0, 200], rotation: [0, 0, 0.4] }}
-      antialias={true}
+      antialias={'true'}
     >
       <ambientLight />
 
