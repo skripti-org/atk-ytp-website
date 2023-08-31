@@ -16,6 +16,7 @@ import {
   IconBrandTwitter,
   IconBrandTelegram,
   IconBrandMinecraft,
+  IconBrandGithub,
 } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -77,19 +78,13 @@ export default function Footer({ links }: FooterSimpleProps) {
           <Group className={classes.links}>{items}</Group>
           <Group spacing={0} className={classes.links} position='right' noWrap>
             <ActionIcon size='lg'>
-              <IconBrandTwitter stroke={1.5} />
-            </ActionIcon>
-            <ActionIcon size='lg'>
-              <IconBrandYoutube stroke={1.5} />
-            </ActionIcon>
-            <ActionIcon size='lg'>
               <IconBrandInstagram stroke={1.5} />
             </ActionIcon>
             <ActionIcon size='lg'>
               <IconBrandTelegram stroke={1.5} />
             </ActionIcon>
             <ActionIcon size='lg'>
-              <IconBrandMinecraft stroke={1.5} />
+              <IconBrandGithub stroke={1.5} />
             </ActionIcon>
           </Group>
           <Space h='md' />
