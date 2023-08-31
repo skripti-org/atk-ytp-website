@@ -146,9 +146,11 @@ export default function HeaderMegaMenu({ links }) {
             flexDirection: 'column',
             alignItems: 'center',
             margin: 'auto',
+            
           },
           body: {
             padding: 0,
+            marginBottom: '60px'
           },
           header: {
             background: '#E7FF50',

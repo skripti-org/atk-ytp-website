@@ -12,7 +12,12 @@
   }
 
   .font-outline-2-title {
-    -webkit-text-stroke: 4px black;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
   }
 
   .hero-grid-rows {
