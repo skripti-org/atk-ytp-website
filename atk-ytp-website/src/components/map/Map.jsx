@@ -25,6 +25,12 @@ function Markers() {
       info: 'Tää baari on myynnissä. Ei oo kallis osta pois.'
     },
     {
+      coordinates: [62.5959455,29.7487638],
+      label: 'Joensuun yhteiskoulun lukio',
+      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
+      info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!'
+    },
+    {
       coordinates: [62.6026422, 29.7745023],
       label: 'Pielisjoen koulu',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
@@ -35,6 +41,12 @@ function Markers() {
       label: 'Carelia-sali',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
       info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali!'
+    },
+    {
+      coordinates: [62.5674612,29.8303404],
+      label: 'Etkopaikka',
+      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
+      info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.'
     }
   ];
   return (
