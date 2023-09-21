@@ -9,6 +9,7 @@ import Info from './components/info/Info';
 import Schedule from './components/schedule/Schedule';
 import Map from './components/map/Map';
 import Credits from './components/credits/Credits';
+import Main from './components/hero/Main';
 
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
       <Navbar links={links} />
 
       <Hero />
-
+      <Main/>
       <main>
         <Info />
 

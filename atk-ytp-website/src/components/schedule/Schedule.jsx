@@ -35,42 +35,47 @@ export default function Schedule() {
   const wed = [
     {
       time: 10,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 11,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 12,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 13,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 14,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 15,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 16,
-      activity: 'Sample',
+      activity: 'Rastikierros alkaa',
+      main: true,
+    },
+    {
+      time: 18,
+      activity: 'Etkot alkavat',
       main: false,
     },
     {
-      time: 17,
-      activity: 'Sample',
+      time: "NaN",
+      activity: 'Jatkot Kimmelissä: Ursus Factory',
       main: false,
     },
   ];
@@ -78,32 +83,37 @@ export default function Schedule() {
   const thu = [
     {
       time: 10,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 11,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 12,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 13,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
       time: 14,
-      activity: 'Sample',
+      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
-      time: 15,
-      activity: 'Sample',
+      time: 18,
+      activity: 'Etkot alkavat',
+      main: true,
+    },
+    {
+      time: "xx",
+      activity: 'Jatkot Kerubissa: Affirmed, Digital Mindz, Bionator Project',
       main: true,
     },
   ];

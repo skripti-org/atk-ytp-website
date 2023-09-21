@@ -5,6 +5,8 @@ const useStyles = createStyles((theme) => ({
   wrapper: {
     marginTop: '3rem',
     marginBottom: '3rem',
+    paddingRight: '2rem',
+    paddingLeft: '2rem',
   },
   title: {
     marginBottom: theme.spacing.xl,

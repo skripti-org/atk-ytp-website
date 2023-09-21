@@ -67,8 +67,12 @@ export default function Info() {
             Joukkoliikenne JoJo
           </Anchor>
           <br />
-          <Anchor href='' target='_blank'>
+          <Anchor href='https://t.me/+EOI-Do9oS6Q0YzJk' target='_blank'>
             ATK-YTP Telegram
+          </Anchor>
+          <br />
+          <Anchor href='https://t.me/atkytp23tiedotus' target='_blank'>
+            ATK-YTP Tiedotuskanava
           </Anchor>
           <br />
           <Anchor href='https://www.skripti.org' target='_blank'>
