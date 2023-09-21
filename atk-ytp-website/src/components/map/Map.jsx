@@ -13,6 +13,7 @@ import PageSection from '../layout/PageSection';
 import { useRef } from 'react';
 import Legend from './Legend';
 import CustomIcon from './CustomIcon';
+import CustomPopup from './CustomPopup';
 
 function Markers() {
   const map = useMap();
@@ -21,22 +22,20 @@ function Markers() {
       coordinates: [62.6020939, 29.7623925],
       label: 'Marks',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      info: 'Tää baari on myynnissä. Ei oo kallis osta pois.'
     },
     {
       coordinates: [62.6026422, 29.7745023],
       label: 'Pielisjoen koulu',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
+      info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!'
     },
     {
       coordinates: [62.6036733, 29.7446238, 21],
       label: 'Carelia-sali',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
-    },
-    {
-      coordinates: [62.60358808111174, 29.747125070027504],
-      label: 'Aurora-sali',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
-    },
+      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali!'
+    }
   ];
   return (
     markers.length > 0 &&
@@ -53,7 +52,7 @@ function Markers() {
           icon={CustomIcon({ iconUrl: marker.iconUrl })}
         >
           <Popup>
-            <span>{marker.label}</span>
+            <CustomPopup label={marker.label} info={marker.info} coordinates={marker.coordinates} />
           </Popup>
         </Marker>
       );
