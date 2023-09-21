@@ -75,7 +75,12 @@ function LocationMarker() {
       position={position}
       icon={CustomIcon({ iconUrl: 'https://sampwiki.blast.hk/wroot/images2/3/3e/Icon_3.gif' })}
     >
-      <Popup>Olet tässä :D</Popup>
+      <Popup>
+        <div>
+          <img width={100} src='https://i.ytimg.com/vi/so_7WcDkjxs/mqdefault.jpg'></img>
+        </div>
+        <div className='text-xs font-sans'>Olet tässä :D</div>
+      </Popup>
     </Marker>
   );
 }
