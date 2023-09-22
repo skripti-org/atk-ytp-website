@@ -10,14 +10,7 @@ import {
   Divider,
   Text,
 } from '@mantine/core';
-import {
-  IconBrandInstagram,
-  IconBrandYoutube,
-  IconBrandTwitter,
-  IconBrandTelegram,
-  IconBrandMinecraft,
-  IconBrandGithub,
-} from '@tabler/icons-react';
+import { IconBrandInstagram, IconBrandTelegram, IconBrandGithub } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   footer: {

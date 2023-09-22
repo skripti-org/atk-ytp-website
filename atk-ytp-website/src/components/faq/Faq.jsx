@@ -11,7 +11,7 @@ const qas = [
   ['ATK-YTP?', 'Automaattisen tietojenkäsittelyn yhteistoimintapäivät.'],
   ['Joensuu?', 'Idässä.'],
   ['Ravintola?', 'Mikko.'],
-  ['Kolmio?', 'Kulmikas.'],
+  ['Kolmio?', 'Ukko.'],
   ['Rastikierros?', 'Illalla.'],
   ['Majoitus?', 'Kouluilla.'],
 ];
