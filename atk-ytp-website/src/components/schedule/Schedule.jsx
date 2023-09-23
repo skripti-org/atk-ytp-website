@@ -69,7 +69,7 @@ export default function Schedule() {
       main: true,
     },
     {
-      time: 18,
+      time: 19,
       activity: 'Etkot alkavat',
       main: false,
     },
@@ -107,7 +107,7 @@ export default function Schedule() {
       main: true,
     },
     {
-      time: 18,
+      time: 19,
       activity: 'Etkot alkavat',
       main: true,
     },

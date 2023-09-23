@@ -21,7 +21,7 @@ const sponsors = [
   },
   {
     title: 'Sitowise',
-    image: '',
+    image: 'https://raw.githubusercontent.com/skripti-org/atk-ytp-website/v2/atk-ytp-website/public/sitowise.jpeg',
     link: '#',
   },
   {
@@ -31,7 +31,7 @@ const sponsors = [
   },
   {
     title: 'TEK',
-    image: '',
+    image: 'https://raw.githubusercontent.com/skripti-org/atk-ytp-website/v2/atk-ytp-website/public/tek.jpeg',
     link: '#',
   },
 ];
