@@ -9,10 +9,19 @@ export default function Info() {
     <div id='info'>
       <PageSection title='Info'>
         <Paragraph title='Majoitus'>
-          Tapahtuman majoitus tapahtuu kouluilla x ja y. Majoitukset avautuvat tapahtumapäivinä klo
-          x ja sulkeutuvat klo x. Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!
+          Tapahtuman majoitus tapahtuvat Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla. Koulujen sijainnit
+          löydät kartalta. 
+          Majoitukset avautuvat tapahtumapäivinä klo x ja sulkeutuvat klo x. Molemmille kouluilla päivystävät yövahdit molempina öinä.
+          <br />
+          <br />
+          <b>Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!</b>
         </Paragraph>
+        <Paragraph title='Jatkot'>
 
+        </Paragraph>
+        <Paragraph title='Etkot'>
+
+        </Paragraph>
         <Paragraph title='Ruoka'>
           Näläkäinen nikotteleksen, kyllin syönyt röyhteleksen.
           <br />
