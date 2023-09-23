@@ -20,8 +20,18 @@ const sponsors = [
     link: '#',
   },
   {
-    title: 'Abloy',
-    image: 'https://egresscalc.assaabloy.com/assa-abloy-logo-black-and-white1.png',
+    title: 'Sitowise',
+    image: '',
+    link: '#',
+  },
+  {
+    title: 'Mimmit koodaa',
+    image: 'https://mimmitkoodaa.fi/wp-content/themes/mimmitkoodaa-2022/img/mimmit-koodaa-logo-white.svg',
+    link: '#',
+  },
+  {
+    title: 'TEK',
+    image: '',
     link: '#',
   },
 ];

@@ -17,10 +17,20 @@ export default function Info() {
           <b>Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!</b>
         </Paragraph>
         <Paragraph title='Jatkot'>
-
+          Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi. 
+          <br />
+          <br />
+          Ensimmäisen illan jatkot tarjoaa Las Palmas,
+          joka toimii Sokos Hotel Kimmelin tiloina. Illan artistina toimittaa Jussi Pelkosen ja 
+          Aleksi Ripatin muodostama garagerock-duo Ursus Factory! 
+          <br />
+          <br />
+          Toisen illan jatkot järjestetään yökerho Kerubissa, jossa pääsemme nauttimaan paikallisesti 
+          konemusiikista Affirmed:n, Digital Mindz:n, Bionator Project:n tähdittämänä! 
         </Paragraph>
         <Paragraph title='Etkot'>
-
+          Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle molempina päivinä
+          klo 19-23. Etkoille on mahdollista tuoda mukana omia virvokkeita sekä naposteltavia! 
         </Paragraph>
         <Paragraph title='Ruoka'>
           Näläkäinen nikotteleksen, kyllin syönyt röyhteleksen.
