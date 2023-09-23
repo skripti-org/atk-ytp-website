@@ -12,6 +12,7 @@ export default {
       mono: ['ui-monospace', 'SFMono-Regular'],
       display: ['Oswald'],
       body: ['Roboto'],
+      heading: ['Pricedown']
     },
   },
   plugins: [],
