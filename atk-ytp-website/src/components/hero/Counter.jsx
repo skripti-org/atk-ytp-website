@@ -1,24 +1,16 @@
 import React from 'react';
 import { useCountdown } from '../../hooks/useCountdown';
-import './Counter.scss'
+import './Counter.scss';
 import TimeDisplay from './TimeDisplay';
-import Card from './Card'
-
-const ExpiredNotice = () => {
-  return (
-    <div className="expired-notice">
-      <span>atk ytp is here :D</span>
-    </div>
-  );
-};
+import { Paper } from '@mantine/core';
 
 const Timer = ({ days, hours, minutes, seconds }) => {
   return (
-    <div className="show-counter">
-        <TimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
-        <TimeDisplay value={hours} type={'Hours'} isDanger={false} />
-        <TimeDisplay value={minutes} type={'Minutes'} isDanger={false} />
-        <TimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
+    <div className='show-counter'>
+      <TimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
+      <TimeDisplay value={hours} type={'Hours'} isDanger={false} />
+      <TimeDisplay value={minutes} type={'Minutes'} isDanger={false} />
+      <TimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
     </div>
   );
 };
@@ -26,26 +18,13 @@ const Timer = ({ days, hours, minutes, seconds }) => {
 const Counter = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-  if (days + hours + minutes + seconds <= 0) {
-    return <ExpiredNotice />;
-  } else {
+  if (days + hours + minutes + seconds > 0) {
     return (
-      <Card>
-        <div className='pb-4'>
-            <h2 className='font-sans border-b-2 font-light'>YTP STARTS IN</h2>
-          </div>
+      <Paper shadow='md' p='md' radius={'xl'} className='glow relative'>
         <div className='flex'>
-          
-            <Timer
-            days={days}
-            hours={hours}
-            minutes={minutes}
-            seconds={seconds}
-          />
+          <Timer days={days} hours={hours} minutes={minutes} seconds={seconds} />
         </div>
-        
-      </Card>
-
+      </Paper>
     );
   }
 };

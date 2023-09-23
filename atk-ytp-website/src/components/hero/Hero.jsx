@@ -1,22 +1,43 @@
-import Counter from './Counter'
+import React from 'react';
+import { Button, Container } from '@mantine/core';
+import { IconArrowElbowRight } from '@tabler/icons-react';
+import Counter from './Counter';
+import BgCanvas from './Canvas';
+import logo from '../../../assets/logos/logo.png';
 
 const Hero = () => {
-    
   return (
-    <section className="transparent py-16 h-[75vh]">
-      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-evenly">
-        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-            <h1 className='font-sans font-extrabold xl:text-9xl text-5xl mix-blend-difference'>ATK-YTP</h1>
-            <h1 className='font-sans font-extrabold xl:text-3xl text-xs mix-blend-difference'>JOENSUU</h1>
-        </div>
-        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-        <Counter targetDate={new Date("2023-11-10T12:00:00Z").getTime()}/>
-        </div>
+    <section className='relative flex flex-col h-screen grid'>
+      <BgCanvas />
+      <div className='container mx-auto flex flex-col justify-center'>
+        <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
+          <img src={logo} className='w-full h-auto'/>
+          <h1 className='font-outline-2-subtitle font-sans text-sm sm:text-3xl'>
+            18.-19.10.2023
+          </h1>
+        </Container>
       </div>
-  </section>
-  
-  )
-  
+      <Container color='black' className=''>
+        <Button
+          color='triangle-yellow'
+          radius='xl'
+          component='a'
+          href='#aikataulu'
+          rightIcon={<IconArrowElbowRight />}
+          styles={() => ({
+            root: {
+              color: 'black'
+            },
+          })}
+        >
+          Ohjelma
+        </Button>
+      </Container>
+      <Container className='flex items-center justify-center py-8'>
+        <Counter targetDate={new Date('2023-10-18T10:00:00Z').getTime()} />
+      </Container>
+    </section>
+  );
 };
 
 export default Hero;

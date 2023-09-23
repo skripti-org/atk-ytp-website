@@ -1,10 +1,7 @@
+import React from 'react';
+
 const Card = ({ children }) => {
-    return (
-        <div className="bg-[#2A282D] rounded-lg px-5 py-5">
-            {children }
-        </div>
-    )
-}
+  return <div className='rounded-lg bg-[#2A282D] p-5'>{children}</div>;
+};
 
-
-export default Card
+export default Card;

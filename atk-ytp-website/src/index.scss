@@ -2,11 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@font-face {
+  font-family: 'Pricedown';
+  src: local('Pricedown'),
+       url('./assets/fonts/pricedown.otf') format('opentype');
+}
+
+@layer base {
+  .font-outline-2 {
+    text-shadow: 0.5px 1px 0 black, 1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf,
+      1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf, 1.5px 1.5px 0 #ff9adf;
+  }
+
+  .font-outline-2-title {
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+  }
+
+  .font-outline-2-subtitle {
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+
+  .hero-grid-rows {
+    grid-template-rows: 50% 20% 20%;
+  }
+}
+
 $bg-color: #070707;
-$dot-color: hsl(256, 33, 70);
-$red: #C90123;
-$blue: #007BFF;
+$dot-color: #666666;
+$red: #c90123;
+$blue: #007bff;
 $dot-size: 1px;
 $dot-space: 62px;
 
@@ -14,53 +50,81 @@ $dot-space: 62px;
 *::before,
 *::after {
   box-sizing: border-box;
-
 }
 
-#webgl-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: -5;
-  
-}
-.moro {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color-scheme: light dark;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
-  z-index: 50;
-  position: absolute;
-}
 :root {
+  color: white;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
+  background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
   background-size: $dot-space $dot-space;
 }
 
 h1 {
   font-size: 3.2em;
-  line-height: .75;
+  line-height: 0.75;
+}
+
+.h-borders {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.event-main {
+  background: rgba(231, 255, 80, 1);
+  color: black;
 }
 
 body {
-  max-width: 1280px;
+  //max-width: 1280px;
   margin: 0 auto;
   float: none;
+}
+
+.leaflet-container {
+  display: flex;
+  height: min(500px, 80vh);
+  z-index: 500000000 !important;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+.bounce {
+  animation: bouncing 10s infinite normal;
+}
+
+.bounce2 {
+  animation: bouncing 10s 0.15s infinite normal;
+}
+
+.bounce3 {
+  animation: bouncing 10s 0.3s infinite normal;
+}
+
+.bounce4 {
+  animation: bouncing 10s 0.45s infinite normal;
+}
+
+.bounce5 {
+  animation: bouncing 10s 0.6s infinite normal;
+}
+
+@keyframes bouncing {
+  48% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
+  52% {
+    transform: translateY(0);
+  }
 }
