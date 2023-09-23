@@ -74,6 +74,7 @@ body {
 .leaflet-container {
   display: flex;
   height: min(500px, 80vh);
+  z-index: 500000000 !important;
 }
 
 .leaflet-control-attribution {

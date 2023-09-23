@@ -6,33 +6,32 @@ const sponsors = [
   {
     title: 'Siili',
     image: 'https://carner.com/wp-content/uploads/2022/10/siili-solutions-logo-822x618.png',
-    link: '#',
+    link: 'https://www.siili.com/fi/',
   },
   {
     title: 'Nordea',
-    image:
-      'https://assets-global.website-files.com/5dd6b5c7f9822e5ea3513ede/5e67605ec608b56490db5dfa_nordea_logo.webp',
-    link: '#',
+    image: 'https://assets-global.website-files.com/5dd6b5c7f9822e5ea3513ede/5e67605ec608b56490db5dfa_nordea_logo.webp',
+    link: 'https://www.nordea.fi/',
   },
   {
     title: 'Solita',
     image: 'https://www.tietojohtajakilta.net/wp-content/uploads/2020/12/solita_logo-1024x239.png',
-    link: '#',
+    link: 'https://www.solita.fi/',
   },
   {
     title: 'Sitowise',
-    image: 'https://raw.githubusercontent.com/skripti-org/atk-ytp-website/v2/atk-ytp-website/public/sitowise.jpeg',
-    link: '#',
+    image: 'https://skripti.org/img/sponsors/sitowise.png',
+    link: 'https://www.sitowise.com/fi',
   },
   {
     title: 'Mimmit koodaa',
     image: 'https://mimmitkoodaa.fi/wp-content/themes/mimmitkoodaa-2022/img/mimmit-koodaa-logo-white.svg',
-    link: '#',
+    link: 'https://mimmitkoodaa.fi/',
   },
   {
     title: 'TEK',
-    image: 'https://raw.githubusercontent.com/skripti-org/atk-ytp-website/v2/atk-ytp-website/public/tek.jpeg',
-    link: '#',
+    image: 'https://skripti.org/img/sponsors/tek.png',
+    link: 'https://www.tek.fi/fi',
   },
 ];
 
