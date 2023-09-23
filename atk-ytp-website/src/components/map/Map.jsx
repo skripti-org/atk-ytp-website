@@ -1,16 +1,7 @@
-import {
-  MapContainer,
-  TileLayer,
-  WMSTileLayer,
-  Marker,
-  useMap,
-  Popup,
-  useMapEvent,
-} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMap, Popup, useMapEvent } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import PageSection from '../layout/PageSection';
-import { useRef } from 'react';
 import Legend from './Legend';
 import CustomIcon from './CustomIcon';
 import CustomPopup from './CustomPopup';
@@ -22,32 +13,32 @@ function Markers() {
       coordinates: [62.6020939, 29.7623925],
       label: 'Marks',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
-      info: 'Tää baari on myynnissä. Ei oo kallis osta pois.'
+      info: 'Tää baari on myynnissä. Ei oo kallis osta pois.',
     },
     {
-      coordinates: [62.5959455,29.7487638],
+      coordinates: [62.5959455, 29.7487638],
       label: 'Joensuun yhteiskoulun lukio',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
-      info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!'
+      info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!',
     },
     {
       coordinates: [62.6026422, 29.7745023],
       label: 'Pielisjoen koulu',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
-      info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!'
+      info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!',
     },
     {
       coordinates: [62.6036733, 29.7446238, 21],
       label: 'Carelia-sali',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
-      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali!'
+      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali!',
     },
     {
-      coordinates: [62.5674612,29.8303404],
+      coordinates: [62.5674612, 29.8303404],
       label: 'Etkopaikka',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
-      info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.'
-    }
+      info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.',
+    },
   ];
   return (
     markers.length > 0 &&
@@ -91,7 +82,7 @@ function LocationMarker() {
         <div>
           <img width={100} src='https://i.ytimg.com/vi/so_7WcDkjxs/mqdefault.jpg'></img>
         </div>
-        <div className='text-xs font-sans'>Olet tässä :D</div>
+        <div className='font-sans text-xs'>Olet tässä :D</div>
       </Popup>
     </Marker>
   );

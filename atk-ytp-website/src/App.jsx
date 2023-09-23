@@ -12,8 +12,9 @@ import Credits from './components/credits/Credits';
 import Main from './components/hero/Main';
 
 function App() {
-
-  {/*Nää ei ite asiassa toimi vielä D:*/}
+  {
+    /*Nää ei ite asiassa toimi vielä D:*/
+  }
   const links = [
     {
       link: '#info',
@@ -43,12 +44,12 @@ function App() {
       <Navbar links={links} />
 
       <Hero />
-      <Main/>
+      <Main />
       <main>
         <Info />
 
         <Schedule />
-        
+
         <Map />
 
         <FAQ />

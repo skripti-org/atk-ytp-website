@@ -74,7 +74,7 @@ export default function Schedule() {
       main: false,
     },
     {
-      time: "NaN",
+      time: 'NaN',
       activity: 'Jatkot Kimmelissä: Ursus Factory',
       main: false,
     },
@@ -112,7 +112,7 @@ export default function Schedule() {
       main: true,
     },
     {
-      time: "xx",
+      time: 'xx',
       activity: 'Jatkot Kerubissa: Affirmed, Digital Mindz, Bionator Project',
       main: true,
     },
