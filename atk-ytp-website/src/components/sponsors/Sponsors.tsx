@@ -8,11 +8,13 @@ const sponsors = [
     image: 'https://carner.com/wp-content/uploads/2022/10/siili-solutions-logo-822x618.png',
     link: 'https://www.siili.com/fi/',
   },
+  /*
   {
     title: 'Nordea',
     image: 'https://assets-global.website-files.com/5dd6b5c7f9822e5ea3513ede/5e67605ec608b56490db5dfa_nordea_logo.webp',
     link: 'https://www.nordea.fi/',
   },
+  */
   {
     title: 'Solita',
     image: 'https://www.tietojohtajakilta.net/wp-content/uploads/2020/12/solita_logo-1024x239.png',
@@ -25,12 +27,13 @@ const sponsors = [
   },
   {
     title: 'Mimmit koodaa',
-    image: 'https://mimmitkoodaa.fi/wp-content/themes/mimmitkoodaa-2022/img/mimmit-koodaa-logo-white.svg',
+    image:
+      'https://mimmitkoodaa.fi/wp-content/themes/mimmitkoodaa-2022/img/mimmit-koodaa-logo-white.svg',
     link: 'https://mimmitkoodaa.fi/',
   },
   {
     title: 'TEK',
-    image: 'https://skripti.org/img/sponsors/tek.png',
+    image: 'https://www.tek.fi/sites/default/files/attachments/TEK_logo_RGB_RGB_valkoinen.png',
     link: 'https://www.tek.fi/fi',
   },
 ];
@@ -56,12 +59,12 @@ export default function SponsorGrid() {
   ));
 
   return (
-    <div id="yhteistyokumppanit">
-    <PageSection title='Yhteistyökumppanit'>
-      <Container>
-        <Grid gutter='xs'>{cards}</Grid>
-      </Container>
-    </PageSection>
+    <div id='yhteistyokumppanit'>
+      <PageSection title='Yhteistyökumppanit'>
+        <Container>
+          <Grid gutter='xs'>{cards}</Grid>
+        </Container>
+      </PageSection>
     </div>
   );
 }

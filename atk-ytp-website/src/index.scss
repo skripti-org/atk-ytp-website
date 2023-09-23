@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'Pricedown';
   src: local('Pricedown'),
-       url('./assets/fonts/pricedown.otf') format('opentype');
+    url('./assets/fonts/pricedown.otf') format('opentype');
 }
 
 @layer base {
@@ -19,19 +19,19 @@
 
   .font-outline-2-title {
     text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+      3px 3px 0 #000,
+      -3px 3px 0 #000,
+      -3px -3px 0 #000,
+      3px -3px 0 #000;
   }
 
   .font-outline-2-subtitle {
     text-shadow:
-        3px 3px 0 #000,
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-       -1px 1px 0 #000,
-        1px 1px 0 #000;
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 
   .hero-grid-rows {
@@ -88,7 +88,6 @@ body {
 .leaflet-container {
   display: flex;
   height: min(500px, 80vh);
-  z-index: 500000000 !important;
 }
 
 .leaflet-control-attribution {

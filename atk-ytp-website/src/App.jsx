@@ -7,7 +7,7 @@ import SponsorGrid from './components/sponsors/Sponsors';
 import { Helmet } from 'react-helmet';
 import Info from './components/info/Info';
 import Schedule from './components/schedule/Schedule';
-import Map from './components/map/Map';
+import MapComponent from './components/map/Map';
 import Credits from './components/credits/Credits';
 import Main from './components/hero/Main';
 
@@ -50,7 +50,7 @@ function App() {
 
         <Schedule />
 
-        <Map />
+        <MapComponent />
 
         <FAQ />
 

@@ -80,7 +80,7 @@ const Legend = () => {
           </div>
           <Divider color={'gray.6'} />
           <div className='flex flex-1 flex-col justify-center py-2'>
-            {types.map((type, index) => {
+            {types.map((type) => {
               return (
                 <div key={nanoid()} className='flex items-center'>
                   <div>

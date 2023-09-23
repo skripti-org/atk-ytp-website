@@ -7,14 +7,12 @@ import logo from '../../../assets/logos/logo.png';
 
 const Hero = () => {
   return (
-    <section className='relative flex flex-col h-screen grid'>
-      <BgCanvas />
+    <section className='relative flex grid h-screen flex-col'>
+      {/*<BgCanvas />*/}
       <div className='container mx-auto flex flex-col justify-center'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
-          <img src={logo} className='w-full h-auto'/>
-          <h1 className='font-outline-2-subtitle font-sans text-sm sm:text-3xl'>
-            18.-19.10.2023
-          </h1>
+          <img src={logo} className='h-auto w-full' />
+          <h1 className='font-outline-2-subtitle font-sans text-sm sm:text-3xl'>18.-19.10.2023</h1>
         </Container>
       </div>
       <Container color='black' className=''>
@@ -26,7 +24,7 @@ const Hero = () => {
           rightIcon={<IconArrowElbowRight />}
           styles={() => ({
             root: {
-              color: 'black'
+              color: 'black',
             },
           })}
         >

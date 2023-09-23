@@ -1,12 +1,12 @@
-import { MapContainer, TileLayer, Marker, useMap, Popup, useMapEvent } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMap, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import React, { useRef } from 'react';
+import React from 'react';
 import PageSection from '../layout/PageSection';
 import Legend from './Legend';
 import CustomIcon from './CustomIcon';
 import CustomPopup from './CustomPopup';
-import "react-leaflet-fullscreen/styles.css";
-import { FullscreenControl } from "react-leaflet-fullscreen";
+import 'react-leaflet-fullscreen/styles.css';
+import { FullscreenControl } from 'react-leaflet-fullscreen';
 
 function Markers() {
   const map = useMap();
@@ -90,19 +90,7 @@ function LocationMarker() {
   );
 }
 
-function SetViewOnClick({ animateRef }) {
-  const map = useMapEvent('click', (e) => {
-    map.setView(e.latlng, map.getZoom(), {
-      animate: animateRef.current || false,
-    });
-  });
-
-  return null;
-}
-
-export default function Map() {
-  const animateRef = useRef(true);
-
+export default function MapComponent() {
   return (
     <div id='kartta'>
       <PageSection title='Kartta'>
@@ -114,7 +102,7 @@ export default function Map() {
               fadeAnimation={true}
               scrollWheelZoom={true}
               zoomControl={true}
-              style={{ flex: 1, width: '100%', zIndex: 0 }}
+              style={{ flex: 1, width: '100%' }}
             >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -123,7 +111,7 @@ export default function Map() {
               <LocationMarker />
               <Markers />
               <Legend />
-              <FullscreenControl forceSeparateButton={true} position="topright" />
+              <FullscreenControl forceSeparateButton={true} position='topright' />
             </MapContainer>
           </div>
         </section>
