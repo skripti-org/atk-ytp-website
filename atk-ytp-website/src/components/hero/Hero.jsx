@@ -12,9 +12,9 @@ const Hero = () => {
        <BgCanvas />
       <div className='container mx-auto flex flex-col justify-center'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
-          <img src={logo} className='h-auto w-full' loading='eager' />
+          <img src={logo} className='h-auto w-full' loading='eager' alt='ATK-YTPlogo' />
 
-          <h1 className='font-outline-2-subtitle font-sans text-sm sm:text-3xl'>18.-20.10.2023</h1>
+          <h1 className='font-outline-2-subtitle font-sans text-xl sm:text-3xl'>18.-20.10.2023</h1>
         </Container>
       </div>
 
