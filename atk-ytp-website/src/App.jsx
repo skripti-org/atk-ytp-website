@@ -1,20 +1,26 @@
-import React from 'react';
-import Navbar from './components/navigation/Navbar';
-import Hero from './components/hero/Hero';
-import FAQ from './components/faq/Faq';
-import Footer from './components/footer/Footer';
-import SponsorGrid from './components/sponsors/Sponsors';
+import React, { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
-import Info from './components/info/Info';
-import Schedule from './components/schedule/Schedule';
+import Spinner from '../assets/logos/prompt.svg';
+
+import Navbar from './components/navigation/Navbar';
 import MapComponent from './components/map/Map';
 import Credits from './components/credits/Credits';
 import Main from './components/hero/Main';
 
+const Hero = React.lazy(() => import('./components/hero/Hero'));
+const Info = React.lazy(() => import('./components/info/Info'));
+const Schedule = React.lazy(() => import('./components/schedule/Schedule'));
+const FAQ = React.lazy(() => import('./components/faq/Faq'));
+const SponsorGrid = React.lazy(() => import('./components/sponsors/Sponsors'));
+const Footer = React.lazy(async () => {
+  const [moduleExports] = await Promise.all([
+    import('./components/footer/Footer'),
+    new Promise((resolve) => setTimeout(resolve, 500)),
+  ]);
+  return moduleExports;
+});
+
 function App() {
-  {
-    /*Nää ei ite asiassa toimi vielä D:*/
-  }
   const links = [
     {
       link: '#info',
@@ -36,32 +42,49 @@ function App() {
 
   return (
     <div className='App'>
-      <Helmet>
-        <title>ATK-YTP &apos;23</title>
-        <meta name='description' content='ATK-YTP 23 Joensuussa!' />
-      </Helmet>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              width: '100vw',
+              height: '100vh',
+              background: '#E7FF50',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <img src={Spinner} className='tremble' />
+          </div>
+        }
+      >
+        <Helmet>
+          <title>ATK-YTP &apos;23</title>
+          <meta name='description' content='ATK-YTP 23 Joensuussa!' />
+        </Helmet>
 
-      <Navbar links={links} />
+        <Navbar links={links} />
 
-      <Hero />
+        <Hero />
 
-      <Main />
+        <main>
+          <Main />
 
-      <main>
-        <Info />
+          <Info />
 
-        <Schedule />
+          <Schedule />
 
-        <MapComponent />
+          <MapComponent />
 
-        <FAQ />
+          <FAQ />
 
-        <SponsorGrid />
+          <SponsorGrid />
 
-        <Credits />
-      </main>
+          <Credits />
+        </main>
 
-      <Footer links={links} />
+        <Footer links={links} />
+      </Suspense>
     </div>
   );
 }

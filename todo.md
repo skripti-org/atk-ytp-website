@@ -4,6 +4,6 @@
 - [ ] kartan sijainnit
 - [ ] Aikataulu
 - [ ] Oikeat sponsorit
-- [ ] Kartta fullscreen
+- [x] Kartta fullscreen
 - [ ] Kartta alueet
 - [ ] Lazyload

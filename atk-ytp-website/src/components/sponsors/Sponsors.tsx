@@ -52,7 +52,7 @@ export default function SponsorGrid() {
     <Grid.Col span={6} xs={4} sm={3} key={sponsor.title}>
       <Card className={classes.card} p='md' radius={0} component='a' href={sponsor.link}>
         <AspectRatio ratio={1}>
-          <Image src={sponsor.image} />
+          <Image src={sponsor.image} alt={sponsor.title + ' logo'} />
         </AspectRatio>
       </Card>
     </Grid.Col>
