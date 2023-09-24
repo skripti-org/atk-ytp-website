@@ -35,9 +35,9 @@ const Legend = () => {
     borderRadius: '4px',
     boxShadow: '0 1px 5px rgba(0,0,0,0.65)',
     zIndex: 1000,
-    width: '2.5rem',
+    width: '2rem',
     opacity: 1,
-    height: '2.5rem',
+    height: '2rem',
     color: '#070707',
     backgroundColor: 'white',
     display: 'flex',
@@ -68,7 +68,7 @@ const Legend = () => {
   ];
 
   return (
-    <div className='leaflet-top leaflet-right'>
+    <div className='leaflet-top leaflet-right mt-12'>
       {showLegend ? (
         <div
           className='legend leaflet-control-zoom leaflet-control-container leaflet-control px-4'

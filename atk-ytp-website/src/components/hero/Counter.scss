@@ -58,6 +58,36 @@
   text-transform: uppercase;
   font-size: 0.75rem;
   line-height: 1rem;
+  font-family: 'Syne';
+}
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.glow {
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    top: 45%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(130,190,129,1) 0%, rgba(231,255,80,1) 70%);
+    background-size: 200% 200%;
+    animation: animateGlow 2.5s linear infinite;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
 }

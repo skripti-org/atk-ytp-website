@@ -5,6 +5,8 @@ import PageSection from '../layout/PageSection';
 import Legend from './Legend';
 import CustomIcon from './CustomIcon';
 import CustomPopup from './CustomPopup';
+import "react-leaflet-fullscreen/styles.css";
+import { FullscreenControl } from "react-leaflet-fullscreen";
 
 function Markers() {
   const map = useMap();
@@ -121,6 +123,7 @@ export default function Map() {
               <LocationMarker />
               <Markers />
               <Legend />
+              <FullscreenControl forceSeparateButton={true} position="topright" />
             </MapContainer>
           </div>
         </section>

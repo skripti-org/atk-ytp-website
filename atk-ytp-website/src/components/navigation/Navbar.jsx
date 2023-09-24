@@ -10,7 +10,7 @@ import {
   rem,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -79,6 +79,19 @@ const useStyles = createStyles((theme) => ({
       display: 'none',
     },
   },
+  hidden: {
+    [theme.fn.largerThan('sm')]: {
+        transform: 'translateY(-100%)',
+        transition: 'transform 0.3s ease-in-out',
+    }
+
+  },
+  visible: {
+    [theme.fn.largerThan('sm')]: {
+      transform: 'translateY(0)',
+      transition: 'transform 0.3s ease-in-out',
+    }
+  },
 
   nav: {
     [theme.fn.smallerThan('sm')]: {
@@ -93,21 +106,48 @@ const useStyles = createStyles((theme) => ({
       boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       backdropFilter: 'blur(7px)',
       WebkitBackdropFilter: 'blur(7px)',
-
       borderTop: '1px solid rgba(255, 255, 255, 1)',
     },
-    backgroundColor: 'transparent',
+    background: 'rgba(0, 0, 0, 0.6)',
+    backdropFilter: 'blur(7px)',
+    WebkitBackdropFilter: 'blur(7px)',
+    position: 'fixed',
+    transition: 'transform 0.3s ease-in-out',
     borderBottom: '1px solid rgba(255, 255, 255, 1)',
   },
 }));
 
 export default function HeaderMegaMenu({ links }) {
+
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const { classes, theme } = useStyles();
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') { 
+      if (window.scrollY > lastScrollY) {
+        setShow(false); 
+      } else {
+        setShow(true);  
+      }
+      setLastScrollY(window.scrollY); 
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+    
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
-    <Box className='relative'>
-      <Header height={60} px='md' sx={classes.nav}>
+    <Box className='relative mb-16'>
+      <Header height={60} px='md' sx={classes.nav} className={`${show ? classes.visible : classes.hidden}`}>
         <Group position='apart' sx={{ height: '100%' }}>
           <a href='https://www.atk-ytp.org/' className='flex items-center no-underline'>
             <span className='self-center whitespace-nowrap text-2xl font-semibold text-white no-underline'>

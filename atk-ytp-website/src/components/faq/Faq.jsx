@@ -25,7 +25,7 @@ const quotes = [
     person: 'Random Guy',
   },
   {
-    text: 'Wine if fine, but whiskey is quicker.',
+    text: 'Wine is fine, but whiskey is quicker.',
     person: 'Hank Moody',
   },
 ];

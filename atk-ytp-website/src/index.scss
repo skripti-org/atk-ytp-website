@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@font-face {
+  font-family: 'Pricedown';
+  src: local('Pricedown'),
+       url('./assets/fonts/pricedown.otf') format('opentype');
+}
+
 @layer base {
   .font-outline-2 {
     text-shadow: 0.5px 1px 0 black, 1.5px 1.5px 0 #ff9adf, -1.5px 1.5px 0 #ff9adf,
@@ -12,6 +18,14 @@
   }
 
   .font-outline-2-title {
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+  }
+
+  .font-outline-2-subtitle {
     text-shadow:
         3px 3px 0 #000,
       -1px -1px 0 #000,  
@@ -74,6 +88,7 @@ body {
 .leaflet-container {
   display: flex;
   height: min(500px, 80vh);
+  z-index: 500000000 !important;
 }
 
 .leaflet-control-attribution {
