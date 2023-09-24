@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, useMap, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMap, Popup, GeoJSON, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import PageSection from '../layout/PageSection';
@@ -7,6 +7,7 @@ import CustomIcon from './CustomIcon';
 import CustomPopup from './CustomPopup';
 import 'react-leaflet-fullscreen/styles.css';
 import { FullscreenControl } from 'react-leaflet-fullscreen';
+import CampusGeo from './kampus.json';
 
 function Markers() {
   const map = useMap();
@@ -109,6 +110,11 @@ export default function MapComponent() {
                 url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
               />
               <LocationMarker />
+
+              <GeoJSON data={CampusGeo}>
+                <Tooltip sticky>Kampusalue</Tooltip>
+              </GeoJSON>
+
               <Markers />
               <Legend />
               <FullscreenControl forceSeparateButton={true} position='topright' />

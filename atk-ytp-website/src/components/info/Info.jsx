@@ -8,29 +8,34 @@ export default function Info() {
   return (
     <div id='info'>
       <PageSection title='Info'>
+        <Alert radius={0} icon={<IconAlertCircle />} title='Huom!' variant='filled'>
+          Sivujen tiedot ovat paikoittain vielä puutteellisia sekä ne saattavat muuttua ennen
+          tapatumaa.
+        </Alert>
         <Paragraph title='Majoitus'>
-          Tapahtuman majoitus tapahtuvat Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla. Koulujen sijainnit
-          löydät kartalta. 
-          Majoitukset avautuvat tapahtumapäivinä klo x ja sulkeutuvat klo x. Molemmille kouluilla päivystävät yövahdit molempina öinä.
+          Tapahtuman majoitus tapahtuvat Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla.
+          Koulujen sijainnit löydät kartalta. Majoitukset avautuvat tapahtumapäivinä klo x ja
+          sulkeutuvat klo x. Molemmille kouluilla päivystävät yövahdit molempina öinä.
           <br />
           <br />
           <b>Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!</b>
         </Paragraph>
-        <Paragraph title='Jatkot'>
-          Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi. 
-          <br />
-          <br />
-          Ensimmäisen illan jatkot tarjoaa Las Palmas,
-          joka toimii Sokos Hotel Kimmelin tiloina. Illan artistina toimittaa Jussi Pelkosen ja 
-          Aleksi Ripatin muodostama garagerock-duo Ursus Factory! 
-          <br />
-          <br />
-          Toisen illan jatkot järjestetään yökerho Kerubissa, jossa pääsemme nauttimaan paikallisesti 
-          konemusiikista Affirmed:n, Digital Mindz:n, Bionator Project:n tähdittämänä! 
-        </Paragraph>
         <Paragraph title='Etkot'>
-          Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle molempina päivinä
-          klo 19-23. Etkoille on mahdollista tuoda mukana omia virvokkeita sekä naposteltavia! 
+          Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle
+          molempina päivinä klo 19-23. Etkoille on mahdollista tuoda mukana omia virvokkeita sekä
+          naposteltavia!
+        </Paragraph>
+        <Paragraph title='Jatkot'>
+          Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi.
+          <br />
+          <br />
+          Ensimmäisen illan jatkot tarjoaa Las Palmas, joka toimii Sokos Hotel Kimmelin tiloina.
+          Illan artistina toimittaa Jussi Pelkosen ja Aleksi Ripatin muodostama garagerock-duo Ursus
+          Factory!
+          <br />
+          <br />
+          Toisen illan jatkot järjestetään yökerho Kerubissa, jossa pääsemme nauttimaan
+          paikallisesti konemusiikista Affirmed:n, Digital Mindz:n, Bionator Project:n tähdittämänä!
         </Paragraph>
         <Paragraph title='Ruoka'>
           Näläkäinen nikotteleksen, kyllin syönyt röyhteleksen.

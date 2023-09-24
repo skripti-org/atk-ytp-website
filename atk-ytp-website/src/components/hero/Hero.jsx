@@ -3,7 +3,8 @@ import { Button, Container } from '@mantine/core';
 import { IconArrowElbowRight } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
-import BgCanvas from './Canvas';
+
+const BgCanvas = React.lazy(() => import('./Canvas'))
 
 const Hero = () => {
   return (
@@ -11,12 +12,12 @@ const Hero = () => {
        <BgCanvas />
       <div className='container mx-auto flex flex-col justify-center'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
-          <img src={logo} className='h-auto w-full' />
+          <img src={logo} className='h-auto w-full' loading='eager' />
 
           <h1 className='font-outline-2-subtitle font-sans text-sm sm:text-3xl'>18.-20.10.2023</h1>
         </Container>
       </div>
-      
+
       <Container color='black' className=''>
         <Button
           color='triangle-yellow'

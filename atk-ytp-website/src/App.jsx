@@ -3,22 +3,16 @@ import { Helmet } from 'react-helmet';
 import Spinner from '../assets/logos/prompt.svg';
 
 import Navbar from './components/navigation/Navbar';
-import MapComponent from './components/map/Map';
-import Credits from './components/credits/Credits';
 import Main from './components/hero/Main';
+import Schedule from './components/schedule/Schedule';
+import FAQ from './components/faq/Faq';
+import Credits from './components/credits/Credits';
+import Footer from './components/footer/Footer';
 
 const Hero = React.lazy(() => import('./components/hero/Hero'));
 const Info = React.lazy(() => import('./components/info/Info'));
-const Schedule = React.lazy(() => import('./components/schedule/Schedule'));
-const FAQ = React.lazy(() => import('./components/faq/Faq'));
+const MapComponent = React.lazy(() => import('./components/map/Map'));
 const SponsorGrid = React.lazy(() => import('./components/sponsors/Sponsors'));
-const Footer = React.lazy(async () => {
-  const [moduleExports] = await Promise.all([
-    import('./components/footer/Footer'),
-    new Promise((resolve) => setTimeout(resolve, 500)),
-  ]);
-  return moduleExports;
-});
 
 function App() {
   const links = [
@@ -42,6 +36,13 @@ function App() {
 
   return (
     <div className='App'>
+      <Helmet>
+        <title>ATK-YTP &apos;23</title>
+        <meta name='description' content='ATK-YTP 23 Joensuussa!' />
+      </Helmet>
+
+      <Navbar links={links} />
+
       <Suspense
         fallback={
           <div
@@ -58,13 +59,6 @@ function App() {
           </div>
         }
       >
-        <Helmet>
-          <title>ATK-YTP &apos;23</title>
-          <meta name='description' content='ATK-YTP 23 Joensuussa!' />
-        </Helmet>
-
-        <Navbar links={links} />
-
         <Hero />
 
         <main>
