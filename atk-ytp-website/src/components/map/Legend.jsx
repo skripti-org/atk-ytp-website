@@ -11,7 +11,6 @@ const Legend = () => {
   };
 
   const legendStyle = {
-    display: showLegend ? 'none' : 'flex',
     backgroundColor: 'white',
     textAlign: 'left',
     borderRadius: '4px',
@@ -30,7 +29,6 @@ const Legend = () => {
   };
 
   const infoContainer = {
-    display: showLegend ? 'none' : 'flex',
     textAlign: 'left',
     borderRadius: '4px',
     boxShadow: '0 1px 5px rgba(0,0,0,0.65)',

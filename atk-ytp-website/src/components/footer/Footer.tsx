@@ -63,6 +63,8 @@ export default function Footer({ links }: FooterSimpleProps) {
     </Anchor>
   ));
 
+  //TODO yhteystiedot footeriin
+
   return (
     <div className={classes.footer}>
       <Container>

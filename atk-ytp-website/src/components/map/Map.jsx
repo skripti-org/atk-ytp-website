@@ -34,13 +34,31 @@ function Markers() {
       coordinates: [62.6036733, 29.7446238, 21],
       label: 'Carelia-sali',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
-      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali!',
+      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali C1!',
     },
     {
       coordinates: [62.5674612, 29.8303404],
       label: 'Etkopaikka',
       iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
       info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.',
+    },
+    {
+      coordinates: [62.59936371611705, 29.771264912952883],
+      label: 'Torstain jatkopaikka, Ravintola Kerubi',
+      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      info: '',
+    },
+    {
+      coordinates: [62.601077101642865, 29.77397667532403],
+      label: 'Keskiviikon jatkopaikka, Las Palmas Kimmel',
+      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      info: '',
+    },
+    {
+      coordinates: [62.60682699348919, 29.76630793978979],
+      label: 'Aamusauna on täällä',
+      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/0/03/Icon_20.gif',
+      info: '',
     },
   ];
   return (
