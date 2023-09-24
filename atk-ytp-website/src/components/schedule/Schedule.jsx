@@ -35,32 +35,75 @@ export default function Schedule() {
   const wed = [
     {
       time: 10,
-      activity: 'Firmojen esityksiä',
+      activity: 'Skripti ry & TKT laitos',
       main: true,
     },
     {
       time: 11,
-      activity: 'Firmojen esityksiä',
+      activity: 'Titol',
       main: true,
     },
     {
       time: 12,
-      activity: 'Firmojen esityksiä',
+      activity: 'Siili',
       main: true,
     },
     {
       time: 13,
-      activity: 'Firmojen esityksiä',
+      activity: 'Milja Köpsi',
       main: true,
     },
     {
       time: 14,
-      activity: 'Firmojen esityksiä',
+      activity: 'TBD',
       main: true,
     },
     {
       time: 15,
-      activity: 'Firmojen esityksiä',
+      activity: 'Solita',
+      main: true,
+    },
+    {
+      time: 16,
+      activity: 'Rastikierros alkaa',
+      main: true,
+    },
+    {
+      time: 19,
+      activity: 'Etkot by Siili',
+      main: false,
+    },
+    {
+      time: 22,
+      activity: 'Jatkot Kimmelissä: Ursus Factory',
+      main: false,
+    },
+  ];
+
+  const thu = [
+    {
+      time: 8,
+      activity: 'Aamusauna by Nordea',
+      main: true,
+    },
+    {
+      time: 11,
+      activity: 'TEK',
+      main: true,
+    },
+    {
+      time: 12,
+      activity: 'TBD',
+      main: true,
+    },
+    {
+      time: 13,
+      activity: 'TBD',
+      main: true,
+    },
+    {
+      time: 14,
+      activity: 'TBD',
       main: true,
     },
     {
@@ -71,49 +114,11 @@ export default function Schedule() {
     {
       time: 19,
       activity: 'Etkot alkavat',
-      main: false,
-    },
-    {
-      time: 'NaN',
-      activity: 'Jatkot Kimmelissä: Ursus Factory',
-      main: false,
-    },
-  ];
-
-  const thu = [
-    {
-      time: 10,
-      activity: 'Firmojen esityksiä',
       main: true,
     },
     {
-      time: 11,
-      activity: 'Firmojen esityksiä',
-      main: true,
-    },
-    {
-      time: 12,
-      activity: 'Firmojen esityksiä',
-      main: true,
-    },
-    {
-      time: 13,
-      activity: 'Firmojen esityksiä',
-      main: true,
-    },
-    {
-      time: 14,
-      activity: 'Firmojen esityksiä',
-      main: true,
-    },
-    {
-      time: 19,
-      activity: 'Etkot alkavat',
-      main: true,
-    },
-    {
-      time: 'xx',
-      activity: 'Jatkot Kerubissa: Affirmed, Digital Mindz, Bionator Project',
+      time: 22,
+      activity: 'Reivit Kerubissa: Affirmed, Digital Mindz, Bionator Project',
       main: true,
     },
   ];
@@ -153,7 +158,6 @@ export default function Schedule() {
               To 19.10.
             </Text>
             <Divider my='sm' color={'gray.8'} />
-
             {getProgram(thu)}
           </Paper>
         </Flex>

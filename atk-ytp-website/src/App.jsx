@@ -44,7 +44,9 @@ function App() {
       <Navbar links={links} />
 
       <Hero />
+
       <Main />
+
       <main>
         <Info />
 

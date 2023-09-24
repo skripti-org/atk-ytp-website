@@ -23,6 +23,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             '#E7FF50',
             '#E7FF50',
           ],
+          yellow: [
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+            '#E7FF50',
+          ],
         },
       }}
     >

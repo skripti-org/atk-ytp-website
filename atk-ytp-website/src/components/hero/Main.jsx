@@ -38,7 +38,7 @@ export default function Main() {
           Yhteistoimintapäivät tarjoavat alan opiskelijoille ympäri Suomen mahdollisuuden tutustua
           toisiinsa sekä alan yrityksiin hauskalla tavalla. Tapahtumassa useat alan ammattilaiset
           pitävät vaikuttavia luentoja kahtena seminaaripäivänä. Luennot järjestetään Joensuun
-          kampuksella C1-salissa 18. ja 19. lokakuuta klo 11-16, ja sen jälkeen voit verkostoitua
+          kampuksella C1-salissa 18. ja 19. lokakuuta klo 10-16, ja sen jälkeen voit verkostoitua
           iltaohjelman parissa. Lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa.
         </Highlight>
       </Text>
