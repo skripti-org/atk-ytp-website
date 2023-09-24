@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, useMap, Popup, GeoJSON, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import PageSection from '../layout/PageSection';
 import Legend from './Legend';
 import CustomIcon from './CustomIcon';
@@ -8,6 +8,7 @@ import CustomPopup from './CustomPopup';
 import 'react-leaflet-fullscreen/styles.css';
 import { FullscreenControl } from 'react-leaflet-fullscreen';
 import CampusGeo from './kampus.json';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 function Markers() {
   const map = useMap();
@@ -88,11 +89,11 @@ function LocationMarker() {
   const [position, setPosition] = React.useState(null);
 
   const map = useMap();
-  React.useEffect(() => {
+  if (position == null) {
     map.locate().on('locationfound', function (e) {
       setPosition(e.latlng);
     });
-  }, [map]);
+  }
 
   return position === null ? null : (
     <Marker
@@ -110,8 +111,11 @@ function LocationMarker() {
 }
 
 export default function MapComponent() {
+  const map = useRef(null);
+  const isMapVisible = useIntersectionObserver(map);
+
   return (
-    <div id='kartta'>
+    <div id='kartta' ref={map}>
       <PageSection title='Kartta'>
         <section className='map-component'>
           <div className='map'>
@@ -127,7 +131,7 @@ export default function MapComponent() {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
               />
-              <LocationMarker />
+              {isMapVisible && <LocationMarker />}
 
               <GeoJSON data={CampusGeo}>
                 <Tooltip sticky>Kampusalue</Tooltip>
