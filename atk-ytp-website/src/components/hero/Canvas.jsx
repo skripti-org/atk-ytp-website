@@ -16,20 +16,20 @@ function Sphere() {
 
   useFrame(() => {
     if (sphereRef.current) {
-      sphereRef.current.rotation.y += 0.0005;
+      sphereRef.current.rotation.y += 0.0002;
     }
   });
 
   useEffect(() => {
     if (sphereRef.current) {
       const sphereGeometry = sphereRef.current.geometry;
-      const newGeometry = new THREE.SphereGeometry(getRadius(), 30, 30, 0, 6.28, 0, Math.PI);
+      const newGeometry = new THREE.SphereGeometry(getRadius(), 30, 20, 0, 6.28, 0, Math.PI);
       sphereGeometry.copy(newGeometry);
     }
   }, [size.width, size.height]);
 
   //parametreja
-  const elems = 30;
+  const elems = 20;
 
   return (
     <mesh ref={sphereRef}>
@@ -44,17 +44,15 @@ export default function BgCanvas() {
     <Canvas
       className='bgCanvas'
       camera={{ position: [0, 0, 200], rotation: [0, 0, 0.4] }}
-      antialias={'true'}
+      antialias={'false'}
     >
-      <ambientLight />
-
       <Sphere />
 
       <EffectComposer>
-        <DepthOfField focusDistance={1} focalLength={0.02} bokehScale={2} height={480} />
-        <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={300} />
+      
+        <Bloom luminanceThreshold={1.5} luminanceSmoothing={0.9} height={300} />
         <Noise opacity={0.05} />
-        <Vignette eskil={false} offset={0.1} darkness={1.2} />
+        <Vignette eskil={false} offset={0.1} darkness={1.5} />
       </EffectComposer>
     </Canvas>
   );

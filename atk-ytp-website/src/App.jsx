@@ -48,7 +48,7 @@ function App() {
             style={{
               width: '100vw',
               height: '100vh',
-              background: '#E7FF50',
+              background: '#070707',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',

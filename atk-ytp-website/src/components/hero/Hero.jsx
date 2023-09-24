@@ -3,10 +3,12 @@ import { Button, Container } from '@mantine/core';
 import { IconArrowElbowRight } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
+import BgCanvas from './Canvas';
 
 const Hero = () => {
   return (
     <section className='relative grid h-screen flex-col'>
+       <BgCanvas />
       <div className='container mx-auto flex flex-col justify-center'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
           <img src={logo} className='h-auto w-full' />
