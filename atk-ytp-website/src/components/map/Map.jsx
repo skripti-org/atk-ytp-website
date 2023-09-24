@@ -99,7 +99,7 @@ export default function MapComponent() {
           <div className='map'>
             <MapContainer
               center={[62.602079226, 29.759679275]}
-              zoom={15}
+              zoom={14}
               fadeAnimation={true}
               scrollWheelZoom={true}
               zoomControl={true}
