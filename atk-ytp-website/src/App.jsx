@@ -41,8 +41,6 @@ function App() {
         <meta name='description' content='ATK-YTP 23 Joensuussa!' />
       </Helmet>
 
-      <Navbar links={links} />
-
       <Suspense
         fallback={
           <div
@@ -59,6 +57,8 @@ function App() {
           </div>
         }
       >
+        <Navbar links={links} />
+
         <Hero />
 
         <main>
