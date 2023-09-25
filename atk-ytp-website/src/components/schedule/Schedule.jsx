@@ -9,8 +9,8 @@ export default function Schedule() {
       <Table highlightOnHover withColumnBorders withBorder>
         <thead>
           <tr>
-            <th>klo</th>
-            <th>ohjelma</th>
+            <th>Klo</th>
+            <th>Ohjelma</th>
           </tr>
         </thead>
         <tbody>
@@ -33,14 +33,20 @@ export default function Schedule() {
   }
 
   const wed = [
+
     {
-      time: 10,
-      activity: 'Skripti ry & TKT laitos',
+      time: 8,
+      activity: 'Majoitus aukeaa',
       main: true,
     },
     {
-      time: 11,
-      activity: 'Titol',
+      time: 10,
+      activity: 'Majoitus sulkeutuu',
+      main: true,
+    },
+    {
+      time: 10.5,
+      activity: 'Skripti ry & TKT laitos + Titol',
       main: true,
     },
     {
@@ -55,7 +61,7 @@ export default function Schedule() {
     },
     {
       time: 14,
-      activity: 'TBD',
+      activity: 'Nordea',
       main: true,
     },
     {
@@ -74,16 +80,36 @@ export default function Schedule() {
       main: false,
     },
     {
+      time: 21,
+      activity: 'Majoitus aukeaa',
+      main: false,
+    },
+    {
       time: 22,
-      activity: 'Jatkot Kimmelissä: Ursus Factory',
+      activity: 'Jatkot Kimmelissä',
+      main: false,
+    },
+    {
+      time: 24,
+      activity: 'Ursus Factory',
       main: false,
     },
   ];
 
   const thu = [
     {
+      time: 7.5,
+      activity: 'Lähtö aamusaunalle',
+      main: true,
+    },
+    {
       time: 8,
       activity: 'Aamusauna by Nordea',
+      main: true,
+    },
+    {
+      time: 11,
+      activity: 'Majoitus sulkeutuu',
       main: true,
     },
     {
@@ -107,13 +133,23 @@ export default function Schedule() {
       main: true,
     },
     {
+      time: 15,
+      activity: 'TBD',
+      main: true,
+    },
+    {
       time: 16,
       activity: 'Rastikierros alkaa',
       main: true,
     },
     {
       time: 19,
-      activity: 'Etkot alkavat',
+      activity: 'Etkot',
+      main: true,
+    },
+    {
+      time: 21,
+      activity: 'Majoitus aukeaa',
       main: true,
     },
     {
