@@ -5,7 +5,7 @@ import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(() => ({
   heroBtn: {
     margin: '5px',
   },
@@ -18,8 +18,7 @@ const Hero = () => {
       <div className='container mx-auto flex flex-col justify-center'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
           <picture>
-            <source className='max-w-full' src={logoWebp} type='image/webp' />
-            <source className='max-w-full' srcSet={logo} type='image/jpeg' />
+            <source srcSet={logoWebp} type='image/webp' className='max-w-full' />
             <img className='max-w-full' src={logo} alt='ATK-YTP logo' />
           </picture>
 

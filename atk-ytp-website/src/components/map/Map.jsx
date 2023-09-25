@@ -14,6 +14,7 @@ import IconBar from '../../../assets/icons/Icon_49.gif';
 import IconSave from '../../../assets/icons/Icon_35.gif';
 import IconFire from '../../../assets/icons/Icon_20.gif';
 import IconSchool from '../../../assets/icons/Icon_36.gif';
+import IconDiner from '../../../assets/icons/Icon_17.gif';
 
 function Markers() {
   const map = useMap();
@@ -66,6 +67,36 @@ function Markers() {
       coordinates: [62.60682699348919, 29.76630793978979],
       label: 'Aamusauna on täällä',
       iconUrl: IconFire,
+      info: '',
+    },
+    {
+      coordinates: [62.60395088796654, 29.744121624489953],
+      label: 'Ravintola Carelia',
+      iconUrl: IconDiner,
+      info: '',
+    },
+    {
+      coordinates: [62.60544812111559, 29.746798721909375],
+      label: 'Kampus bistro',
+      iconUrl: IconDiner,
+      info: '',
+    },
+    {
+      coordinates: [62.60461125112615, 29.7409188699068],
+      label: 'Wicked Rabbit Metria',
+      iconUrl: IconDiner,
+      info: '',
+    },
+    {
+      coordinates: [62.60379956594281, 29.740046474806675],
+      label: 'Ravintola Natura',
+      iconUrl: IconDiner,
+      info: '',
+    },
+    {
+      coordinates: [62.604547938022144, 29.737829524172902],
+      label: 'Ravintola Natura',
+      iconUrl: IconDiner,
       info: '',
     },
   ];
