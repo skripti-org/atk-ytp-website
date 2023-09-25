@@ -15,7 +15,7 @@ const Hero = () => {
   const { classes } = useStyles();
   return (
     <section className='relative grid h-[calc(100vh-59px)]'>
-      <div className='container mx-auto flex flex-col justify-center'>
+      <div className='container mx-auto flex flex-col justify-center p-8'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
           <picture>
             <source className='max-w-full' src={logoWebp} type='image/webp' />
@@ -27,7 +27,7 @@ const Hero = () => {
         </Container>
       </div>
 
-      <Container className='text-center'>
+      <Container className='text-center p-8'>
         <Button
           sx={classes.heroBtn}
           color='triangle-yellow'
@@ -74,7 +74,7 @@ const Hero = () => {
           Kartta
         </Button>
       </Container>
-      <Container className='flex items-center justify-center py-8'>
+      <Container className='flex items-center justify-center p-8'>
         <Counter targetDate={new Date('2023-10-18T10:00:00Z').getTime()} />
       </Container>
     </section>

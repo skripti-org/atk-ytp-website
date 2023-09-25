@@ -20,7 +20,7 @@
   display: flex;
   gap: 0;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .show-counter .countdown-link {
@@ -40,7 +40,7 @@
 
 .show-counter .countdown {
   line-height: 1.5rem;
-  padding: 0rem 1rem;
+  padding: 0rem .75rem;
   align-items: center;
   display: flex;
   flex-direction: column;
