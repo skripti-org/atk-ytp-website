@@ -51,8 +51,8 @@ export default function SponsorGrid() {
   const cards = sponsors.map((sponsor) => (
     <Grid.Col span={6} xs={4} sm={3} key={sponsor.title}>
       <Card className={classes.card} p='md' radius={0} component='a' href={sponsor.link}>
-        <AspectRatio ratio={1}>
-          <Image src={sponsor.image} alt={sponsor.title + ' logo'} />
+        <AspectRatio ratio={1} className='brightness-200'>
+          <Image src={sponsor.image} alt={sponsor.title + ' logo'} className='grayscale'/>
         </AspectRatio>
       </Card>
     </Grid.Col>
