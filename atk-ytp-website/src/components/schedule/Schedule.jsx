@@ -1,36 +1,11 @@
 import React from 'react';
 import PageSection from '../layout/PageSection';
-import { Divider, Flex, Paper, Table, Text } from '@mantine/core';
+import { Divider, Flex, Grid, Paper, Table, Text } from '@mantine/core';
+import TimeCard from './TimeCard';
 import { nanoid } from 'nanoid';
 
 export default function Schedule() {
-  function getProgram(day) {
-    return (
-      <Table highlightOnHover withColumnBorders withBorder>
-        <thead>
-          <tr>
-            <th>Klo</th>
-            <th>Ohjelma</th>
-          </tr>
-        </thead>
-        <tbody>
-          {day.map((event) => (
-            <tr key={nanoid()} className={/*event.main ? 'event-main' : null*/ ''}>
-              <td>{timeToString(event.time)}</td>
-              <td>{event.activity}</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
-    );
-  }
-
-  function timeToString(time) {
-    const hours = Math.floor(time).toString().padStart(2, '0');
-    const minutes = ((time % 1) * 60).toFixed(0).padStart(2, '0');
-
-    return `${hours}:${minutes}`;
-  }
+  // TODO: rajapintaan?
 
   const wed = [
 
@@ -159,44 +134,33 @@ export default function Schedule() {
     },
   ];
 
+  const fri = [
+    {
+      time: 11,
+      activity: 'Majoitus sulkeutuu',
+      main: true,
+    },
+    {
+      time: 21,
+      activity: 'Asteriski kotona',
+      main: true,
+    },
+  ]
+
   return (
     <div id='aikataulu'>
       <PageSection title='Aikataulu'>
-        <Flex
-          direction={{ base: 'column', sm: 'row' }}
-          gap={{ base: 'sm', sm: 'lg' }}
-          justify={{ sm: 'center' }}
-        >
-          <Paper shadow='xl' radius='0' p='xl' withBorder className='flex-1'>
-            <Text
-              variant='gradient'
-              gradient={{ from: '#FFEC99', to: '#e7ff50', deg: 45 }}
-              sx={{ fontFamily: 'Greycliff CF, sans-serif' }}
-              ta='center'
-              fz='xl'
-              fw={800}
-            >
-              Ke 18.10.
-            </Text>
-            <Divider my='sm' color={'gray.8'} />
-            {getProgram(wed)}
-          </Paper>
-
-          <Paper shadow='xl' radius='0' p='xl' withBorder className='flex-1'>
-            <Text
-              variant='gradient'
-              gradient={{ from: '#FFEC99', to: '#e7ff50', deg: 45 }}
-              sx={{ fontFamily: 'Greycliff CF, sans-serif' }}
-              ta='center'
-              fz='xl'
-              fw={800}
-            >
-              To 19.10.
-            </Text>
-            <Divider my='sm' color={'gray.8'} />
-            {getProgram(thu)}
-          </Paper>
-        </Flex>
+        <Grid justify="center">
+          <Grid.Col span="auto" key={nanoid()}>
+            <TimeCard dayString={'Ke 18.10.'} scheduleDay={wed}/>
+          </Grid.Col>  
+          <Grid.Col span="auto" key={nanoid()}>
+            <TimeCard dayString={'To 19.10.'} scheduleDay={thu}/>
+          </Grid.Col>
+          <Grid.Col span="auto" key={nanoid()}>
+             <TimeCard dayString={'Pe 20.10.'} scheduleDay={fri}/>
+          </Grid.Col>
+        </Grid>
       </PageSection>
     </div>
   );

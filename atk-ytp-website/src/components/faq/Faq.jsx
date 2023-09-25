@@ -9,13 +9,19 @@ const Q = 0;
 const A = 1;
 const qas = [
   ['ATK-YTP?', 'Automaattisen tietojenkäsittelyn yhteistoimintapäivät.'],
-  ['Joensuu?', 'Idässä.'],
-  ['Ravintola?', 'Mikko.'],
+  ['Joensuu?', 'Joensuu on Suomen kaupunki ja Pohjois-Karjalan maakuntakeskus' +
+    'joka sijaitsee Saimaan Pyhäselän pohjoisrannalla Pielisjoen suulla Pohjois-Karjalan maakunnassa. ' +
+    'Joensuu on asukasluvultaan Suomen 12. suurin kaupunki.'],
+  ['Ravintola?', 'Mikko. Ensiluokkaista asiakaskohtelua kaupungin suurimman olutvalikoiman kera.'],
   ['Kolmio?', 'Ukko.'],
-  ['Rastikierros?', 'Illalla.'],
+  ['Rastikierros?', 'Illalla. Day 1 ainejärjestöt, Day 2 TKT-laitos / firmat'],
   ['Majoitus?', 'Kouluilla.'],
 ];
 const quotes = [
+  {
+    text: 'Ah shit, here we go again',
+    person: 'CJ',
+  },
   {
     text: 'Nautin Joensuusta',
     person: 'Idän susi',
