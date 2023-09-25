@@ -13,30 +13,14 @@ export default function Info() {
           tapatumaa.
         </Alert>
         <Paragraph title='Majoitus'>
-          Tapahtuman majoitus tapahtuvat Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla.
+          Tapahtuman majoitus tapahtuu Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla.
           Koulujen sijainnit löydät kartalta. Majoitukset avautuvat tapahtumapäivinä klo x ja
-          sulkeutuvat klo x. Molemmille kouluilla päivystävät yövahdit molempina öinä.
+          sulkeutuvat klo y. Molemmille kouluilla päivystävät yövahdit molempina öinä.
           <br />
           <br />
           <b>Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!</b>
         </Paragraph>
-        <Paragraph title='Etkot'>
-          Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle
-          molempina päivinä klo 19-23. Etkoille on mahdollista tuoda mukana omia virvokkeita sekä
-          naposteltavia!
-        </Paragraph>
-        <Paragraph title='Jatkot'>
-          Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi.
-          <br />
-          <br />
-          Ensimmäisen illan jatkot tarjoaa Las Palmas, joka toimii Sokos Hotel Kimmelin tiloina.
-          Illan artistina toimittaa Jussi Pelkosen ja Aleksi Ripatin muodostama garagerock-duo Ursus
-          Factory!
-          <br />
-          <br />
-          Toisen illan jatkot järjestetään yökerho Kerubissa, jossa pääsemme nauttimaan
-          paikallisesti konemusiikista Affirmed:n, Digital Mindz:n, Bionator Project:n tähdittämänä!
-        </Paragraph>
+
         <Paragraph title='Ruoka'>
           Näläkäinen nikotteleksen, kyllin syönyt röyhteleksen.
           <br />
@@ -54,16 +38,28 @@ export default function Info() {
         </Paragraph>
 
         <Paragraph title='Liikkuminen'>
-          Jalan{' '}
-          <Anchor
-            href='https://www.karjalainen.fi/maakunta/joensuun-metro-pikatukku-suljetaan-kevaan-aikana-wihuri-metro-tukku-karsii-verkostostaan-alkuvuoden-aikana-kaksi-muutakin-pikatukkua-syyna-koronapandemia'
-            target='_blank'
-          >
-            tai metrolla.
-          </Anchor>
+          Joensuussa on helppo liikkua, sillä kaupunki on tasainen ja vaakasuorassa.
           <Alert radius={0} icon={<IconAlertCircle />} title='Vinkki!' variant='filled'>
             Vältä ruuhkat ja saavu Joensuuhun jo 500 päivää ennen tapahtumaa!
           </Alert>
+        </Paragraph>
+
+        <Paragraph title='Etkot'>
+          Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle
+          ja sieltä pois molempina päivinä klo 19-23. Etkoille on mahdollista tuoda mukana omia
+          virvokkeita sekä naposteltavia!
+        </Paragraph>
+        <Paragraph title='Jatkot'>
+          Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi.
+          <br />
+          <br />
+          Ensimmäisen illan jatkot tarjoaa Las Palmas, joka toimii Sokos Hotel Kimmelin tiloissa.
+          Illan artistina toimittaa Jussi Pelkosen ja Aleksi Ripatin muodostama garagerock-duo Ursus
+          Factory!
+          <br />
+          <br />
+          Toisen illan jatkot järjestetään Ravintola Kerubissa, jossa pääsemme nauttimaan
+          konemusiikista Affirmed:n, Digital Mindz:n ja Bionator Project:n tähdittämänä!
         </Paragraph>
 
         <Paragraph title='Turvallinen tila'>
