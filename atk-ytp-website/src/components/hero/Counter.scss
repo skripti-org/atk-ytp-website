@@ -64,7 +64,7 @@
 .glow {
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: 0;
     top: 45%;
     left: 0;
@@ -74,7 +74,12 @@
     width: 100%;
     transform: scale(0.9) translateZ(0);
     filter: blur(15px);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(130,190,129,1) 0%, rgba(231,255,80,1) 70%);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(130, 190, 129, 1) 0%,
+      rgba(231, 255, 80, 1) 70%
+    );
     background-size: 200% 200%;
     animation: animateGlow 2.5s linear infinite;
   }

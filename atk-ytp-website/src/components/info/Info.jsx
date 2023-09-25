@@ -86,6 +86,8 @@ export default function Info() {
           </Anchor>
         </Paragraph>
 
+        <Paragraph title='Yhteystiedot'>null</Paragraph>
+
         <Paragraph title='Linkkejä'>
           <Anchor href='https://jojo.joensuu.fi/liput-ja-hinnat' target='_blank'>
             Joukkoliikenne JoJo

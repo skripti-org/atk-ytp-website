@@ -7,58 +7,65 @@ import CustomIcon from './CustomIcon';
 import CustomPopup from './CustomPopup';
 import 'react-leaflet-fullscreen/styles.css';
 import { FullscreenControl } from 'react-leaflet-fullscreen';
-import CampusGeo from './kampus.json';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+
+import CampusGeo from './kampus.json';
+import IconBar from '../../../assets/icons/Icon_49.gif';
+import IconSave from '../../../assets/icons/Icon_35.gif';
+import IconFire from '../../../assets/icons/Icon_20.gif';
+import IconSchool from '../../../assets/icons/Icon_36.gif';
 
 function Markers() {
   const map = useMap();
+
+  //TODO nämä rajapinnasta????
   const markers = [
     {
       coordinates: [62.6020939, 29.7623925],
       label: 'Marks',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      iconUrl: IconBar,
       info: 'Tää baari on myynnissä. Ei oo kallis osta pois.',
     },
     {
       coordinates: [62.5959455, 29.7487638],
       label: 'Joensuun yhteiskoulun lukio',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
+      iconUrl: IconSave,
       info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!',
     },
     {
       coordinates: [62.6026422, 29.7745023],
       label: 'Pielisjoen koulu',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
+      iconUrl: IconSave,
       info: 'Täällähän majoittuu mukavasti. Nukkuakin saa mutta ei ole pakko!',
     },
     {
       coordinates: [62.6036733, 29.7446238, 21],
       label: 'Carelia-sali',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
-      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali C1!',
+      iconUrl: IconSchool,
+      info: 'Ai että. Keskiviikon ja torstain seminaarit fasilitoi mahtava Carelia-sali!',
     },
     {
       coordinates: [62.5674612, 29.8303404],
       label: 'Etkopaikka',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
+      iconUrl: IconSchool,
       info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.',
     },
     {
       coordinates: [62.59936371611705, 29.771264912952883],
       label: 'Torstain jatkopaikka, Ravintola Kerubi',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      iconUrl: IconBar,
       info: '',
     },
     {
       coordinates: [62.601077101642865, 29.77397667532403],
       label: 'Keskiviikon jatkopaikka, Las Palmas Kimmel',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      iconUrl: IconBar,
       info: '',
     },
     {
       coordinates: [62.60682699348919, 29.76630793978979],
       label: 'Aamusauna on täällä',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/0/03/Icon_20.gif',
+      iconUrl: IconFire,
       info: '',
     },
   ];
@@ -121,7 +128,7 @@ export default function MapComponent() {
           <div className='map'>
             <MapContainer
               center={[62.602079226, 29.759679275]}
-              zoom={14}
+              zoom={13}
               fadeAnimation={true}
               scrollWheelZoom={true}
               zoomControl={true}

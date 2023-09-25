@@ -10,7 +10,7 @@ import {
   rem,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -81,16 +81,15 @@ const useStyles = createStyles((theme) => ({
   },
   hidden: {
     [theme.fn.largerThan('sm')]: {
-        transform: 'translateY(-100%)',
-        transition: 'transform 0.3s ease-in-out',
-    }
-
+      transform: 'translateY(-100%)',
+      transition: 'transform 0.3s ease-in-out',
+    },
   },
   visible: {
     [theme.fn.largerThan('sm')]: {
       transform: 'translateY(0)',
       transition: 'transform 0.3s ease-in-out',
-    }
+    },
   },
 
   nav: {
@@ -99,7 +98,7 @@ const useStyles = createStyles((theme) => ({
       bottom: 0,
       left: 0,
       width: '100%',
-      zIndex: 1000,
+      zIndex: 1001,
       borderBottom: 0,
       top: 'calc(env(safe-area-inset-bottom)) - 60px',
       background: 'rgba(0, 0, 0, 0.6)',
@@ -118,27 +117,26 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export default function HeaderMegaMenu({ links }) {
-
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const { classes, theme } = useStyles();
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
-    if (typeof window !== 'undefined') { 
+    if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) {
-        setShow(false); 
+        setShow(false);
       } else {
-        setShow(true);  
+        setShow(true);
       }
-      setLastScrollY(window.scrollY); 
+      setLastScrollY(window.scrollY);
     }
   };
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlNavbar);
-    
+
       return () => {
         window.removeEventListener('scroll', controlNavbar);
       };
@@ -147,9 +145,14 @@ export default function HeaderMegaMenu({ links }) {
 
   return (
     <Box className='relative mb-16'>
-      <Header height={60} px='md' sx={classes.nav} className={`${show ? classes.visible : classes.hidden}`}>
+      <Header
+        height={60}
+        px='md'
+        sx={classes.nav}
+        className={`${show ? classes.visible : classes.hidden}`}
+      >
         <Group position='apart' sx={{ height: '100%' }}>
-          <a href='https://www.atk-ytp.org/' className='flex items-center no-underline'>
+          <a href='/' className='flex items-center no-underline'>
             <span className='self-center whitespace-nowrap text-2xl font-semibold text-white no-underline'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
@@ -173,7 +176,7 @@ export default function HeaderMegaMenu({ links }) {
         size='100%'
         closeButtonProps={{ display: 'none' }}
         classNames={{ root: classes.hiddenDesktop }}
-        zIndex={900}
+        zIndex={1000}
         height='100%'
         styles={() => ({
           content: {
@@ -186,11 +189,10 @@ export default function HeaderMegaMenu({ links }) {
             flexDirection: 'column',
             alignItems: 'center',
             margin: 'auto',
-            
           },
           body: {
             padding: 0,
-            marginBottom: '60px'
+            marginBottom: '60px',
           },
           header: {
             background: '#E7FF50',
@@ -201,7 +203,12 @@ export default function HeaderMegaMenu({ links }) {
 
         {links.map((link) => {
           return (
-            <a key={`menu-${link.label}`} href={link.link} className={classes.link} onClick={toggleDrawer}>
+            <a
+              key={`menu-${link.label}`}
+              href={link.link}
+              className={classes.link}
+              onClick={toggleDrawer}
+            >
               {link.label}
             </a>
           );

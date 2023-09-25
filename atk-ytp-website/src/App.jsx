@@ -8,6 +8,7 @@ import Schedule from './components/schedule/Schedule';
 import FAQ from './components/faq/Faq';
 import Credits from './components/credits/Credits';
 import Footer from './components/footer/Footer';
+import BgCanvas from './components/hero/Canvas';
 
 const Hero = React.lazy(() => import('./components/hero/Hero'));
 const Info = React.lazy(() => import('./components/info/Info'));
@@ -40,6 +41,8 @@ function App() {
         <title>ATK-YTP &apos;23</title>
         <meta name='description' content='ATK-YTP 23 Joensuussa!' />
       </Helmet>
+
+      <BgCanvas />
 
       <Suspense
         fallback={
