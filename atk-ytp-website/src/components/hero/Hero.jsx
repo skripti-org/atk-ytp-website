@@ -4,6 +4,7 @@ import { IconCalendar, IconMap, IconMovie } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
+import BgCanvas from './Canvas';
 
 const useStyles = createStyles(() => ({
   heroBtn: {
