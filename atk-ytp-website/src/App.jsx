@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import { Helmet } from 'react-helmet';
 import Spinner from '../assets/logos/prompt.svg';
 
 import Navbar from './components/navigation/Navbar';
@@ -36,11 +35,6 @@ function App() {
 
   return (
     <div className='App'>
-      <Helmet>
-        <title>ATK-YTP &apos;23</title>
-        <meta name='description' content='ATK-YTP 23 Joensuussa!' />
-      </Helmet>
-
       <Suspense
         fallback={
           <div

@@ -10,7 +10,7 @@ import {
   rem,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -166,7 +166,12 @@ export default function HeaderMegaMenu({ links }) {
               );
             })}
           </Group>
-          <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
+          <Burger
+            opened={drawerOpened}
+            onClick={toggleDrawer}
+            className={classes.hiddenDesktop}
+            aria-label='Toggle navigation'
+          />
         </Group>
       </Header>
 

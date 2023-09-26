@@ -1,5 +1,4 @@
 import { Container, Highlight, Text, Title, createStyles } from '@mantine/core';
-import React from 'react';
 import YoutubeEmbed from './Youtube';
 
 const useStyles = createStyles((theme) => ({
