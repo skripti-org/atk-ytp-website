@@ -13,13 +13,12 @@ export default function Info() {
           tapatumaa.
         </Alert>
         <Paragraph title='Majoitus'>
-          Tapahtuman majoitus tapahtuu Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla. Koulujen sijainnit löydät kartalta.
-          Majoitukset avautuvat tapahtumapäivinä seuraavasti:
+          Tapahtuman majoitus tapahtuu Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla.
+          Koulujen sijainnit löydät kartalta. Majoitukset avautuvat tapahtumapäivinä seuraavasti:
           Keskiviikkona majoitus aukeaa klo 8.00 ja sulkeutuu klo 10.00 seminaariesitysten ajaksi.
-          Torstaina majoitus sulkeutuu klo 11.00 ja aukeaa klo 21.00.
-          Perjantaina majoitus sulkeutuu klo 11.00.
-          Molemmilla kouluilla päivystävät yövahdit molempina öinä, jotta majoittujilla on turvallinen ja miellyttävä oleskelu tapahtuman aikana.
-
+          Torstaina majoitus sulkeutuu klo 11.00 ja aukeaa klo 21.00. Perjantaina majoitus sulkeutuu
+          klo 11.00. Molemmilla kouluilla päivystävät yövahdit molempina öinä, jotta majoittujilla
+          on turvallinen ja miellyttävä oleskelu tapahtuman aikana.
           <br />
           <br />
           <b>Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!</b>
@@ -42,16 +41,24 @@ export default function Info() {
         </Paragraph>
 
         <Paragraph title='Liikkuminen'>
-          Joensuussa on helppo liikkua, sillä kaupunki on tasainen ja vaakasuorassa. Illan etkoja lukuunottamatta kaikki
-          tapahtumapaikat sijaitsevat kävelymatkan päässä keskustasta. Mikäli apostolikyyti ei ole vaihtoehto,
-          voi siirtymiset hoitaa helposti myös esim. &nbsp;
+          Joensuussa on helppo liikkua, sillä kaupunki on tasainen ja vaakasuorassa. Illan etkoja
+          lukuunottamatta kaikki tapahtumapaikat sijaitsevat kävelymatkan päässä keskustasta. Mikäli
+          apostolikyyti ei ole vaihtoehto, voi siirtymiset hoitaa helposti myös esim. &nbsp;
           <Anchor href='https://jojo.joensuu.fi/liput-ja-hinnat' target='_blank'>
             bussilla
-          </Anchor> tai &nbsp;
+          </Anchor>{' '}
+          tai &nbsp;
           <Anchor href='https://www.taksiitasuomi.fi/' target='_blank'>
             taksilla
-          </Anchor>.
-          <Alert radius={0} icon={<IconAlertCircle />} title='Vinkki!' variant='filled' className='mt-2'>
+          </Anchor>
+          .
+          <Alert
+            radius={0}
+            icon={<IconAlertCircle />}
+            title='Vinkki!'
+            variant='filled'
+            className='mt-2'
+          >
             Vältä ruuhkat ja saavu Joensuuhun jo 500 päivää ennen tapahtumaa!
           </Alert>
         </Paragraph>
@@ -65,13 +72,13 @@ export default function Info() {
           Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi.
           <br />
           <br />
-          Keskiviikon jatkot tarjoaa Las Palmas, joka toimii Sokos Hotel Kimmelin tiloissa.
-          Illan artistina toimittaa Jussi Pelkosen ja Aleksi Ripatin muodostama garagerock-duo Ursus
+          Keskiviikon jatkot tarjoaa Las Palmas, joka toimii Sokos Hotel Kimmelin tiloissa. Illan
+          artistina toimittaa Jussi Pelkosen ja Aleksi Ripatin muodostama garagerock-duo Ursus
           Factory! Keikka alkaa noin klo 24.00.
           <br />
           <br />
-          Torstain jatkot järjestetään Ravintola Kerubissa, jossa pääsemme nauttimaan
-          konemusiikista Affirmed:n, Digital Mindz:n ja Bionator Project:n tähdittämänä!
+          Torstain jatkot järjestetään Ravintola Kerubissa, jossa pääsemme nauttimaan konemusiikista
+          Affirmed:n, Digital Mindz:n ja Bionator Project:n tähdittämänä!
         </Paragraph>
 
         <Paragraph title='Turvallinen tila'>
@@ -95,52 +102,61 @@ export default function Info() {
         </Paragraph>
 
         <Paragraph title='Yhteystiedot'>
-            Verkkosivut:&nbsp;
-            <Anchor href='https://t.me/paakkis' target='_blank'>
-              Juuso P
-            </Anchor>,&nbsp;
-            <Anchor href='https://t.me/nykanen' target='_blank'>
-              Juho N
-            </Anchor>,&nbsp;
-            <Anchor href='https://t.me/eetukarttunen' target='_blank'>
-              Eetu K
-            </Anchor>
-            <br />
-            Majoitus:&nbsp;
-            <Anchor href='https://t.me/toukojjouko' target='_blank'>
-              Touko P
-            </Anchor>
-            <br />
-            Rastikierrokset:&nbsp;
-            <Anchor href='https://t.me/EmBBuu' target='_blank'>
-              Emilia U
-            </Anchor>,&nbsp;
-            <Anchor href='https://t.me/sanniedita' target='_blank'>
-              Sanni O
-            </Anchor>
-            <br />
-            Bussikuljetukset:&nbsp;
-            <Anchor href='https://t.me/sanniedita' target='_blank'>
-              Sanni O
-            </Anchor>
-            <br />
-            Aamusauna:&nbsp;
-            <Anchor href='https://t.me/Jertsa' target='_blank'>
-              Jermu R
-            </Anchor>
-            <br />
-            Etkot & Jatkot:&nbsp;
-            <Anchor href='https://t.me/san_teri' target='_blank'>
-              Santeri M
-            </Anchor>
-            <br />
-            Häirintäyhdyshenkilöt:&nbsp;
-            <Anchor href='https://t.me/dalcane' target='_blank'>
-              Antti H
-            </Anchor>,&nbsp;
-            <Anchor href='https://t.me/juliajunt' target='_blank'>
-              Julia J
-            </Anchor>
+          Yleinen:&nbsp;
+          <Anchor href='' target='_blank'>
+            ???
+          </Anchor>
+          <br />
+          Verkkosivut:&nbsp;
+          <Anchor href='https://t.me/paakkis' target='_blank'>
+            Juuso P
+          </Anchor>
+          ,&nbsp;
+          <Anchor href='https://t.me/nykanen' target='_blank'>
+            Juho N
+          </Anchor>
+          ,&nbsp;
+          <Anchor href='https://t.me/eetukarttunen' target='_blank'>
+            Eetu K
+          </Anchor>
+          <br />
+          Majoitus:&nbsp;
+          <Anchor href='https://t.me/toukojjouko' target='_blank'>
+            Touko P
+          </Anchor>
+          <br />
+          Rastikierrokset:&nbsp;
+          <Anchor href='https://t.me/EmBBuu' target='_blank'>
+            Emilia U
+          </Anchor>
+          ,&nbsp;
+          <Anchor href='https://t.me/sanniedita' target='_blank'>
+            Sanni O
+          </Anchor>
+          <br />
+          Bussikuljetukset:&nbsp;
+          <Anchor href='https://t.me/sanniedita' target='_blank'>
+            Sanni O
+          </Anchor>
+          <br />
+          Aamusauna:&nbsp;
+          <Anchor href='https://t.me/Jertsa' target='_blank'>
+            Jermu R
+          </Anchor>
+          <br />
+          Etkot & Jatkot:&nbsp;
+          <Anchor href='https://t.me/san_teri' target='_blank'>
+            Santeri M
+          </Anchor>
+          <br />
+          Häirintäyhdyshenkilöt:&nbsp;
+          <Anchor href='https://t.me/dalcane' target='_blank'>
+            Antti H
+          </Anchor>
+          ,&nbsp;
+          <Anchor href='https://t.me/juliajunt' target='_blank'>
+            Julia J
+          </Anchor>
           <br />
         </Paragraph>
 

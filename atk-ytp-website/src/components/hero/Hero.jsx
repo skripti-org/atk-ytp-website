@@ -4,7 +4,6 @@ import { IconCalendar, IconMap, IconMovie } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
-import BgCanvas from './Canvas';
 
 const useStyles = createStyles(() => ({
   heroBtn: {
@@ -16,7 +15,6 @@ const Hero = () => {
   const { classes } = useStyles();
   return (
     <section className='relative grid min-h-[calc(100dvh-59px)]'>
-      <BgCanvas />
       <div className='container mx-auto flex flex-col justify-center p-8'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
           <picture>
