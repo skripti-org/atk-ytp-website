@@ -15,6 +15,7 @@ const Hero = () => {
   const { classes } = useStyles();
   return (
     <section className='relative grid h-[calc(100vh-59px)]'>
+      <BgCanvas />
       <div className='container mx-auto flex flex-col justify-center p-8'>
         <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
           <picture>
