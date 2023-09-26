@@ -42,6 +42,7 @@ export default function Main() {
           iltaohjelman parissa. Lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa.
         </Highlight>
       </Text>
+
       <YoutubeEmbed />
     </Container>
   );
