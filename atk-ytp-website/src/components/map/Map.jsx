@@ -116,7 +116,7 @@ function Markers() {
           position={marker.coordinates}
           icon={CustomIcon({ iconUrl: marker.iconUrl })}
         >
-          <Popup>
+          <Popup maxWidth='100%' maxHeight='auto'>
             <CustomPopup label={marker.label} info={marker.info} coordinates={marker.coordinates} />
           </Popup>
         </Marker>
