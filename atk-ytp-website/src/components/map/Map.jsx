@@ -153,7 +153,9 @@ function LocationMarker() {
 export default function MapComponent() {
   const map = useRef(null);
   const isMapVisible = useIntersectionObserver(map);
-
+  const tile = `https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${
+    import.meta.env.VITE_API_KEY
+  }`;
   return (
     <div id='kartta' ref={map}>
       <PageSection title='Kartta'>
@@ -168,8 +170,8 @@ export default function MapComponent() {
               style={{ flex: 1, width: '100%' }}
             >
               <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+                attribution='&copy; <a hrefhttps://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url={tile}
               />
               {isMapVisible && <LocationMarker />}
 
