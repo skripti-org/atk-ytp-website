@@ -1,4 +1,3 @@
-import React from 'react';
 import PageSection from '../layout/PageSection';
 
 export default function Team() {

@@ -12,9 +12,10 @@ import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import CampusGeo from './kampus.json';
 import IconBar from '../../../assets/icons/Icon_49.gif';
 import IconSave from '../../../assets/icons/Icon_35.gif';
-import IconFire from '../../../assets/icons/Icon_20.gif';
 import IconSchool from '../../../assets/icons/Icon_36.gif';
 import IconDiner from '../../../assets/icons/Icon_17.gif';
+import IconQuestionmark from '../../../assets/icons/Icon_37.gif';
+import { nanoid } from 'nanoid';
 
 function Markers() {
   const map = useMap();
@@ -101,6 +102,12 @@ function Markers() {
       iconUrl: IconDiner,
       info: '',
     },
+    {
+      coordinates: [62.59920094198321, 29.758089726753642],
+      label: 'Ravintola Mikko',
+      iconUrl: IconQuestionmark,
+      info: '',
+    },
   ];
   return (
     markers.length > 0 &&
@@ -112,7 +119,7 @@ function Markers() {
               map.setView(marker.coordinates, 20);
             },
           }}
-          key={marker.coordinates}
+          key={nanoid()}
           position={marker.coordinates}
           icon={CustomIcon({ iconUrl: marker.iconUrl })}
         >

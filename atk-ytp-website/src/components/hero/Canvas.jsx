@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { EffectComposer, DepthOfField, Vignette } from '@react-three/postprocessing';
 import { Canvas, useFrame, extend, useThree } from '@react-three/fiber';
 import './Canvas.scss';

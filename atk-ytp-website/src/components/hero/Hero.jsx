@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, Container, createStyles } from '@mantine/core';
 import { IconCalendar, IconMap, IconMovie } from '@tabler/icons-react';
 import Counter from './Counter';

@@ -13,7 +13,6 @@ const Hero = React.lazy(() => import('./components/hero/Hero'));
 const Info = React.lazy(() => import('./components/info/Info'));
 const MapComponent = React.lazy(() => import('./components/map/Map'));
 const SponsorGrid = React.lazy(() => import('./components/sponsors/Sponsors'));
-const BgCanvas = React.lazy(() => import('./components/hero/Canvas'));
 
 function App() {
   const links = [

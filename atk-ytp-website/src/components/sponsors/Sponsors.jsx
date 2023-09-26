@@ -1,6 +1,8 @@
 import { createStyles, Image, Container, AspectRatio, Grid, Card } from '@mantine/core';
-import React from 'react';
 import PageSection from '../layout/PageSection';
+
+import sitowise from '../../../assets/logos/sitowise.png';
+import solita from '../../../assets/logos/solita.png';
 
 const sponsors = [
   {
@@ -8,21 +10,14 @@ const sponsors = [
     image: 'https://carner.com/wp-content/uploads/2022/10/siili-solutions-logo-822x618.png',
     link: 'https://www.siili.com/fi/',
   },
-  /*
-  {
-    title: 'Nordea',
-    image: 'https://assets-global.website-files.com/5dd6b5c7f9822e5ea3513ede/5e67605ec608b56490db5dfa_nordea_logo.webp',
-    link: 'https://www.nordea.fi/',
-  },
-  */
   {
     title: 'Solita',
-    image: 'https://www.tietojohtajakilta.net/wp-content/uploads/2020/12/solita_logo-1024x239.png',
+    image: solita,
     link: 'https://www.solita.fi/',
   },
   {
     title: 'Sitowise',
-    image: 'https://skripti.org/img/sponsors/sitowise.png',
+    image: sitowise,
     link: 'https://www.sitowise.com/fi',
   },
   {
@@ -52,7 +47,7 @@ export default function SponsorGrid() {
     <Grid.Col span={6} xs={4} sm={3} key={sponsor.title}>
       <Card className={classes.card} p='md' radius={0} component='a' href={sponsor.link}>
         <AspectRatio ratio={1} className='brightness-200'>
-          <Image src={sponsor.image} alt={sponsor.title + ' logo'} className='grayscale'/>
+          <Image src={sponsor.image} alt={sponsor.title + ' logo'} className='grayscale' />
         </AspectRatio>
       </Card>
     </Grid.Col>

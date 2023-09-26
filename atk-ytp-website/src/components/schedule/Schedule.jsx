@@ -1,6 +1,5 @@
-import React from 'react';
 import PageSection from '../layout/PageSection';
-import { Divider, Flex, Grid, Paper, Table, Text } from '@mantine/core';
+import { Grid } from '@mantine/core';
 import TimeCard from './TimeCard';
 import { nanoid } from 'nanoid';
 
@@ -8,7 +7,6 @@ export default function Schedule() {
   // TODO: rajapintaan?
 
   const wed = [
-
     {
       time: 8,
       activity: 'Majoitus aukeaa',
@@ -145,20 +143,20 @@ export default function Schedule() {
       activity: 'Asteriski kotona',
       main: true,
     },
-  ]
+  ];
 
   return (
     <div id='aikataulu'>
       <PageSection title='Aikataulu'>
-        <Grid justify="center">
-          <Grid.Col span="auto" key={nanoid()}>
-            <TimeCard dayString={'Ke 18.10.'} scheduleDay={wed}/>
-          </Grid.Col>  
-          <Grid.Col span="auto" key={nanoid()}>
-            <TimeCard dayString={'To 19.10.'} scheduleDay={thu}/>
+        <Grid justify='center'>
+          <Grid.Col span='auto' key={nanoid()}>
+            <TimeCard dayString={'Ke 18.10.'} scheduleDay={wed} />
           </Grid.Col>
-          <Grid.Col span="auto" key={nanoid()}>
-             <TimeCard dayString={'Pe 20.10.'} scheduleDay={fri}/>
+          <Grid.Col span='auto' key={nanoid()}>
+            <TimeCard dayString={'To 19.10.'} scheduleDay={thu} />
+          </Grid.Col>
+          <Grid.Col span='auto' key={nanoid()}>
+            <TimeCard dayString={'Pe 20.10.'} scheduleDay={fri} />
           </Grid.Col>
         </Grid>
       </PageSection>

@@ -1,4 +1,3 @@
-import React from 'react';
 import PageSection from '../layout/PageSection';
 import { Anchor, Alert } from '@mantine/core';
 import Paragraph from '../layout/Paragraph';
