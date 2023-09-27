@@ -13,8 +13,8 @@ const useStyles = createStyles(() => ({
 const Hero = () => {
   const { classes } = useStyles();
   return (
-    <section className='relative grid min-h-[calc(100vh-59px)]'>
-      <div>
+    <section className='relative flex min-h-[calc(100vh-59px)] flex-col justify-center'>
+      <div className='flex flex-1 flex-col items-center justify-end'>
         <div className='container mx-auto flex flex-col justify-center px-8 py-2'>
           <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
             <picture>
@@ -76,7 +76,7 @@ const Hero = () => {
           </Button>
         </Container>
       </div>
-      <Container className='flex items-center justify-center p-8'>
+      <Container className='flex flex-1 items-center justify-center p-8'>
         <Counter targetDate={new Date('2023-10-18T10:00:00Z').getTime()} />
       </Container>
     </section>
