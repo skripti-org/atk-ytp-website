@@ -3,6 +3,7 @@ import { IconCalendar, IconMap, IconMovie } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
+import Circle from './Circle';
 
 const useStyles = createStyles(() => ({
   heroBtn: {
@@ -14,14 +15,14 @@ const Hero = () => {
   const { classes } = useStyles();
   return (
     <section className='relative flex min-h-[calc(100vh-59px)] flex-col justify-center'>
-      <div className='flex flex-1 flex-col items-center justify-end'>
-        <div className='container mx-auto flex flex-col justify-center px-8 py-2'>
-          <Container className='relative flex flex-col text-center lg:max-w-md xl:max-w-lg'>
+      <div className='relative flex flex-1 flex-col items-center justify-end'>
+        <div className='container relative mx-auto flex w-full flex-col justify-center px-8 py-2'>
+          <Container className='relative flex flex-col text-center xl:max-w-2xl'>
             <picture>
               <source srcSet={logoWebp} type='image/webp' className='max-w-full' />
               <img className='max-w-full' src={logo} alt='ATK-YTP logo' />
             </picture>
-
+            <Circle />
             <h1 className='font-outline-2-subtitle font-sans text-2xl sm:text-3xl'>
               18.-20.10.2023
             </h1>
