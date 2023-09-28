@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import Spinner from '../assets/logos/prompt.svg';
-
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/navigation/Navbar';
 import Main from './components/hero/Main';
 import Schedule from './components/schedule/Schedule';
@@ -72,6 +72,7 @@ function App() {
         </main>
 
         <Footer links={links} />
+        <Analytics />
       </Suspense>
     </div>
   );

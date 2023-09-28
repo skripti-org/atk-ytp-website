@@ -20,6 +20,7 @@
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.6",
     "@types/three": "^0.155.0",
+    "@vercel/analytics": "^1.0.2",
     "embla-carousel-autoplay": "^8.0.0-rc11",
     "embla-carousel-react": "^7.0.0",
     "leaflet": "^1.9.4",
