@@ -1,5 +1,5 @@
 import PageSection from '../layout/PageSection';
-import { Anchor, Alert } from '@mantine/core';
+import { Anchor, Alert, List } from '@mantine/core';
 import Paragraph from '../layout/Paragraph';
 import { IconAlertCircle } from '@tabler/icons-react';
 
@@ -11,6 +11,13 @@ export default function Info() {
           Sivujen tiedot ovat paikoittain vielä puutteellisia sekä ne saattavat muuttua ennen
           tapatumaa.
         </Alert>
+
+        <Paragraph title='Mitä mukaan?'>
+          <List type='ordered' withPadding size='lg'>
+            <List.Item>Haalarit</List.Item>
+          </List>
+        </Paragraph>
+
         <Paragraph title='Majoitus'>
           Tapahtuman majoitus tapahtuu Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla.
           Koulujen sijainnit löydät kartalta. Majoitukset avautuvat tapahtumapäivinä seuraavasti:
