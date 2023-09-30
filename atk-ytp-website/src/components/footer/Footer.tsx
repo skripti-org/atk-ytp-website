@@ -10,7 +10,7 @@ import {
   Divider,
   Text,
 } from '@mantine/core';
-import { IconBrandInstagram, IconBrandTelegram, IconBrandGithub } from '@tabler/icons-react';
+import { IconBrandInstagram, IconBrandTelegram } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -52,37 +52,39 @@ interface FooterSimpleProps {
 export default function Footer({ links }: FooterSimpleProps) {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Anchor<'a'>
-      color='white'
-      key={`footer-${link.label}`}
-      href={link.link}
-      onClick={(event) => event.preventDefault()}
-      size='sm'
-    >
+    <Anchor<'a'> color='white' key={`footer-${link.label}`} href={link.link} size='sm'>
       {link.label}
     </Anchor>
   ));
-
-  //TODO yhteystiedot footeriin
 
   return (
     <div className={classes.footer}>
       <Container>
         <Container className={classes.inner}>
           <Text weight='800'>ATK-YTP &apos;23</Text>
+
           <Group className={classes.links}>{items}</Group>
+
           <Group spacing={0} className={classes.links} position='right' noWrap>
-            <ActionIcon size='lg'>
+            <ActionIcon component='a' href='https://www.instagram.com/skriptiry/' size='lg'>
               <IconBrandInstagram stroke={1.5} />
             </ActionIcon>
-            <ActionIcon size='lg'>
+            <ActionIcon component='a' href='https://t.me/atkytp23tiedotus' size='lg'>
               <IconBrandTelegram stroke={1.5} />
             </ActionIcon>
-            <ActionIcon size='lg'>
+            {/*
+            <ActionIcon
+              component='a'
+              href='https://github.com/skripti-org/atk-ytp-website'
+              size='lg'
+            >
               <IconBrandGithub stroke={1.5} />
             </ActionIcon>
+            */}
           </Group>
+
           <Space h='md' />
+
           <Anchor<'a'> color='white' key='Skripti ry' href='https://www.skripti.org' size='sm'>
             Skripti ry
           </Anchor>
