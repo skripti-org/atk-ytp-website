@@ -3,11 +3,14 @@ import PageSection from '../layout/PageSection';
 
 import sitowise from '../../../assets/logos/sitowise.png';
 import solita from '../../../assets/logos/solita.png';
+import siili from '../../../assets/logos/siili.png';
+import mimmitKoodaa from '../../../assets/logos/mimmit-koodaa.svg';
+import tek from '../../../assets/logos/TEK.png';
 
 const sponsors = [
   {
     title: 'Siili',
-    image: 'https://carner.com/wp-content/uploads/2022/10/siili-solutions-logo-822x618.png',
+    image: siili,
     link: 'https://www.siili.com/fi/',
   },
   {
@@ -22,13 +25,12 @@ const sponsors = [
   },
   {
     title: 'Mimmit koodaa',
-    image:
-      'https://mimmitkoodaa.fi/wp-content/themes/mimmitkoodaa-2022/img/mimmit-koodaa-logo-white.svg',
+    image: mimmitKoodaa,
     link: 'https://mimmitkoodaa.fi/',
   },
   {
     title: 'TEK',
-    image: 'https://www.tek.fi/sites/default/files/attachments/TEK_logo_RGB_RGB_valkoinen.png',
+    image: tek,
     link: 'https://www.tek.fi/fi',
   },
 ];

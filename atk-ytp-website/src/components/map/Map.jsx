@@ -8,14 +8,16 @@ import CustomPopup from './CustomPopup';
 import 'react-leaflet-fullscreen/styles.css';
 import { FullscreenControl } from 'react-leaflet-fullscreen';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { nanoid } from 'nanoid';
 
 import CampusGeo from './kampus.json';
-import IconBar from '../../../assets/icons/Icon_49.gif';
+import IconMarker from '../../../assets/icons/Icon_3.gif';
+import IconDiner from '../../../assets/icons/Icon_17.gif';
 import IconSave from '../../../assets/icons/Icon_35.gif';
 import IconSchool from '../../../assets/icons/Icon_36.gif';
-import IconDiner from '../../../assets/icons/Icon_17.gif';
 import IconQuestionmark from '../../../assets/icons/Icon_37.gif';
-import { nanoid } from 'nanoid';
+import IconBar from '../../../assets/icons/Icon_49.gif';
+import TriangleMan from '../../../assets/img/triangle.jpg';
 
 function Markers() {
   const map = useMap();
@@ -143,13 +145,10 @@ function LocationMarker() {
   }
 
   return position === null ? null : (
-    <Marker
-      position={position}
-      icon={CustomIcon({ iconUrl: 'https://sampwiki.blast.hk/wroot/images2/3/3e/Icon_3.gif' })}
-    >
+    <Marker position={position} icon={CustomIcon({ iconUrl: IconMarker })}>
       <Popup>
         <div>
-          <img width={100} src='https://i.ytimg.com/vi/so_7WcDkjxs/mqdefault.jpg'></img>
+          <img width={100} src={TriangleMan}></img>
         </div>
         <div className='font-sans text-xs'>Olet tässä :D</div>
       </Popup>
@@ -177,7 +176,7 @@ export default function MapComponent() {
               style={{ flex: 1, width: '100%' }}
             >
               <TileLayer
-                attribution='&copy; <a hrefhttps://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url={tile}
               />
               {isMapVisible && <LocationMarker />}

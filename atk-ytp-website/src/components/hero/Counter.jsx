@@ -1,4 +1,3 @@
-import React from 'react';
 import { useCountdown } from '../../hooks/useCountdown';
 import './Counter.scss';
 import TimeDisplay from './TimeDisplay';
@@ -20,7 +19,7 @@ const Counter = ({ targetDate }) => {
 
   if (days + hours + minutes + seconds > 0) {
     return (
-      <Paper shadow='md' p='md' radius={'xl'} className='glow relative'>
+      <Paper shadow='md' p='md' radius='3rem' className='glow relative' withBorder>
         <div className='flex'>
           <Timer days={days} hours={hours} minutes={minutes} seconds={seconds} />
         </div>

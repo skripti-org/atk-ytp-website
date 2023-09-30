@@ -1,11 +1,12 @@
 # TODO
 
-- [ ] tekstisisällöt
-- [x] kartan sijainnit
-- [ ] Aikataulu
-- [ ] Oikeat sponsorit
 - [x] Kartta fullscreen
+- [x] kartan sijainnit
 - [x] Kartta alueet
+- [x] footerin linkit
+- [ ] tekstisisällöt
+- [ ] Aikataulu
+- [ ] loput sponsorit
 - [ ] Lazyload
 - [ ] webp
 - [ ] lokaalit kuvat sponsseista jne
@@ -13,4 +14,4 @@
 - [ ] ATK-YTP premium
 - [ ] ATK-YTP retro
 - [ ] kide-app nappi headeriin
-- [ ] footerin linkit
+- [ ] lokalisointi

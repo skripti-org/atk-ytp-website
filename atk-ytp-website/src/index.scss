@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: 'Pricedown';
@@ -106,6 +106,39 @@ body {
 
 .bounce5 {
   animation: bouncing 10s 0.6s infinite normal;
+}
+
+.hero-glow {
+  &::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    z-index: 10;
+    height: 50%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(130, 190, 129, 1) 0%,
+      rgba(231, 255, 80, 1) 70%
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 2.5s linear infinite;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
 }
 
 @keyframes bouncing {

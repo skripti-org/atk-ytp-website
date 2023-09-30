@@ -1,7 +1,8 @@
-import { Accordion, Blockquote } from '@mantine/core';
+import { Accordion, Blockquote, rem } from '@mantine/core';
 import PageSection from '../layout/PageSection';
 import HighlightSection from '../layout/HighlightSection';
 import { Carousel } from '@mantine/carousel';
+import { IconArrowDown, IconArrowUp } from '@tabler/icons-react';
 
 const Q = 0;
 const A = 1;
@@ -28,6 +29,10 @@ const quotes = [
     person: 'Idän susi',
   },
   {
+    text: 'write once, run anywhere',
+    person: 'Java',
+  },
+  {
     text: 'Kunnon kusipaskakännit ja vetoja',
     person: 'Random Guy',
   },
@@ -51,7 +56,19 @@ const FAQ = () => {
       </Accordion>
 
       <HighlightSection>
-        <Carousel mx='auto' withIndicators loop height={200} orientation='vertical'>
+        <Carousel
+          mx='auto'
+          withIndicators
+          loop
+          height={200}
+          orientation='vertical'
+          nextControlIcon={
+            <IconArrowDown style={{ width: rem(16), height: rem(16) }} aria-label='next slide' />
+          }
+          previousControlIcon={
+            <IconArrowUp style={{ width: rem(16), height: rem(16) }} aria-label='previous slide' />
+          }
+        >
           {quotes.map((quote) => {
             return (
               <Carousel.Slide

@@ -66,10 +66,20 @@ export default function Footer({ links }: FooterSimpleProps) {
           <Group className={classes.links}>{items}</Group>
 
           <Group spacing={0} className={classes.links} position='right' noWrap>
-            <ActionIcon component='a' href='https://www.instagram.com/skriptiry/' size='lg'>
+            <ActionIcon
+              component='a'
+              href='https://www.instagram.com/skriptiry/'
+              size='lg'
+              aria-label='Skripti ry instagram'
+            >
               <IconBrandInstagram stroke={1.5} />
             </ActionIcon>
-            <ActionIcon component='a' href='https://t.me/atkytp23tiedotus' size='lg'>
+            <ActionIcon
+              component='a'
+              href='https://t.me/atkytp23tiedotus'
+              size='lg'
+              aria-label='Telegram tiedotuskanava'
+            >
               <IconBrandTelegram stroke={1.5} />
             </ActionIcon>
             {/*
