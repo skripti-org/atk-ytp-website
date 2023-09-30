@@ -15,6 +15,11 @@ export default function Info() {
         <Paragraph title='Mitä mukaan?'>
           <List type='ordered' withPadding size='lg'>
             <List.Item>Haalarit</List.Item>
+            <List.Item>Makuupussi ja -alusta</List.Item>
+            <List.Item>DELTACO Cat6a S/FTP -asennuskaapelirulla ulkokäyttöön, 100 m</List.Item>
+            <List.Item>Hygieniatarvikkeet</List.Item>
+            <List.Item>Lämmintä vaatetta</List.Item>
+            <List.Item>Roppakaupalla reissumieltä!</List.Item>
           </List>
         </Paragraph>
 
@@ -57,7 +62,7 @@ export default function Info() {
           <Anchor href='https://www.taksiitasuomi.fi/' target='_blank'>
             taksilla
           </Anchor>
-          .
+          tai tierillä (jos niitä ei ole tapahtumaan mennessä raivattu pois) .
           <Alert
             radius={0}
             icon={<IconAlertCircle />}
@@ -68,6 +73,8 @@ export default function Info() {
             Vältä ruuhkat ja saavu Joensuuhun jo 500 päivää ennen tapahtumaa!
           </Alert>
         </Paragraph>
+
+        <Paragraph title='Rastikierrokset'></Paragraph>
 
         <Paragraph title='Etkot'>
           Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle

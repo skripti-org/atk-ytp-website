@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IconInfoCircleFilled } from '@tabler/icons-react';
 import { Divider } from '@mantine/core';
 import { nanoid } from 'nanoid';

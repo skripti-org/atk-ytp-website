@@ -1,4 +1,13 @@
-import { MapContainer, TileLayer, Marker, useMap, Popup, GeoJSON, Tooltip } from 'react-leaflet';
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  useMap,
+  Popup,
+  GeoJSON,
+  Tooltip,
+  Circle,
+} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import React, { useRef } from 'react';
 import PageSection from '../layout/PageSection';
@@ -23,6 +32,7 @@ function Markers() {
   const map = useMap();
 
   //TODO nämä rajapinnasta????
+  //TODO aj-tila, storm circle jne.
   const markers = [
     {
       coordinates: [62.6020939, 29.7623925],
@@ -110,6 +120,12 @@ function Markers() {
       iconUrl: IconQuestionmark,
       info: '',
     },
+    {
+      coordinates: [62.59831277510679, 29.743575861549743],
+      label: 'Skriptin aj-tila',
+      iconUrl: IconQuestionmark,
+      info: '',
+    },
   ];
   return (
     markers.length > 0 &&
@@ -185,8 +201,14 @@ export default function MapComponent() {
                 <Tooltip sticky>Kampusalue</Tooltip>
               </GeoJSON>
 
+              <Circle center={[62.614591714071615, 29.819584213298924]} radius={1000}>
+                <Tooltip sticky>Storm circle (Battle Royale)</Tooltip>
+              </Circle>
+
               <Markers />
+
               <Legend />
+
               <FullscreenControl forceSeparateButton={true} position='topright' />
             </MapContainer>
           </div>
