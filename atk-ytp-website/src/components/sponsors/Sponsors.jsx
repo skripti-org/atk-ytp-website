@@ -6,6 +6,7 @@ import solita from '../../../assets/logos/solita.png';
 import siili from '../../../assets/logos/siili.png';
 import mimmitKoodaa from '../../../assets/logos/mimmit-koodaa.svg';
 import tek from '../../../assets/logos/TEK.png';
+import koeda from '../../../assets/logos/koeda2.png';
 
 const sponsors = [
   {
@@ -33,12 +34,17 @@ const sponsors = [
     image: tek,
     link: 'https://www.tek.fi/fi',
   },
+  {
+    title: 'Koeda Consulting',
+    image: koeda,
+    link: 'https://www.koeda.fi',
+  },
 ];
 
 const useStyles = createStyles((theme) => ({
   card: {
     background: theme.colors.dark[9],
-    border: '1px solid white',
+    border: '1px solid white'
   },
 }));
 
@@ -58,8 +64,8 @@ export default function SponsorGrid() {
   return (
     <div id='yhteistyokumppanit'>
       <PageSection title='Yhteistyökumppanit'>
-        <Container>
-          <Grid gutter='xs'>{cards}</Grid>
+        <Container >
+          <Grid gutter='xs' >{cards}</Grid>
         </Container>
       </PageSection>
     </div>
