@@ -102,7 +102,7 @@ export default function Schedule() {
     },
     {
       time: 14,
-      activity: 'TBD',
+      activity: 'Sitowise',
       main: true,
     },
     {
