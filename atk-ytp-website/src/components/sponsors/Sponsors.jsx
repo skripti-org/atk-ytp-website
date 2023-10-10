@@ -7,6 +7,7 @@ import siili from '../../../assets/logos/siili.png';
 import mimmitKoodaa from '../../../assets/logos/mimmit-koodaa.svg';
 import tek from '../../../assets/logos/TEK.png';
 import koeda from '../../../assets/logos/koeda2.png';
+import sensire from '../../../assets/logos/sensire.png';
 import celsius from '../../../assets/logos/celsius2.webp';
 
 const sponsors = [
@@ -41,6 +42,11 @@ const sponsors = [
     link: 'https://www.koeda.fi',
   },
   {
+    title: 'Sensire',
+    image: sensire,
+    link: 'https://www.sensire.com/fi/',
+  },
+  {
     title: 'Celsius Suomi',
     image: celsius,
     link: 'https://celsiussuomi.fi/',
@@ -60,8 +66,8 @@ export default function SponsorGrid() {
   const cards = sponsors.map((sponsor) => (
     <Grid.Col span={6} xs={4} sm={3} key={sponsor.title}>
       <Card className={classes.card} p='md' radius={0} component='a' href={sponsor.link}>
-        <AspectRatio ratio={1} className='brightness-200'>
-          <Image src={sponsor.image} alt={sponsor.title + ' logo'} className='grayscale' />
+        <AspectRatio ratio={1} className='brightness-0 invert'>
+          <Image src={sponsor.image} alt={sponsor.title + ' logo'} />
         </AspectRatio>
       </Card>
     </Grid.Col>
