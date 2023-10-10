@@ -16,7 +16,9 @@ export default function Info() {
           <List type='ordered' withPadding size='lg'>
             <List.Item>Haalarit</List.Item>
             <List.Item>Makuupussi ja -alusta</List.Item>
-            <List.Item>DELTACO Cat6a S/FTP -asennuskaapelirulla ulkokäyttöön, 100 m</List.Item>
+            <List.Item>
+              DELTACO Cat6a S/FTP -asennuskaapelirulla ulkokäyttöön, 100 m (vapaaehtoinen)
+            </List.Item>
             <List.Item>Hygieniatarvikkeet</List.Item>
             <List.Item>Lämmintä vaatetta</List.Item>
             <List.Item>Roppakaupalla reissumieltä!</List.Item>
@@ -40,9 +42,9 @@ export default function Info() {
           <br />
           <br />
           Joensuun kampukselta löytyy useita opiskelijaravintoloita tapahtumapaikan läheltä, kuten
-          Carelia, Kampus Bistro ja Wicked Rabbit (kasvisruoka). Opiskelijaravintoloiden lisäksi
-          Joensuun keskusta on pullollaan erilaisia ruokapaikkoja. Näiden lisäksi Foodora ja Wolt
-          kuljettavat sapuskaa.
+          Carelia, Kampus Bistro ja Wicked Rabbit Mertia (kasvisruoka). Opiskelijaravintoloiden
+          lisäksi Joensuun keskusta on pullollaan erilaisia ruokapaikkoja. Näiden lisäksi Foodora ja
+          Wolt kuljettavat sapuskaa.
           <br />
           <br />
           Kurkkaappa joutessas:{' '}
@@ -61,8 +63,8 @@ export default function Info() {
           tai &nbsp;
           <Anchor href='https://www.taksiitasuomi.fi/' target='_blank'>
             taksilla
-          </Anchor>
-          tai tierillä (jos niitä ei ole tapahtumaan mennessä raivattu pois) .
+          </Anchor>{' '}
+          tai Tierillä (jos niitä ei ole tapahtumaan mennessä raivattu pois).
           <Alert
             radius={0}
             icon={<IconAlertCircle />}

@@ -15,3 +15,5 @@
 - [ ] ATK-YTP retro
 - [ ] kide-app nappi headeriin
 - [ ] lokalisointi
+- [ ] ruokakauppoja
+- [ ] 
