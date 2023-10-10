@@ -10,7 +10,7 @@ import {
   Divider,
   Text,
 } from '@mantine/core';
-import { IconBrandInstagram, IconBrandTelegram } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandInstagram, IconBrandTelegram } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -82,15 +82,15 @@ export default function Footer({ links }: FooterSimpleProps) {
             >
               <IconBrandTelegram stroke={1.5} />
             </ActionIcon>
-            {/*
+
             <ActionIcon
               component='a'
               href='https://github.com/skripti-org/atk-ytp-website'
               size='lg'
+              aria-label='Github-repo'
             >
               <IconBrandGithub stroke={1.5} />
             </ActionIcon>
-            */}
           </Group>
 
           <Space h='md' />

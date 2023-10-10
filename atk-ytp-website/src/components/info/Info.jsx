@@ -17,7 +17,7 @@ export default function Info() {
             <List.Item>Haalarit</List.Item>
             <List.Item>Makuupussi ja -alusta</List.Item>
             <List.Item>
-              DELTACO Cat6a S/FTP -asennuskaapelirulla ulkokäyttöön, 100 m (vapaaehtoinen)
+              DELTACO Cat6a S/FTP -asennuskaapelirulla ulkokäyttöön, 100 m (ei pakollinen)
             </List.Item>
             <List.Item>Hygieniatarvikkeet</List.Item>
             <List.Item>Lämmintä vaatetta</List.Item>
@@ -76,12 +76,31 @@ export default function Info() {
           </Alert>
         </Paragraph>
 
-        <Paragraph title='Rastikierrokset'></Paragraph>
+        <Paragraph title='Rastikierrokset'>
+          Jo perinteeksi muodostuneet rastikierrokset ovat osa myös Joensuun YTP:tä! Kerää max
+          NaN-hengen joukkue kasaan ja lähde ulkoiluttamaan haalareitasi Joensuun keskustan
+          raittiiseen ulkoilmaan! Ensimmäisenä päivänä rasteja pitävät paikalliset ainejärjestöt, ja
+          toisena päivänä rasteilla voi tavata tkt-laitoksen sekä yhteistyökumppaneiden edustajia.
+        </Paragraph>
 
         <Paragraph title='Etkot'>
           Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle
-          ja sieltä pois molempina päivinä klo 19-23. Etkoille on mahdollista tuoda mukana omia
-          virvokkeita sekä naposteltavia!
+          ja sieltä pois molempina päivinä klo 19-21 ja 22-23. Huomioithan, että bussikyydeissä on
+          tunnin tauko klo 21-22. Bussit lähtevät taidemuseo Onnin edestä Koskikadulta. Etkoille on
+          mahdollista tuoda mukana omia virvokkeita sekä naposteltavia!
+          <br />
+          <br />
+          Ensimmäisen illan etkot ovat järjestetty yhteistyössä Siilin kanssa! Toisena iltana
+          bingoillaan Giggelin ja Kaalimadon kanssa!
+          <Alert
+            radius={0}
+            icon={<IconAlertCircle />}
+            title='Vinkki!'
+            variant='filled'
+            className='mt-2'
+          >
+            Omat ostokset kannattaa hoitaa keskustassa ennen etkoille lähtöä!
+          </Alert>
         </Paragraph>
         <Paragraph title='Jatkot'>
           Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi.
@@ -93,7 +112,7 @@ export default function Info() {
           <br />
           <br />
           Torstain jatkot järjestetään Ravintola Kerubissa, jossa pääsemme nauttimaan konemusiikista
-          Affirmed:n, Digital Mindz:n ja Bionator Project:n tähdittämänä!
+          Affirmed:n, Digital Mindz:n ja Bionator Project:n tähdittämänä! Ovet aukeavat klo 22.
         </Paragraph>
 
         <Paragraph title='Turvallinen tila'>

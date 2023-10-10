@@ -40,6 +40,7 @@ export default function Main() {
           pitävät vaikuttavia luentoja kahtena seminaaripäivänä. Luennot järjestetään Joensuun
           kampuksella C1-salissa 18. ja 19. lokakuuta klo 10-16, ja sen jälkeen voit verkostoitua
           iltaohjelman parissa. Lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa.
+          Tervetuloa Joensuuhun!
         </Highlight>
       </Text>
 

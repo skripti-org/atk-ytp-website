@@ -7,6 +7,7 @@ import siili from '../../../assets/logos/siili.png';
 import mimmitKoodaa from '../../../assets/logos/mimmit-koodaa.svg';
 import tek from '../../../assets/logos/TEK.png';
 import koeda from '../../../assets/logos/koeda2.png';
+import celsius from '../../../assets/logos/celsius2.webp';
 
 const sponsors = [
   {
@@ -39,12 +40,17 @@ const sponsors = [
     image: koeda,
     link: 'https://www.koeda.fi',
   },
+  {
+    title: 'Celsius Suomi',
+    image: celsius,
+    link: 'https://celsiussuomi.fi/',
+  },
 ];
 
 const useStyles = createStyles((theme) => ({
   card: {
     background: theme.colors.dark[9],
-    border: '1px solid white'
+    border: '1px solid white',
   },
 }));
 
@@ -64,8 +70,8 @@ export default function SponsorGrid() {
   return (
     <div id='yhteistyokumppanit'>
       <PageSection title='Yhteistyökumppanit'>
-        <Container >
-          <Grid gutter='xs' >{cards}</Grid>
+        <Container>
+          <Grid gutter='xs'>{cards}</Grid>
         </Container>
       </PageSection>
     </div>
