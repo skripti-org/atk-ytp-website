@@ -5,10 +5,11 @@ const Circle = () => (
     data-animation-duration='5s'
     viewBox='0 0 100 100'
     className='absolute inset-x-0 top-0 -z-10 w-[100%]'
+    fill='#070707'
   >
     <defs>
       <clipPath id='svg-11-b-mask'>
-        <circle className='svg-11-b-circle' cx={50} cy={50} r={30} />
+        <circle className='svg-11-b-circle' cx={50} cy={50} r={31} />
       </clipPath>
     </defs>
     <style>
@@ -17,7 +18,7 @@ const Circle = () => (
       }
     </style>
     <g className='svg-11-b-g' clipPath='url(#svg-11-b-mask)'>
-      <circle cx={50} cy={50} r={30} fill='#ff9adf' className='hero-glow relative opacity-80' />
+      <circle cx={50} cy={50} r={30} fill='#ff9adf' className='relative opacity-80' />
       <g
         className='svg-11-b-g svg-11-b-line-group'
         style={{

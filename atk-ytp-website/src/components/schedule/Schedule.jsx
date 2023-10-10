@@ -97,12 +97,12 @@ export default function Schedule() {
     },
     {
       time: 13,
-      activity: 'TBD',
+      activity: 'Koeda Consulting',
       main: true,
     },
     {
       time: 14,
-      activity: 'TBD',
+      activity: 'Sitowise',
       main: true,
     },
     {
