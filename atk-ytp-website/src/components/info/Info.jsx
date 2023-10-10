@@ -82,10 +82,13 @@ export default function Info() {
         </Paragraph>
 
         <Paragraph title='Rastikierrokset'>
-          Jo perinteeksi muodostuneet rastikierrokset ovat osa myös Joensuun YTP:tä! Kerää max
-          NaN-hengen joukkue kasaan ja lähde ulkoiluttamaan haalareitasi Joensuun keskustan
-          raittiiseen ulkoilmaan! Ensimmäisenä päivänä rasteja pitävät paikalliset ainejärjestöt, ja
-          toisena päivänä rasteilla voi tavata tkt-laitoksen sekä yhteistyökumppaneiden edustajia.
+          Jo perinteeksi muodostuneet rastikierrokset ovat osa myös Joensuun YTP:tä! Kerää 4-8:n
+          hengen joukkue kasaan ja lähde ulkoiluttamaan haalareitasi Joensuun keskustan raittiiseen
+          ulkoilmaan!
+          <br />
+          <br />
+          Ensimmäisenä päivänä rasteja pitävät paikalliset ainejärjestöt, ja toisena päivänä
+          rasteilla voi tavata tkt-laitoksen sekä yhteistyökumppaneiden edustajia.
         </Paragraph>
 
         <Paragraph title='Etkot'>

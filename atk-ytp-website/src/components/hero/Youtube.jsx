@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import './Counter.scss';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { AspectRatio, Skeleton } from '@mantine/core';
 
 const EMBED_ID = 'hgZ-FrfIFG4?si=H6NJr62mRobvDZdm';
 
@@ -10,6 +11,10 @@ const YoutubeEmbed = () => {
 
   return (
     <div ref={ref} className='relative h-0 overflow-hidden pb-[56.25%] shadow' id='traileri'>
+      <AspectRatio ratio={16 / 9}>
+        <Skeleton />
+      </AspectRatio>
+
       {isVisible && (
         <iframe
           width='853'

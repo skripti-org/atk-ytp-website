@@ -24,6 +24,7 @@ export default function Main() {
           <br /> here we go again
         </Text>
       </Title>
+
       <Text size='md'>
         <Highlight highlight={['18.-20.10.2023', 'Skripti ry']} className='p-2'>
           ATK-YTP saapuu Joensuuhun! ATK-yhteistoimintapäivät, lyhyesti ATK-YTP, järjestetään tänä
@@ -33,6 +34,7 @@ export default function Main() {
           Itä-Suomen yliopiston Joensuun kampuksen tietojenkäsittelijöiden ainejärjestö Skripti ry.
         </Highlight>
       </Text>
+
       <Text size='md'>
         <Highlight highlight={['C1-salissa']} className='p-2'>
           Yhteistoimintapäivät tarjoavat alan opiskelijoille ympäri Suomen mahdollisuuden tutustua

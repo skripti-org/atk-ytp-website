@@ -7,6 +7,7 @@ import Schedule from './components/schedule/Schedule';
 import FAQ from './components/faq/Faq';
 import Credits from './components/credits/Credits';
 import Footer from './components/footer/Footer';
+import Team from './components/team/Team';
 
 const Hero = React.lazy(() => import('./components/hero/Hero'));
 const Info = React.lazy(() => import('./components/info/Info'));
@@ -69,6 +70,8 @@ function App() {
           <SponsorGrid />
 
           <Credits />
+
+          {/*<Team />*/}
         </main>
 
         <Footer links={links} />
