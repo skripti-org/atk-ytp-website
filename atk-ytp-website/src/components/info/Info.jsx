@@ -61,11 +61,11 @@ export default function Info() {
         <Paragraph title='Liikkuminen'>
           Joensuussa on helppo liikkua, sillä kaupunki on tasainen ja vaakasuorassa. Illan etkoja
           lukuunottamatta kaikki tapahtumapaikat sijaitsevat kävelymatkan päässä keskustasta. Mikäli
-          apostolikyyti ei ole vaihtoehto, voi siirtymiset hoitaa helposti myös esim. &nbsp;
+          apostolikyyti ei ole vaihtoehto, voi siirtymiset hoitaa helposti myös esim.&nbsp;
           <Anchor href='https://jojo.joensuu.fi/liput-ja-hinnat' target='_blank'>
             bussilla
           </Anchor>{' '}
-          tai &nbsp;
+          tai&nbsp;
           <Anchor href='https://www.taksiitasuomi.fi/' target='_blank'>
             taksilla
           </Anchor>{' '}
