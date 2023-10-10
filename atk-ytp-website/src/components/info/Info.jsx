@@ -51,6 +51,11 @@ export default function Info() {
           <Anchor href=' https://www.uef.fi/fi/kampusravintolat' target='_blank'>
             Joensuun kampusravintolat ja -kahvilat.
           </Anchor>
+          <br />
+          <br />
+          Keskustan ruokakaupoista auki pisimpään ovat K-Citymarket Keskusta (klo 8-23) ja S-market
+          Papinkatu (klo 7-23). Lisäksi hieman kauempaa kaakosta löytyy S-market Niinivaara, joka on
+          24h/7 auki.
         </Paragraph>
 
         <Paragraph title='Liikkuminen'>

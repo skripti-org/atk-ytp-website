@@ -5,15 +5,13 @@
 - [x] Kartta alueet
 - [x] footerin linkit
 - [ ] tekstisisällöt
-- [ ] Aikataulu
+- [x] Aikataulu
 - [ ] loput sponsorit
-- [ ] Lazyload
+- [x] Lazyload, tarpeeks laiska joo.
 - [ ] webp
-- [ ] lokaalit kuvat sponsseista jne
-- [ ] svg animated navbar
+- [x] lokaalit kuvat sponsseista jne
+- [ ] svg animated navbar ???
 - [ ] ATK-YTP premium
 - [ ] ATK-YTP retro
 - [ ] kide-app nappi headeriin
 - [ ] lokalisointi
-- [ ] ruokakauppoja
-- [ ] 
