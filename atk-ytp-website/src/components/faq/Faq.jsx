@@ -18,6 +18,7 @@ const qas = [
   ['Kolmio?', 'Ukko.'],
   ['Rastikierros?', 'Illalla. Day 1 ainejärjestöt, Day 2 TKT-laitos / firmat'],
   ['Majoitus?', 'Kouluilla.'],
+  ['Use-case?', 'Jyys keissi.'],
 ];
 const quotes = [
   {
@@ -32,10 +33,11 @@ const quotes = [
     text: 'write once, run anywhere',
     person: 'Java',
   },
+  /*
   {
     text: 'Kunnon kusipaskakännit ja vetoja',
     person: 'Random Guy',
-  },
+  },*/
   {
     text: 'Wine is fine, but whiskey is quicker.',
     person: 'Hank Moody',

@@ -78,7 +78,7 @@ const Hero = () => {
         </Container>
       </div>
       <Container className='flex flex-1 items-center justify-center p-8'>
-        <Counter targetDate={new Date('2023-10-18T10:00:00Z').getTime()} />
+        <Counter targetDate={new Date('2023-10-18T07:00:00Z').getTime()} />
       </Container>
     </section>
   );

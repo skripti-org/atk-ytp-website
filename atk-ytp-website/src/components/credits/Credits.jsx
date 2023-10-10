@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Evil credits component
 // What the Fuck???
 
@@ -28,6 +26,67 @@ console.log(
   Olin vielä varannut koko porukalle illaks appsien asentelua varten Android-pipot mut eihän noille mammareille kehdannu niitä ees antaa. Joillekin ilmeisesti se yksi bugi on iltaa varten ihan tarpeeks.`,
   'font-size: 50px; font-weight: bold; font-family: "Times new Roman", Times, serif',
 );
+console.log(`Rantamalla Likolahden
+Hilima Holkin kanssa kahden
+Yhteisestä rakkauvesta
+Aina haaveiltiin
+
+Käessä pitelin Hiliman kättä
+Aettaan mentiin sitten viivyttelemättä
+Tekohampaat samaan lasiin
+Yöksi laitettiin
+
+Kunnes Hiliman vei multa Onni
+Laukkanen, kylän ravattisonni
+Hajanaisten kenkies lotinaa
+Navetalta kuule nyt en
+
+Poissa lasista on Hiliman hampaat
+Myöty kanat, siat, lampaat
+Konelypsyyn kantturat täytyi
+Minun totuttaa
+Navettaan minä mänen nytkin
+Rikki lypsykoneen kytkin
+Miksen Hilma koskaan sua
+Takaisin minä saa
+
+Miksi Hilman vei multa Onni
+Laukkanen kylän ravattisonni
+Hajanaisten kenkies lotinaa
+Navetalta kuule nyt en
+
+Kynsilakkaa oot sä lyönyt näppiin
+Aittas oven laitat säppiin
+Vällyn väliin painut kanssa
+Onni Laukkasen
+
+Kumiteräs aitan rappuun nojaan
+Tuskissain minä kaivan ojaa
+Laukkanen ja syksy saa
+Mutta minä en
+
+Koska Hilman vei multa Onni
+Laukkanen kylän ravattisonni
+Hajanaisten kenkies lotinaa
+Navetalta kuule nyt en
+
+Jätitko mut Hilma ehkä juuri siksi
+Etten koskaan tullut vänkäriksi
+Lietettä kun luukun läpi
+Mätit lantalaan
+
+Nyt mä kaikkea kadun vasta
+Hilma ootteloo jo Onnin lasta
+Kahen viikon piästä niihen
+Häitä tanssitaan
+
+Kuokkavieraaks meinaan mennä minä päissään
+Kostan Hilmalle ja pieraisen häissään
+Hajanaisten kenkies lotinaa
+Navetalta kun kuule minä en
+Ihan itekseni kuopan katolla
+Näin sinua muistellen
+-Jaakko Teppo`);
 const Credits = () => {
   return <div></div>;
 };

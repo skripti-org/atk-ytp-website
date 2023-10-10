@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TimeDisplay = ({ value, type, isDanger }) => {
   return (
     <div className={isDanger ? 'countdown danger' : 'countdown'}>
