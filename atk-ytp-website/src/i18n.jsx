@@ -19,6 +19,23 @@ i18n.use(initReactI18next).init({
           part2:
             'Yhteistoimintapäivät tarjoavat alan opiskelijoille ympäri Suomen mahdollisuuden tutustua toisiinsa sekä alan yrityksiin hauskalla tavalla. Tapahtumassa useat alan ammattilaiset pitävät vaikuttavia luentoja kahtena seminaaripäivänä. Luennot järjestetään Joensuun kampuksella C1-salissa 18. ja 19. lokakuuta klo 10-16, ja sen jälkeen voit verkostoitua iltaohjelman parissa. Lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa. Tervetuloa Joensuuhun!',
         },
+        schedule: {
+          sauna: 'Aamusauna by Nordea',
+          saunaleave: 'Lähtö aamusaunalle',
+          wed: 'Ke',
+          thu: 'To',
+          fri: 'Pe',
+          time: 'Klo',
+          programme: 'Ohjelma',
+          opening: 'Majoitus aukeaa',
+          closing: 'Majoitus sulkeutuu',
+          preparty1: 'Etkot by Siili',
+          preparty2: 'Etkot',
+          afterparty1: 'Jatkot Kimmelissä',
+          afterparty2: 'Reivit Kerubissa: Affirmed, Digital Mindz, Bionator Project',
+          crawl: 'Rastikierros alkaa',
+          asteriski: 'Asteriski kotona'
+        },
         info: {
           atkYtpArrives: 'ATK-YTP saapuu Joensuuhun!',
           atkYtpDescription:
@@ -117,6 +134,23 @@ i18n.use(initReactI18next).init({
           part2:
             'The co-operative days offer students from all over Finland the opportunity to get to know each other and the companies in the field in a fun way. Several industry professionals give impressive lectures during the two seminar days. The lectures will take place at the Joensuu campus in C1 Hall on 18 and 19 October from 10am to 4pm, followed by an evening programme of networking. TiTOL will also hold its autumn association meeting during the event. Welcome to Joensuu!',
         },
+        schedule: {
+          wed: 'Wed',
+          saunaleave: 'Departure for morning sauna',
+          sauna: 'Morning sauna by Nordea',
+          thu: 'Thu',
+          fri: 'Fri',
+          time: 'Time',
+          programme: 'Programme',
+          opening: 'Accommodation opens',
+          closing: 'Accommodation closes',
+          preparty1: 'Pre-party by Siili',
+          preparty2: 'Pre-party',
+          afterparty1: 'After-party at Kimmel',
+          afterparty2: 'Rave at Kerubi: Affirmed, Digital Mindz, Bionator Project',
+          crawl: 'City crawl begins',
+          asteriski: 'Asteriski finally at home'
+        },
         info: {
           atkYtpArrives: 'ATK-YTP is coming to Joensuu!',
           atkYtpDescription:
@@ -124,8 +158,8 @@ i18n.use(initReactI18next).init({
           cooperationDays:
             'Cooperation days offer IT students from all over Finland the opportunity to get to know each other and the companies in the field in a fun way. Several industry professionals give impressive lectures on both seminar days. The lectures will be held at the Joensuu campus in C1 hall on the 18th and 19th of October from 10 am to 4 pm, followed by networking in the evening program. In addition, TiTOL will hold its autumn plenary meeting during the event. Welcome to Joensuu!',
           importantNotice: 'Note!',
-          siteInformation:
-            'Note! The information on the pages is still incomplete in places and may change before the event.',
+           
+          siteInformation: 'The information on the pages is still incomplete in places and may change before the event.',
           whatToBring: 'What to Bring?',
           listItems: {
             item1: 'Overalls',
@@ -136,8 +170,8 @@ i18n.use(initReactI18next).init({
             item6: 'A lot of adventure spirit!',
           },
           accommodation: 'Accommodation',
-          accommodationDetails:
-            'Accommodation will be available at Pielisjoen koulu and Joensuun yhteiskoulu. You can find the locations of the schools on the map. Accommodations will be open on the event days as follows: On Wednesday, accommodation opens at 8:00 AM and closes at 10:00 AM during the seminar presentations. On Thursday, accommodation closes at 11:00 AM and opens at 9:00 PM. On Friday, accommodation closes at 11:00 AM. Both schools have night guards on both nights to ensure a safe and pleasant stay during the event.',
+            accommodationDetails: 'Accommodation will be available at Pielisjoen koulu and Joensuun yhteiskoulu. You can find the locations of the schools on the map. Accommodations will be open on the event days as follows: On Wednesday, accommodation opens at 8:00 AM and closes at 10:00 AM during the seminar presentations. On Thursday, accommodation closes at 11:00 AM and opens at 9:00 PM. On Friday, accommodation closes at 11:00 AM. Both schools have night guards on both nights to ensure a safe and pleasant stay during the event.',
+            
           rememberToKeep: 'Please remember to keep your accommodation clean and tidy.',
           food: 'Food',
           hungerRelief: "When you're hungry, you can either grumble or eat.",
@@ -156,11 +190,11 @@ i18n.use(initReactI18next).init({
           taxi: 'by taxi',
           tier: 'with a Tier (if they have not been removed from the streets when the events is held)',
           avoidCrowds: 'Avoid the crowds and arrive in Joensuu 500 days before the event!',
-          challengeStations: 'Challenge Stations',
+          challengeStations: 'City Crawl',
           tradition:
-            'Traditional challenge stations are part of Joensuu YTP as well! Gather a team of 4-8 people and take your overalls for a walk in the fresh air of Joensuu city center!',
+            'The already traditional city crawl is also a part of the Joensuu YTP! Gather a team of 4-8 people and go out and get your overalls in the fresh outdoor air in the centre of Joensuu!',
           localGuilds:
-            "On the first day, the challenge stations are held by local guilds, and on the second day, you can meet representatives from the computer science department and the event's partners.",
+            "On the first day, the challenge checkpoints are held by local guilds, and on the second day, you can meet representatives from the computer science department and the event's partners.",
           preParties: 'Pre-Parties',
           bothEvenings:
             'Pre-parties are organized both evenings in Karhunmäki. Bus rides run to and from the location both evenings from 7-9 pm and 10-11 pm. Note that there is a one-hour break in bus rides from 9-10 pm. Buses depart from Koskikatu in front of the Onni art museum. You can bring your own refreshments and snacks to the pre-parties!',
@@ -200,7 +234,7 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  fallbackLng: 'fi',
+  fallbackLng: localStorage.getItem('selectedLanguage'),
   debug: true,
 });
 

@@ -155,7 +155,7 @@ export default function HeaderMegaMenu({ links }) {
       >
         <Group position='apart' sx={{ height: '100%' }} spacing={0}>
           <a href='/' className='flex flex-1 items-center no-underline'>
-            <span className='self-center whitespace-nowrap text-2xl font-semibold text-white no-underline'>
+            <span className='self-center whitespace-nowrap text-xl font-semibold text-white no-underline'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
           </a>
@@ -214,7 +214,7 @@ export default function HeaderMegaMenu({ links }) {
           },
         })}
       >
-        <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
+  
 
         {links.map((link) => {
           return (
@@ -229,7 +229,7 @@ export default function HeaderMegaMenu({ links }) {
           );
         })}
 
-        <Divider my='sm' color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
+
       </Drawer>
     </Box>
   );

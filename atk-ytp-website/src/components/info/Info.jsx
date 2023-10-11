@@ -108,8 +108,7 @@ export default function Info() {
 
         <Paragraph title={t('info.safeSpace')}>
           {t('info.safeSpace1')}
-          <br />
-          <br />
+          &nbsp;
           {t('info.safeSpace2')}
           <br />
           <br />
@@ -119,8 +118,7 @@ export default function Info() {
             {t('info.moreInformationSafety2')}
           </Anchor>
         </Paragraph>
-
-        <Paragraph title='Yhteystiedot'>
+        <Paragraph title={t('info.contactInformation')}>
           {t('info.generalInquiries')}:&nbsp;
           <Anchor href='https://t.me/san_teri' target='_blank'>
             Santeri M

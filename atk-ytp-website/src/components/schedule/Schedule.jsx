@@ -10,12 +10,12 @@ export default function Schedule() {
   const wed = [
     {
       time: 8,
-      activity: 'Majoitus aukeaa',
+      activity: t('schedule.opening'),
       main: true,
     },
     {
       time: 10,
-      activity: 'Majoitus sulkeutuu',
+      activity: t('schedule.closing'),
       main: true,
     },
     {
@@ -45,22 +45,22 @@ export default function Schedule() {
     },
     {
       time: 16,
-      activity: 'Rastikierros alkaa',
+      activity: t('schedule.crawl'),
       main: true,
     },
     {
       time: 19,
-      activity: 'Etkot by Siili',
+      activity: t('schedule.preparty1'),
       main: false,
     },
     {
       time: 21,
-      activity: 'Majoitus aukeaa',
+      activity: t('schedule.opening'),
       main: false,
     },
     {
       time: 22,
-      activity: 'Jatkot Kimmelissä',
+      activity: t('schedule.afterparty1'),
       main: false,
     },
     {
@@ -73,17 +73,17 @@ export default function Schedule() {
   const thu = [
     {
       time: 7.5,
-      activity: 'Lähtö aamusaunalle',
+      activity: t('schedule.saunaleave'),
       main: true,
     },
     {
       time: 8,
-      activity: 'Aamusauna by Nordea',
+      activity: t('schedule.sauna'),
       main: true,
     },
     {
       time: 11,
-      activity: 'Majoitus sulkeutuu',
+      activity: t('schedule.closing'),
       main: true,
     },
     {
@@ -113,22 +113,22 @@ export default function Schedule() {
     },
     {
       time: 16,
-      activity: 'Rastikierros alkaa',
+      activity: t('schedule.crawl'),
       main: true,
     },
     {
       time: 19,
-      activity: 'Etkot',
+      activity: t('schedule.preparty2'),
       main: true,
     },
     {
       time: 21,
-      activity: 'Majoitus aukeaa',
+      activity: t('schedule.opening'),
       main: true,
     },
     {
       time: 22,
-      activity: 'Reivit Kerubissa: Affirmed, Digital Mindz, Bionator Project',
+      activity: t('schedule.afterparty2'),
       main: true,
     },
   ];
@@ -136,12 +136,12 @@ export default function Schedule() {
   const fri = [
     {
       time: 11,
-      activity: 'Majoitus sulkeutuu',
+      activity: t('schedule.closing'),
       main: true,
     },
     {
       time: 21,
-      activity: 'Asteriski kotona',
+      activity: t('schedule.asteriski'),
       main: true,
     },
   ];
@@ -151,6 +151,7 @@ export default function Schedule() {
       <PageSection title={t('common.schedule')}>
         <Grid justify='center'>
           <Grid.Col span='auto' key={nanoid()}>
+     
             <TimeCard dayString={'Ke 18.10.'} scheduleDay={wed} />
           </Grid.Col>
           <Grid.Col span='auto' key={nanoid()}>
