@@ -4,6 +4,7 @@ import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
 import Circle from './Circle';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = createStyles(() => ({
   heroBtn: {
@@ -13,6 +14,8 @@ const useStyles = createStyles(() => ({
 
 const Hero = () => {
   const { classes } = useStyles();
+  const { t } = useTranslation();
+
   return (
     <section className='relative flex min-h-[calc(100vh-59px)] flex-col justify-center'>
       <div className='relative flex flex-1 flex-col items-center justify-end'>
@@ -43,7 +46,7 @@ const Hero = () => {
               },
             })}
           >
-            Aikataulu
+            {t('common.schedule')}
           </Button>
           <Button
             sx={classes.heroBtn}
@@ -58,7 +61,7 @@ const Hero = () => {
               },
             })}
           >
-            Traileri
+            {t('common.trailer')}
           </Button>
           <Button
             sx={classes.heroBtn}
@@ -73,7 +76,7 @@ const Hero = () => {
               },
             })}
           >
-            Kartta
+            {t('common.map')}
           </Button>
         </Container>
       </div>

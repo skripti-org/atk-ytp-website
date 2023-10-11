@@ -2,154 +2,131 @@ import PageSection from '../layout/PageSection';
 import { Anchor, Alert, List } from '@mantine/core';
 import Paragraph from '../layout/Paragraph';
 import { IconAlertCircle } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 
 export default function Info() {
+  const { t } = useTranslation();
+
   return (
     <div id='info'>
       <PageSection title='Info'>
-        <Alert radius={0} icon={<IconAlertCircle />} title='Huom!' variant='filled'>
-          Sivujen tiedot ovat paikoittain vielä puutteellisia sekä ne saattavat muuttua ennen
-          tapatumaa.
+        <Alert
+          radius={0}
+          icon={<IconAlertCircle />}
+          title={t('info.importantNotice')}
+          variant='filled'
+        >
+          {t('info.siteInformation')}
         </Alert>
 
-        <Paragraph title='Mitä mukaan?'>
+        <Paragraph title={t('info.whatToBring')}>
           <List type='ordered' withPadding size='lg'>
-            <List.Item>Haalarit</List.Item>
-            <List.Item>Makuupussi ja -alusta</List.Item>
-            <List.Item>
-              DELTACO Cat6a S/FTP -asennuskaapelirulla ulkokäyttöön, 100 m (ei pakollinen)
-            </List.Item>
-            <List.Item>Hygieniatarvikkeet</List.Item>
-            <List.Item>Lämmintä vaatetta</List.Item>
-            <List.Item>Roppakaupalla reissumieltä!</List.Item>
+            <List.Item>{t('info.listItems.item1')}</List.Item>
+            <List.Item>{t('info.listItems.item2')}</List.Item>
+            <List.Item>{t('info.listItems.item3')}</List.Item>
+            <List.Item>{t('info.listItems.item4')}</List.Item>
+            <List.Item>{t('info.listItems.item5')}</List.Item>
+            <List.Item>{t('info.listItems.item6')}</List.Item>
           </List>
         </Paragraph>
 
-        <Paragraph title='Majoitus'>
-          Tapahtuman majoitus tapahtuu Pielisjoen koulussa sekä Joensuun yhteiskoulun luokiolla.
-          Koulujen sijainnit löydät kartalta. Majoitukset avautuvat tapahtumapäivinä seuraavasti:
-          Keskiviikkona majoitus aukeaa klo 8.00 ja sulkeutuu klo 10.00 seminaariesitysten ajaksi.
-          Torstaina majoitus sulkeutuu klo 11.00 ja aukeaa klo 21.00. Perjantaina majoitus sulkeutuu
-          klo 11.00. Molemmilla kouluilla päivystävät yövahdit molempina öinä, jotta majoittujilla
-          on turvallinen ja miellyttävä oleskelu tapahtuman aikana.
+        <Paragraph title={t('info.accommodation')}>
+          {t('info.accommodationDetails')}
           <br />
           <br />
-          <b>Muistathan pitää majoituspaikan siistinä ja siivota omat jälkesi!</b>
+          <b>{t('info.rememberToKeep')}</b>
         </Paragraph>
 
-        <Paragraph title='Ruoka'>
-          Näläkäinen nikotteleksen, kyllin syönyt röyhteleksen.
+        <Paragraph title={t('info.food')}>
+          {t('info.hungerRelief')}
           <br />
           <br />
-          Joensuun kampukselta löytyy useita opiskelijaravintoloita tapahtumapaikan läheltä, kuten
-          Carelia, Kampus Bistro ja Wicked Rabbit Mertia (kasvisruoka). Opiskelijaravintoloiden
-          lisäksi Joensuun keskusta on pullollaan erilaisia ruokapaikkoja. Näiden lisäksi Foodora ja
-          Wolt kuljettavat sapuskaa.
+          {t('info.studentRestaurants')}
           <br />
           <br />
-          Kurkkaappa joutessas:{' '}
+          {t('info.restaurantHint')}{' '}
           <Anchor href=' https://www.uef.fi/fi/kampusravintolat' target='_blank'>
-            Joensuun kampusravintolat ja -kahvilat.
+            {t('info.restaurants')}
           </Anchor>
           <br />
           <br />
-          Keskustan ruokakaupoista auki pisimpään ovat K-Citymarket Keskusta (klo 8-23) ja S-market
-          Papinkatu (klo 7-23). Lisäksi hieman kauempaa kaakosta löytyy S-market Niinivaara, joka on
-          24h/7 auki.
+          {t('info.lateNightGroceryStores')}
         </Paragraph>
 
-        <Paragraph title='Liikkuminen'>
-          Joensuussa on helppo liikkua, sillä kaupunki on tasainen ja vaakasuorassa. Illan etkoja
-          lukuunottamatta kaikki tapahtumapaikat sijaitsevat kävelymatkan päässä keskustasta. Mikäli
-          apostolikyyti ei ole vaihtoehto, voi siirtymiset hoitaa helposti myös esim.&nbsp;
+        <Paragraph title={t('info.gettingAround')}>
+          {t('info.easyMovement')}&nbsp;
           <Anchor href='https://jojo.joensuu.fi/liput-ja-hinnat' target='_blank'>
-            bussilla
+            {t('info.bus')}
           </Anchor>{' '}
-          tai&nbsp;
+          {t('info.or')}&nbsp;
           <Anchor href='https://www.taksiitasuomi.fi/' target='_blank'>
-            taksilla
+            {t('info.taxi')}
           </Anchor>{' '}
-          tai Tierillä (jos niitä ei ole tapahtumaan mennessä raivattu pois).
+          {t('info.or')} {t('info.tier')}.
           <Alert
             radius={0}
             icon={<IconAlertCircle />}
-            title='Vinkki!'
+            title={t('info.hint')}
             variant='filled'
             className='mt-2'
           >
-            Vältä ruuhkat ja saavu Joensuuhun jo 500 päivää ennen tapahtumaa!
+            {t('info.avoidCrowds')}
           </Alert>
         </Paragraph>
 
-        <Paragraph title='Rastikierrokset'>
-          Jo perinteeksi muodostuneet rastikierrokset ovat osa myös Joensuun YTP:tä! Kerää 4-8:n
-          hengen joukkue kasaan ja lähde ulkoiluttamaan haalareitasi Joensuun keskustan raittiiseen
-          ulkoilmaan!
+        <Paragraph title={t('info.challengeStations')}>
+          {t('info.tradition')}
           <br />
           <br />
-          Ensimmäisenä päivänä rasteja pitävät paikalliset ainejärjestöt, ja toisena päivänä
-          rasteilla voi tavata tkt-laitoksen sekä yhteistyökumppaneiden edustajia.
+          {t('info.localGuilds')}
         </Paragraph>
 
-        <Paragraph title='Etkot'>
-          Molempina iltoina järjestetään yhteiset etkot Karhunmäellä. Bussikyydit kulkevat paikalle
-          ja sieltä pois molempina päivinä klo 19-21 ja 22-23. Huomioithan, että bussikyydeissä on
-          tunnin tauko klo 21-22. Bussit lähtevät taidemuseo Onnin edestä Koskikadulta. Etkoille on
-          mahdollista tuoda mukana omia virvokkeita sekä naposteltavia!
+        <Paragraph title={t('info.preParties')}>
+          {t('info.bothEvenings')}
           <br />
           <br />
-          Ensimmäisen illan etkot ovat järjestetty yhteistyössä Siilin kanssa! Toisena iltana
-          bingoillaan Giggelin ja Kaalimadon kanssa!
+          {t('info.firstEvening')}
           <Alert
             radius={0}
             icon={<IconAlertCircle />}
-            title='Vinkki!'
+            title={t('info.hint')}
             variant='filled'
             className='mt-2'
           >
-            Omat ostokset kannattaa hoitaa keskustassa ennen etkoille lähtöä!
+            {t('info.rememberShop')}
           </Alert>
         </Paragraph>
-        <Paragraph title='Jatkot'>
-          Molempina YTP-päivinä järjestetään yhteiset jatkot illan huipennukseksi.
+        <Paragraph title={t('info.afterParties')}>
+          {t('info.bothYtpDays')}
           <br />
           <br />
-          Keskiviikon jatkot tarjoaa Las Palmas, joka toimii Sokos Hotel Kimmelin tiloissa. Illan
-          artistina toimittaa Jussi Pelkosen ja Aleksi Ripatin muodostama garagerock-duo Ursus
-          Factory! Keikka alkaa noin klo 24.00.
+          {t('info.wednesdayAfterParty')}
           <br />
           <br />
-          Torstain jatkot järjestetään Ravintola Kerubissa, jossa pääsemme nauttimaan konemusiikista
-          Affirmed:n, Digital Mindz:n ja Bionator Project:n tähdittämänä! Ovet aukeavat klo 22.
+          {t('info.thursdayAfterParty')}
         </Paragraph>
 
-        <Paragraph title='Turvallinen tila'>
-          Tapahtumassa noudatetaan turvallisen tilan periaatteita. Yhdenvertaisuuslain mukaan ketään
-          ei saa syrjiä iän, alkuperän, kansalaisuuden, kielen, uskonnon, vakaumuksen, mielipiteen,
-          poliittisen toiminnan, ammattiyhdistystoiminnan, perhesuhteiden, terveydentilan,
-          vammaisuuden, seksuaalisen suuntautumisen, tai muun henkilöön liittyvän syyn perusteella.
+        <Paragraph title={t('info.safeSpace')}>
+          {t('info.safeSpace1')}
           <br />
           <br />
-          Turvallisemmilla tiloilla viitataan yhteisölliseen pyrkimykseen luoda turvallisuutta
-          lisääviä käytäntöjä. Käytännössä turvallisemmissa tiloissa ainejärjestö ja sen jäsenet
-          pyrkivät ottamaan vastuuta hankalista tilanteista. Ristiriitoja käsitellään sen sijaan,
-          että niitä vain siedetään.
+          {t('info.safeSpace2')}
           <br />
           <br />
-          Lisätietoja tapahtumassa voimassa olevista turvallisen tilan periaatteissa löydät
+          {t('info.moreInformationSafety')}
           <Anchor href='https://www.skripti.org/turvallinentila' target='_blank'>
             {' '}
-            Skripti ry:n weppisivuilta.
+            {t('info.moreInformationSafety2')}
           </Anchor>
         </Paragraph>
 
         <Paragraph title='Yhteystiedot'>
-          Yleinen:&nbsp;
-          <Anchor href='' target='_blank'>
-            ???
+          {t('info.generalInquiries')}:&nbsp;
+          <Anchor href='https://t.me/san_teri' target='_blank'>
+            Santeri M
           </Anchor>
           <br />
-          Verkkosivut:&nbsp;
+          {t('info.websiteContacts')}:&nbsp;
           <Anchor href='https://t.me/paakkis' target='_blank'>
             Juuso P
           </Anchor>
@@ -162,12 +139,12 @@ export default function Info() {
             Eetu K
           </Anchor>
           <br />
-          Majoitus:&nbsp;
+          {t('info.accommodationContact')}:&nbsp;
           <Anchor href='https://t.me/toukojjouko' target='_blank'>
             Touko P
           </Anchor>
           <br />
-          Rastikierrokset:&nbsp;
+          {t('info.challengeStationsContacts')}t:&nbsp;
           <Anchor href='https://t.me/EmBBuu' target='_blank'>
             Emilia U
           </Anchor>
@@ -176,22 +153,22 @@ export default function Info() {
             Sanni O
           </Anchor>
           <br />
-          Bussikuljetukset:&nbsp;
+          {t('info.busTransportContacts')}:&nbsp;
           <Anchor href='https://t.me/sanniedita' target='_blank'>
             Sanni O
           </Anchor>
           <br />
-          Aamusauna:&nbsp;
+          {t('info.morningSaunaContact')}:&nbsp;
           <Anchor href='https://t.me/Jertsa' target='_blank'>
             Jermu R
           </Anchor>
           <br />
-          Etkot & Jatkot:&nbsp;
+          {t('info.prePartyAfterPartyContacts')}:&nbsp;
           <Anchor href='https://t.me/san_teri' target='_blank'>
             Santeri M
           </Anchor>
           <br />
-          Häirintäyhdyshenkilöt:&nbsp;
+          {t('info.harassmentContacts')}:&nbsp;
           <Anchor href='https://t.me/dalcane' target='_blank'>
             Antti H
           </Anchor>
@@ -202,9 +179,9 @@ export default function Info() {
           <br />
         </Paragraph>
 
-        <Paragraph title='Linkkejä'>
+        <Paragraph title={t('info.links')}>
           <Anchor href='https://jojo.joensuu.fi/liput-ja-hinnat' target='_blank'>
-            Joukkoliikenne JoJo
+            {t('info.publicTransportJoJo')}
           </Anchor>
           <br />
           <Anchor href='https://t.me/+EOI-Do9oS6Q0YzJk' target='_blank'>
@@ -212,7 +189,7 @@ export default function Info() {
           </Anchor>
           <br />
           <Anchor href='https://t.me/atkytp23tiedotus' target='_blank'>
-            ATK-YTP Tiedotuskanava
+            {t('info.atkYtpAnnouncements')}
           </Anchor>
           <br />
           <Anchor href='https://www.skripti.org' target='_blank'>
@@ -220,7 +197,7 @@ export default function Info() {
           </Anchor>
           <br />
           <Anchor href='https://www.skripti.org/turvallinentila' target='_blank'>
-            Skripti ry:n turvallisen tilan periaatteet
+            {t('info.skriptiRySafeSpace')}
           </Anchor>
         </Paragraph>
       </PageSection>

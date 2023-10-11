@@ -11,6 +11,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useEffect, useState } from 'react';
+import LangSelector from './LangSelector';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -101,7 +102,7 @@ const useStyles = createStyles((theme) => ({
       zIndex: 1001,
       borderBottom: 0,
       top: 'calc(env(safe-area-inset-bottom)) - 60px',
-      background: 'rgba(0, 0, 0, 0.6)',
+      background: '#070707',
       boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
       backdropFilter: 'blur(7px)',
       WebkitBackdropFilter: 'blur(7px)',
@@ -111,6 +112,7 @@ const useStyles = createStyles((theme) => ({
     backdropFilter: 'blur(7px)',
     WebkitBackdropFilter: 'blur(7px)',
     position: 'fixed',
+
     transition: 'transform 0.3s ease-in-out',
     borderBottom: '1px solid rgba(255, 255, 255, 1)',
   },
@@ -151,13 +153,18 @@ export default function HeaderMegaMenu({ links }) {
         sx={classes.nav}
         className={`${show ? classes.visible : classes.hidden}`}
       >
-        <Group position='apart' sx={{ height: '100%' }}>
-          <a href='/' className='flex items-center no-underline'>
+        <Group position='apart' sx={{ height: '100%' }} spacing={0}>
+          <a href='/' className='flex flex-1 items-center no-underline'>
             <span className='self-center whitespace-nowrap text-2xl font-semibold text-white no-underline'>
               <Text weight='800'>ATK-YTP &apos;23</Text>
             </span>
           </a>
-          <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
+
+          <Group
+            sx={{ height: '100%', justifyContent: 'space-between' }}
+            spacing={0}
+            className={classes.hiddenMobile}
+          >
             {links.map((link) => {
               return (
                 <a key={`navbar-${link.label}`} href={link.link} className={classes.link}>
@@ -166,12 +173,15 @@ export default function HeaderMegaMenu({ links }) {
               );
             })}
           </Group>
-          <Burger
-            opened={drawerOpened}
-            onClick={toggleDrawer}
-            className={classes.hiddenDesktop}
-            aria-label='Toggle navigation'
-          />
+          <Group>
+            <LangSelector />
+            <Burger
+              opened={drawerOpened}
+              onClick={toggleDrawer}
+              className={classes.hiddenDesktop}
+              aria-label='Toggle navigation'
+            />
+          </Group>
         </Group>
       </Header>
 

@@ -2,10 +2,11 @@ import PageSection from '../layout/PageSection';
 import { Grid } from '@mantine/core';
 import TimeCard from './TimeCard';
 import { nanoid } from 'nanoid';
+import { useTranslation } from 'react-i18next';
 
 export default function Schedule() {
   // TODO: rajapintaan?
-
+  const { t } = useTranslation();
   const wed = [
     {
       time: 8,
@@ -147,7 +148,7 @@ export default function Schedule() {
 
   return (
     <div id='aikataulu'>
-      <PageSection title='Aikataulu'>
+      <PageSection title={t('common.schedule')}>
         <Grid justify='center'>
           <Grid.Col span='auto' key={nanoid()}>
             <TimeCard dayString={'Ke 18.10.'} scheduleDay={wed} />

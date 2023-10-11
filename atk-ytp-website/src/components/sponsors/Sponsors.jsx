@@ -9,6 +9,7 @@ import tek from '../../../assets/logos/TEK.png';
 import koeda from '../../../assets/logos/koeda2.png';
 import sensire from '../../../assets/logos/sensire.png';
 import celsius from '../../../assets/logos/celsius2.webp';
+import { useTranslation } from 'react-i18next';
 
 const sponsors = [
   {
@@ -62,7 +63,7 @@ const useStyles = createStyles((theme) => ({
 
 export default function SponsorGrid() {
   const { classes } = useStyles();
-
+  const { t } = useTranslation();
   const cards = sponsors.map((sponsor) => (
     <Grid.Col span={6} xs={4} sm={3} key={sponsor.title}>
       <Card className={classes.card} p='md' radius={0} component='a' href={sponsor.link}>
@@ -75,7 +76,7 @@ export default function SponsorGrid() {
 
   return (
     <div id='yhteistyokumppanit'>
-      <PageSection title='Yhteistyökumppanit'>
+      <PageSection title={t('common.partners')}>
         <Container>
           <Grid gutter='xs'>{cards}</Grid>
         </Container>

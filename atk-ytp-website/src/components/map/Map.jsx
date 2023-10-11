@@ -27,6 +27,7 @@ import IconSchool from '../../../assets/icons/Icon_36.gif';
 import IconQuestionmark from '../../../assets/icons/Icon_37.gif';
 import IconBar from '../../../assets/icons/Icon_49.gif';
 import TriangleMan from '../../../assets/img/triangle.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Markers() {
   const map = useMap();
@@ -178,9 +179,10 @@ export default function MapComponent() {
   const tile = `https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${
     import.meta.env.VITE_API_KEY
   }`;
+  const { t } = useTranslation();
   return (
     <div id='kartta' ref={map}>
-      <PageSection title='Kartta'>
+      <PageSection title={t('common.map')}>
         <section className='map-component'>
           <div className='map'>
             <MapContainer

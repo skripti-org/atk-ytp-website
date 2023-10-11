@@ -1,5 +1,6 @@
 import { Container, Highlight, Text, Title, createStyles } from '@mantine/core';
 import YoutubeEmbed from './Youtube';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -16,6 +17,7 @@ const useStyles = createStyles((theme) => ({
 
 export default function Main() {
   const { classes } = useStyles();
+  const { t } = useTranslation();
   return (
     <Container className={classes.wrapper}>
       <Title order={2} pt={20} pb={20} className={classes.title}>
@@ -27,22 +29,13 @@ export default function Main() {
 
       <Text size='md'>
         <Highlight highlight={['18.-20.10.2023', 'Skripti ry']} className='p-2'>
-          ATK-YTP saapuu Joensuuhun! ATK-yhteistoimintapäivät, lyhyesti ATK-YTP, järjestetään tänä
-          syksynä Joensuussa 18.-20.10.2023. Tämä kaksipäiväinen seminaaritapahtuma, joka on
-          Tietotekniikan opiskelijoiden liiton (TiTOL) järjestämä, kokoaa vuosittain yhteen IT-alan
-          opiskelijoita seitsemästä eri yliopistokaupungista. Tämän vuoden ATK-YTP isäntänä toimii
-          Itä-Suomen yliopiston Joensuun kampuksen tietojenkäsittelijöiden ainejärjestö Skripti ry.
+          {t('intro.part1')}
         </Highlight>
       </Text>
 
       <Text size='md'>
-        <Highlight highlight={['C1-salissa']} className='p-2'>
-          Yhteistoimintapäivät tarjoavat alan opiskelijoille ympäri Suomen mahdollisuuden tutustua
-          toisiinsa sekä alan yrityksiin hauskalla tavalla. Tapahtumassa useat alan ammattilaiset
-          pitävät vaikuttavia luentoja kahtena seminaaripäivänä. Luennot järjestetään Joensuun
-          kampuksella C1-salissa 18. ja 19. lokakuuta klo 10-16, ja sen jälkeen voit verkostoitua
-          iltaohjelman parissa. Lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa.
-          Tervetuloa Joensuuhun!
+        <Highlight highlight={['C1-salissa', 'C1 Hall']} className='p-2'>
+          {t('intro.part2')}
         </Highlight>
       </Text>
 
