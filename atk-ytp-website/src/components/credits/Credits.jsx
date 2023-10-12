@@ -8,6 +8,7 @@ console.log(
 console.log('( ͡❛ ͜ʖ ͡❛)');
 console.log('( ͡❛ ͜ʖ ͡❛)');
 console.log('( ͡❛ ͜ʖ ͡❛)');
+console.log('icon prompt by https://loading.io');
 console.log('%c https://github.com/nyksy', 'color: red');
 console.log('%c https://github.com/paakkis', 'color: red');
 console.log('%c https://github.com/eetukarttunen', 'color: red');
@@ -88,7 +89,7 @@ Ihan itekseni kuopan katolla
 Näin sinua muistellen
 -Jaakko Teppo`);
 const Credits = () => {
-  return <div></div>;
+  return <></>;
 };
 
 export default Credits;
