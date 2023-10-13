@@ -151,14 +151,13 @@ export default function Schedule() {
       <PageSection title={t('common.schedule')}>
         <Grid justify='center'>
           <Grid.Col span='auto' key={nanoid()}>
-     
-            <TimeCard dayString={'Ke 18.10.'} scheduleDay={wed} />
+            <TimeCard dayString={t('schedule.wed') + ' 18.10.'} scheduleDay={wed} />
           </Grid.Col>
           <Grid.Col span='auto' key={nanoid()}>
-            <TimeCard dayString={'To 19.10.'} scheduleDay={thu} />
+            <TimeCard dayString={t('schedule.thu') + ' 19.10.'} scheduleDay={thu} />
           </Grid.Col>
           <Grid.Col span='auto' key={nanoid()}>
-            <TimeCard dayString={'Pe 20.10.'} scheduleDay={fri} />
+            <TimeCard dayString={t('schedule.fri') + ' 20.10.'} scheduleDay={fri} />
           </Grid.Col>
         </Grid>
       </PageSection>

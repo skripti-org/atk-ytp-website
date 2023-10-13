@@ -1,5 +1,5 @@
 import { Button, Container, createStyles } from '@mantine/core';
-import { IconCalendar, IconMap, IconMovie } from '@tabler/icons-react';
+import { IconCalendar, IconMap, IconMessageCircleQuestion, IconMovie } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
@@ -78,6 +78,23 @@ const Hero = () => {
           >
             {t('common.map')}
           </Button>
+          {/*
+          <Button
+            sx={classes.heroBtn}
+            color='pink'
+            radius='xl'
+            component='a'
+            href='https://presemo.uef.fi/ytp/'
+            rightIcon={<IconMessageCircleQuestion />}
+            styles={() => ({
+              root: {
+                color: 'white',
+              },
+            })}
+          >
+            Kysy luennoitsijalta
+          </Button>
+          */}
         </Container>
       </div>
       <Container className='flex flex-1 items-center justify-center p-8'>

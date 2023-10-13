@@ -14,4 +14,4 @@
 - [ ] ATK-YTP premium
 - [ ] ATK-YTP retro
 - [ ] kide-app nappi headeriin
-- [ ] lokalisointi
+- [x] lokalisointi

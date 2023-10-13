@@ -34,7 +34,7 @@ i18n.use(initReactI18next).init({
           afterparty1: 'Jatkot Kimmelissä',
           afterparty2: 'Reivit Kerubissa: Affirmed, Digital Mindz, Bionator Project',
           crawl: 'Rastikierros alkaa',
-          asteriski: 'Asteriski kotona'
+          asteriski: 'Asteriski kotona',
         },
         info: {
           atkYtpArrives: 'ATK-YTP saapuu Joensuuhun!',
@@ -149,7 +149,7 @@ i18n.use(initReactI18next).init({
           afterparty1: 'After-party at Kimmel',
           afterparty2: 'Rave at Kerubi: Affirmed, Digital Mindz, Bionator Project',
           crawl: 'City crawl begins',
-          asteriski: 'Asteriski finally at home'
+          asteriski: 'Asteriski finally at home',
         },
         info: {
           atkYtpArrives: 'ATK-YTP is coming to Joensuu!',
@@ -158,8 +158,9 @@ i18n.use(initReactI18next).init({
           cooperationDays:
             'Cooperation days offer IT students from all over Finland the opportunity to get to know each other and the companies in the field in a fun way. Several industry professionals give impressive lectures on both seminar days. The lectures will be held at the Joensuu campus in C1 hall on the 18th and 19th of October from 10 am to 4 pm, followed by networking in the evening program. In addition, TiTOL will hold its autumn plenary meeting during the event. Welcome to Joensuu!',
           importantNotice: 'Note!',
-           
-          siteInformation: 'The information on the pages is still incomplete in places and may change before the event.',
+
+          siteInformation:
+            'The information on the pages is still incomplete in places and may change before the event.',
           whatToBring: 'What to Bring?',
           listItems: {
             item1: 'Overalls',
@@ -170,8 +171,9 @@ i18n.use(initReactI18next).init({
             item6: 'A lot of adventure spirit!',
           },
           accommodation: 'Accommodation',
-            accommodationDetails: 'Accommodation will be available at Pielisjoen koulu and Joensuun yhteiskoulu. You can find the locations of the schools on the map. Accommodations will be open on the event days as follows: On Wednesday, accommodation opens at 8:00 AM and closes at 10:00 AM during the seminar presentations. On Thursday, accommodation closes at 11:00 AM and opens at 9:00 PM. On Friday, accommodation closes at 11:00 AM. Both schools have night guards on both nights to ensure a safe and pleasant stay during the event.',
-            
+          accommodationDetails:
+            'Accommodation will be available at Pielisjoen koulu and Joensuun yhteiskoulu. You can find the locations of the schools on the map. Accommodations will be open on the event days as follows: On Wednesday, accommodation opens at 8:00 AM and closes at 10:00 AM during the seminar presentations. On Thursday, accommodation closes at 11:00 AM and opens at 9:00 PM. On Friday, accommodation closes at 11:00 AM. Both schools have night guards on both nights to ensure a safe and pleasant stay during the event.',
+
           rememberToKeep: 'Please remember to keep your accommodation clean and tidy.',
           food: 'Food',
           hungerRelief: "When you're hungry, you can either grumble or eat.",
@@ -234,7 +236,7 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  fallbackLng: localStorage.getItem('selectedLanguage'),
+  fallbackLng: localStorage.getItem('selectedLanguage') || 'fi',
   debug: true,
 });
 

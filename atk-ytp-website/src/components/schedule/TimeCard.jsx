@@ -1,8 +1,10 @@
 import { Divider, Paper, Text, Table } from '@mantine/core';
 import { nanoid } from 'nanoid';
-import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function TimeCard({ dayString, scheduleDay }) {
+  const { t } = useTranslation();
+
   function timeToString(time) {
     const hours = Math.floor(time).toString().padStart(2, '0');
     const minutes = ((time % 1) * 60).toFixed(0).padStart(2, '0');
@@ -34,8 +36,8 @@ export default function TimeCard({ dayString, scheduleDay }) {
       <Table highlightOnHover withColumnBorders withBorder>
         <thead>
           <tr>
-            <th>Klo</th>
-            <th>Ohjelma</th>
+            <th>{t('schedule.time')}</th>
+            <th>{t('schedule.programme')}</th>
           </tr>
         </thead>
         <tbody>
