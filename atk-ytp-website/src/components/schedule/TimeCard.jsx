@@ -1,5 +1,6 @@
 import { Divider, Paper, Text, Table } from '@mantine/core';
 import { nanoid } from 'nanoid';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function TimeCard({ dayString, scheduleDay }) {
