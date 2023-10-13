@@ -127,6 +127,77 @@ body {
   }
 }
 
+.nav-title {
+  font-family: 'Syne';
+  font-weight: 800;
+  position: absolute;
+  fill: white;
+
+}
+
+.big-text {
+  text-transform: uppercase;
+  animation: stroke 4s;
+  stroke-width: 2;
+  font-size: 8rem;
+}
+
+.small-text {
+  font-size: 4rem; /* Half the size of ATK-YTP text */
+  animation: stroke-23 2s 4s forwards; /* Delay by 4s and duration 2s, with forwards to keep the final state */
+  opacity: 0; /* Start with zero opacity */
+}
+
+.glowing-outline {
+  border: 2px solid #e7ff50;
+  box-shadow: 0 0 10px rgba(231, 255, 80, 0.4);
+}
+
+@keyframes stroke {
+  0% {
+    fill: #070707;
+    stroke: #E7FF50;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: .5;
+    opacity: 0;
+  }
+  70% {
+    fill: #070707;
+    stroke: #E7FF50;
+    opacity: 70;
+  }
+  80% {
+    fill: #070707;
+    stroke: #E7FF50;
+    stroke-width: 1;
+    opacity: 80;
+  }
+  90% {
+    fill: #070707;
+    stroke: #E7FF50;
+    stroke-width: .5;
+    opacity: 90;
+  } 
+  100% {
+    fill: #FFFFFF;
+    stroke: #E7FF50;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+    opacity: 100;
+  }
+}
+
+@keyframes stroke-23 {
+  0% {
+      opacity: 0; /* Not visible at the start */
+  }
+  100% {
+      opacity: 100; /* Stays visible after the animation finishes */
+  }
+}
+
 @keyframes animateGlow {
   0% {
     opacity: 50%;

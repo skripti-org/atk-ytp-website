@@ -130,7 +130,7 @@ i18n.use(initReactI18next).init({
         },
         intro: {
           part1:
-            'ATK-YTP comes to Joensuu! The ATK-YTP, or ATK-YTP for short, will take place this autumn in Joensuu, Finland, on 18-20 October 2023.This two-day seminar event, organised by the Association of Students of Information Technology (TiTOL), brings together IT students from seven different university cities every year. This year´s ATK-YTP is hosted by Skripti ry, a student association of computer scientists at the University of Eastern Finland´s Joensuu campus.',
+            'ATK-YTP comes to Joensuu! The ATK-YTP will take place this autumn in Joensuu, Finland, on 18-20 October 2023. This two-day seminar event, organised by the Association of Students of Information Technology (TiTOL), brings together IT students from seven different university cities every year. This year´s ATK-YTP is hosted by Skripti ry, a student association of computer scientists at the University of Eastern Finland´s Joensuu campus.',
           part2:
             'The co-operative days offer students from all over Finland the opportunity to get to know each other and the companies in the field in a fun way. Several industry professionals give impressive lectures during the two seminar days. The lectures will take place at the Joensuu campus in C1 Hall on 18 and 19 October from 10am to 4pm, followed by an evening programme of networking. TiTOL will also hold its autumn association meeting during the event. Welcome to Joensuu!',
         },
@@ -184,15 +184,15 @@ i18n.use(initReactI18next).init({
           gettingAround: 'Getting Around',
           hint: 'Hint!',
           easyMovement:
-            "Getting around in Joensuu is easy because the city is flat and horizontal. Except for the pre-parties in the evening, all event venues are within walking distance from the city center. If hitchhiking isn't an option, you can easily take a",
-          bus: 'by bus',
+            "Getting around in Joensuu is easy because the city is quite horizontal. All event venues are within walking distance from the city center, except for the pre-parties in the evening. If hitchhiking isn't an option, you can easily take a",
+          bus: 'bus',
           or: 'or',
-          taxi: 'by taxi',
-          tier: 'with a Tier (if they have not been removed from the streets when the events is held)',
+          taxi: 'taxi',
+          tier: 'a Tier (if they have not been removed from the streets when the events is held)',
           avoidCrowds: 'Avoid the crowds and arrive in Joensuu 500 days before the event!',
           challengeStations: 'City Crawl',
           tradition:
-            'The already traditional city crawl is also a part of the Joensuu YTP! Gather a team of 4-8 people and go out and get your overalls in the fresh outdoor air in the centre of Joensuu!',
+            'The already traditional city crawl is also a part of the Joensuu YTP! Gather a team of 4-8 people and go out and get your overalls in the fresh outdoor air in the centre of Joensuu! In the city crawl you explore the city with your team and carry out fun and challenging tasks on multiple checkpoints.',
           localGuilds:
             "On the first day, the challenge checkpoints are held by local guilds, and on the second day, you can meet representatives from the computer science department and the event's partners.",
           preParties: 'Pre-Parties',
@@ -213,8 +213,8 @@ i18n.use(initReactI18next).init({
             'The event follows the principles of a safe space. According to the Equality Act, no one should be discriminated against based on age, origin, nationality, language, religion, belief, opinion, political activity, trade union activity, family relationships, state of health, disability, sexual orientation, or other personal reasons.',
           safeSpace2: '',
           moreInformationSafety:
-            'For more information about the principles of a safe space at the event, you can visit the Skripti ry website.',
-          moreInformationSafety2: 'from Skripti website.',
+            'For more information about the principles of safe space at the event, you can visit the',
+          moreInformationSafety2: 'Skripti ry website.',
           contactInformation: 'Contact Information',
           generalInquiries: 'General Inquiries',
           websiteContacts: 'Website Contacts',

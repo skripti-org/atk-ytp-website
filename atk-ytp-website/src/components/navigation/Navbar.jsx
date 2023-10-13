@@ -45,7 +45,11 @@ const useStyles = createStyles((theme) => ({
       color: '#070707',
     }),
   },
-
+  logo: {
+    width: '200px',
+    marginRight: theme.spacing.md,
+  },
+  
   subLink: {
     width: '100%',
     padding: `${theme.spacing.xs} ${theme.spacing.md}`,
@@ -108,7 +112,7 @@ const useStyles = createStyles((theme) => ({
       WebkitBackdropFilter: 'blur(7px)',
       borderTop: '1px solid rgba(255, 255, 255, 1)',
     },
-    background: 'rgba(0, 0, 0, 0.6)',
+    background: '#070707',
     backdropFilter: 'blur(7px)',
     WebkitBackdropFilter: 'blur(7px)',
     position: 'fixed',
@@ -154,10 +158,15 @@ export default function HeaderMegaMenu({ links }) {
         className={`${show ? classes.visible : classes.hidden}`}
       >
         <Group position='apart' sx={{ height: '100%' }} spacing={0}>
-          <a href='/' className='flex flex-1 items-center no-underline'>
-            <span className='self-center whitespace-nowrap text-xl font-semibold text-white no-underline'>
-              <Text weight='800'>ATK-YTP &apos;23</Text>
-            </span>
+        <a href='/' className='flex flex-1 items-center no-underline'>
+            <svg viewBox="0 0 1320 300" className={`${classes.logo} nav-title`}>
+            <text x="20" y="50%" dy=".35em" className="big-text">
+                ATK-YTP
+            </text>
+            <text x="950" y="45%" dy=".1em" className="small-text">
+                &apos;23
+            </text>
+            </svg>
           </a>
 
           <Group

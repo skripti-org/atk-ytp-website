@@ -1,5 +1,6 @@
 import { Divider, Paper, Text, Table } from '@mantine/core';
 import { nanoid } from 'nanoid';
+import { useEffect, useState } from 'react';
 
 export default function TimeCard({ dayString, scheduleDay }) {
   function timeToString(time) {
@@ -9,6 +10,25 @@ export default function TimeCard({ dayString, scheduleDay }) {
     return `${hours}:${minutes}`;
   }
 
+  
+  const [currentEventIndex, setCurrentEventIndex] = useState(-1);
+
+  /* Otetaan käyttöön tapahtuman alkaessa
+  
+  const now = new Date();
+  const currentHour = now.getHours();
+  const currentMinutes = now.getMinutes();
+
+  useEffect(() => {
+    const currentIndex = scheduleDay.findIndex((event) => {
+      const eventHour = Math.floor(event.time);
+      const eventMinutes = (event.time % 1) * 60;
+      return (eventHour === currentHour && eventMinutes <= currentMinutes );
+    });
+    setCurrentEventIndex(currentIndex);
+  }, [scheduleDay, currentHour, currentMinutes]);
+  */
+  
   function getProgram(day) {
     return (
       <Table highlightOnHover withColumnBorders withBorder>
@@ -19,8 +39,8 @@ export default function TimeCard({ dayString, scheduleDay }) {
           </tr>
         </thead>
         <tbody>
-          {day.map((event) => (
-            <tr key={nanoid()} className={/*event.main ? 'event-main' : null*/ ''}>
+          {day.map((event, index) => (
+            <tr key={nanoid()} className={currentEventIndex === index ? 'glowing-outline' : ''}>
               <td>{timeToString(event.time)}</td>
               <td>{event.activity}</td>
             </tr>
