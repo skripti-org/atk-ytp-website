@@ -1,4 +1,5 @@
 import { Divider, Paper, Text, Table } from '@mantine/core';
+import { IconInfoHexagonFilled } from '@tabler/icons-react';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -46,6 +47,9 @@ export default function TimeCard({ dayString, scheduleDay }) {
             <tr key={nanoid()} className={currentEventIndex === index ? 'glowing-outline' : ''}>
               <td>{timeToString(event.time)}</td>
               <td>{event.activity}</td>
+      
+  
+          
             </tr>
           ))}
         </tbody>

@@ -1,5 +1,5 @@
 import { Button, Container, createStyles } from '@mantine/core';
-import { IconCalendar, IconMap, IconMessageCircleQuestion, IconMovie } from '@tabler/icons-react';
+import { IconCalendar, IconMap, IconMessageCircleQuestion, IconMovie, IconTicket } from '@tabler/icons-react';
 import Counter from './Counter';
 import logo from '../../../assets/logos/logo.png';
 import logoWebp from '../../../assets/logos/logo.webp';
@@ -77,6 +77,23 @@ const Hero = () => {
             })}
           >
             {t('common.map')}
+          </Button>
+          <Button
+              sx={classes.heroBtn}
+              color='kide'
+              radius='xl'
+              
+              component='a'
+              href='https://kide.app/fi/events/dbb84356-62ad-411a-b0e0-237837b32f05'
+              target='_blank'
+              rightIcon={<IconTicket />}
+              styles={() => ({
+                root: {
+                  color: 'white'
+                },
+              })}
+          >
+            Liput
           </Button>
           {/*
           <Button

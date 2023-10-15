@@ -9,7 +9,7 @@
 .expired-notice > span {
   font-size: 2.5rem;
   font-weight: bold;
-  color: red;
+  color: #c2255c;
 }
 
 .expired-notice > p {
@@ -46,8 +46,8 @@
   flex-direction: column;
 }
 
-.show-counter .countdown.danger {
-  color: #ff0000;
+.show-counter .countdown.danger > p {
+  color: #c2255c;
 }
 
 .show-counter .countdown > p {

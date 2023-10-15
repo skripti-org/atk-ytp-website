@@ -8,10 +8,12 @@ import {
   Burger,
   Drawer,
   rem,
+  Button,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useEffect, useState } from 'react';
 import LangSelector from './LangSelector';
+import { IconTicket } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -174,6 +176,7 @@ export default function HeaderMegaMenu({ links }) {
             spacing={0}
             className={classes.hiddenMobile}
           >
+
             {links.map((link) => {
               return (
                 <a key={`navbar-${link.label}`} href={link.link} className={classes.link}>
