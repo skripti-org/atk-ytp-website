@@ -77,14 +77,6 @@ function Markers() {
       iconUrl: IconBar,
       info: '',
     },
-    /*
-    {
-      coordinates: [62.60682699348919, 29.76630793978979],
-      label: 'Aamusauna on täällä',
-      iconUrl: IconFire,
-      info: '',
-    },
-    */
     {
       coordinates: [62.60395088796654, 29.744121624489953],
       label: 'Ravintola Carelia',
