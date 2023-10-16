@@ -93,7 +93,7 @@ export default function Schedule() {
     },
     {
       time: 12,
-      activity: 'TBD',
+      activity: 'Sensire',
       main: true,
     },
     {

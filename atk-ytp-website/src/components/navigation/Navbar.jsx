@@ -51,7 +51,7 @@ const useStyles = createStyles((theme) => ({
     width: '200px',
     marginRight: theme.spacing.md,
   },
-  
+
   subLink: {
     width: '100%',
     padding: `${theme.spacing.xs} ${theme.spacing.md}`,
@@ -160,14 +160,14 @@ export default function HeaderMegaMenu({ links }) {
         className={`${show ? classes.visible : classes.hidden}`}
       >
         <Group position='apart' sx={{ height: '100%' }} spacing={0}>
-        <a href='/' className='flex flex-1 items-center no-underline'>
-            <svg viewBox="0 0 1320 300" className={`${classes.logo} nav-title`}>
-            <text x="20" y="50%" dy=".35em" className="big-text">
+          <a href='/' className='flex flex-1 items-center no-underline'>
+            <svg viewBox='0 0 1320 300' className={`${classes.logo} nav-title`}>
+              <text x='20' y='50%' dy='.35em' className='big-text'>
                 ATK-YTP
-            </text>
-            <text x="950" y="45%" dy=".1em" className="small-text">
+              </text>
+              <text x='950' y='45%' dy='.1em' className='small-text'>
                 &apos;23
-            </text>
+              </text>
             </svg>
           </a>
 
@@ -176,7 +176,6 @@ export default function HeaderMegaMenu({ links }) {
             spacing={0}
             className={classes.hiddenMobile}
           >
-
             {links.map((link) => {
               return (
                 <a key={`navbar-${link.label}`} href={link.link} className={classes.link}>
@@ -226,8 +225,6 @@ export default function HeaderMegaMenu({ links }) {
           },
         })}
       >
-  
-
         {links.map((link) => {
           return (
             <a
@@ -240,8 +237,6 @@ export default function HeaderMegaMenu({ links }) {
             </a>
           );
         })}
-
-
       </Drawer>
     </Box>
   );
