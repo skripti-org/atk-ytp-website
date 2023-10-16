@@ -1,5 +1,5 @@
-import { Divider, Paper, Text, Table } from '@mantine/core';
-import { IconInfoHexagonFilled } from '@tabler/icons-react';
+import { Divider, Paper, Text, Table, Popover } from '@mantine/core';
+import { IconInfoCircle, IconInfoHexagon, IconInfoHexagonFilled, IconInfoSmall, IconTooltip } from '@tabler/icons-react';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -43,15 +43,28 @@ export default function TimeCard({ dayString, scheduleDay }) {
           </tr>
         </thead>
         <tbody>
-          {day.map((event, index) => (
-            <tr key={nanoid()} className={currentEventIndex === index ? 'glowing-outline' : ''}>
-              <td>{timeToString(event.time)}</td>
-              <td>{event.activity}</td>
-      
-  
-          
-            </tr>
-          ))}
+        {day.map((event, index) => (
+          <tr key={nanoid()} className={currentEventIndex === index ? 'glowing-outline' : ''}>
+            <td>{timeToString(event.time)}</td>
+            {event.description ? (
+              <Popover width="target" position="top-end" withArrow shadow="sm" >
+                <Popover.Target >
+                  <td className="grid grid-cols-4 justify-center items-center cursor-pointer">
+                    <div className="col-span-3">{event.activity}</div>
+                    <IconInfoCircle className="justify-self-end" />
+                  </td>
+                </Popover.Target>
+                <Popover.Dropdown >
+                  <Text size="sm">{event.description}</Text>
+                </Popover.Dropdown>
+              </Popover>
+            ) : (
+              <td className="grid grid-cols-4 justify-center items-center">
+                <div className="col-span-3">{event.activity}</div>
+              </td>
+            )}
+          </tr>
+        ))}
         </tbody>
       </Table>
     );

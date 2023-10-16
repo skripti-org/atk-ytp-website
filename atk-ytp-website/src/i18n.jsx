@@ -12,6 +12,7 @@ i18n.use(initReactI18next).init({
           map: 'Kartta',
           trailer: 'Traileri',
           partners: 'Yhteistyökumppanit',
+          tickets: 'Liput',
         },
         intro: {
           part1:
@@ -127,6 +128,7 @@ i18n.use(initReactI18next).init({
           map: 'Map',
           trailer: 'Trailer',
           partners: 'Partners',
+          tickets: 'Tickets',
         },
         intro: {
           part1:

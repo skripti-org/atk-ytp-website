@@ -98,7 +98,7 @@ const Hero = () => {
               },
             })}
           >
-            Liput
+           {t('common.tickets')}
           </Button>
           <Button
             sx={classes.heroBtn}
