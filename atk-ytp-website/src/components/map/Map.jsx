@@ -90,20 +90,8 @@ function Markers() {
       info: '',
     },
     {
-      coordinates: [62.60461125112615, 29.7409188699068],
-      label: 'Wicked Rabbit Metria',
-      iconUrl: IconDiner,
-      info: '',
-    },
-    {
-      coordinates: [62.60379956594281, 29.740046474806675],
-      label: 'Ravintola Natura',
-      iconUrl: IconDiner,
-      info: '',
-    },
-    {
       coordinates: [62.604547938022144, 29.737829524172902],
-      label: 'Ravintola Natura',
+      label: 'Ravintola Futura',
       iconUrl: IconDiner,
       info: '',
     },
