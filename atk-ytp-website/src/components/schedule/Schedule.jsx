@@ -110,12 +110,7 @@ export default function Schedule() {
     {
       time: 13,
       activity: 'Koeda Consulting',
-<<<<<<< HEAD
       description: t('schedule.koeda'),
-=======
-      description:
-        'Kuinka kannattaa lähteä rakentamaan omaa yritystä? Mitä Koeda tekee? Mitä kannattaa opiskella jos haluaa tulevaisuudessa datan pariin töihin? Näihin ja useisiin muihin kysymyksiin lähdetaan hakemaan vastauksia kun Koedan co-founder ja entinen järjestöaktiivi Paavo Koivistoinen palaa opiskelijoiden keskuuteen Skripti ry:n järjestämillä ATK-yhteistoimintapäivillä.',
->>>>>>> c95fc6c2b39ffb2f3b77bbcc3bf54aa5e10a07a1
       main: true,
     },
     {
