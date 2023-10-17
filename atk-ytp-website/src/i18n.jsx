@@ -21,7 +21,7 @@ i18n.use(initReactI18next).init({
             'Yhteistoimintapäivät tarjoavat alan opiskelijoille ympäri Suomen mahdollisuuden tutustua toisiinsa sekä alan yrityksiin hauskalla tavalla. Tapahtumassa useat alan ammattilaiset pitävät vaikuttavia luentoja kahtena seminaaripäivänä. Luennot järjestetään Joensuun kampuksella C1-salissa 18. ja 19. lokakuuta klo 10-16, ja sen jälkeen voit verkostoitua iltaohjelman parissa. Lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa. Tervetuloa Joensuuhun!',
         },
         schedule: {
-          sauna: 'Aamusauna by Nordea',
+          sauna: 'Aamusauna',
           saunaleave: 'Lähtö aamusaunalle',
           wed: 'Ke',
           thu: 'To',
@@ -139,7 +139,7 @@ i18n.use(initReactI18next).init({
         schedule: {
           wed: 'Wed',
           saunaleave: 'Departure for morning sauna',
-          sauna: 'Morning sauna by Nordea',
+          sauna: 'Morning sauna',
           thu: 'Thu',
           fri: 'Fri',
           time: 'Time',
