@@ -26,6 +26,10 @@ import IconSave from '../../../assets/icons/Icon_35.gif';
 import IconSchool from '../../../assets/icons/Icon_36.gif';
 import IconQuestionmark from '../../../assets/icons/Icon_37.gif';
 import IconBar from '../../../assets/icons/Icon_49.gif';
+import IconEtkot from '../../../assets/icons/Icon_31.gif';
+import IconJatkot from '../../../assets/icons/Icon_48.gif';
+import IconKyyti from '../../../assets/icons/Icon_55.gif';
+
 import TriangleMan from '../../../assets/img/triangle.jpg';
 import { useTranslation } from 'react-i18next';
 
@@ -62,19 +66,25 @@ function Markers() {
     {
       coordinates: [62.5674612, 29.8303404],
       label: 'Etkopaikka',
-      iconUrl: IconSchool,
+      iconUrl: IconEtkot,
       info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.',
+    },
+    {
+      coordinates: [62.60120512377709, 29.755255871403953],
+      label: 'Etkojen bussikuljetus',
+      iconUrl: IconKyyti,
+      info: 'Etkojen bussit lähtevät Koskikadulta Taidekeskus Ahjon vierestä. Bussit kulkevat sitä mukaa kun kyydit ovat täynnä.',
     },
     {
       coordinates: [62.59936371611705, 29.771264912952883],
       label: 'Torstain jatkopaikka, Ravintola Kerubi',
-      iconUrl: IconBar,
+      iconUrl: IconJatkot,
       info: '',
     },
     {
       coordinates: [62.601077101642865, 29.77397667532403],
       label: 'Keskiviikon jatkopaikka, Las Palmas Kimmel',
-      iconUrl: IconBar,
+      iconUrl: IconJatkot,
       info: '',
     },
     {
