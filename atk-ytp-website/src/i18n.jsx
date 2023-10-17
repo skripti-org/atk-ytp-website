@@ -36,6 +36,9 @@ i18n.use(initReactI18next).init({
           afterparty2: 'Reivit Kerubissa: Affirmed, Digital Mindz, Bionator Project',
           crawl: 'Rastikierros alkaa',
           asteriski: 'Asteriski kotona',
+          kopsi: 'Verkostoituminen ja työelämän taidot IT-alalla',
+          koeda:
+            'Kuinka kannattaa lähteä rakentamaan omaa yritystä? Mitä Koeda tekee? Mitä kannattaa opiskella jos haluaa tulevaisuudessa datan pariin töihin? Näihin ja useisiin muihin kysymyksiin lähdetaan hakemaan vastauksia kun Koedan co-founder ja entinen järjestöaktiivi Paavo Koivistoinen palaa opiskelijoiden keskuuteen Skripti ry:n järjestämillä ATK-yhteistoimintapäivillä.',
         },
         info: {
           atkYtpArrives: 'ATK-YTP saapuu Joensuuhun!',
@@ -152,6 +155,9 @@ i18n.use(initReactI18next).init({
           afterparty2: 'Rave at Kerubi: Affirmed, Digital Mindz, Bionator Project',
           crawl: 'City crawl begins',
           asteriski: 'Asteriski finally at home',
+          kopsi: 'Networking and working life skills in IT',
+          koeda:
+            'How should you go about building your own business? What does Koeda do? What should you study if you want to work with data in the future? Answers to these and many other questions will be sought when Koeda co-founder and former organisation activist Paavo Koivistoinen returns to the student community at the ICT Co-operation Days organised by Skripti ry.',
         },
         info: {
           atkYtpArrives: 'ATK-YTP is coming to Joensuu!',

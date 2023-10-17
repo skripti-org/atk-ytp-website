@@ -98,7 +98,7 @@ const Hero = () => {
               },
             })}
           >
-           {t('common.tickets')}
+            {t('common.tickets')}
           </Button>
           <Button
             sx={classes.heroBtn}
@@ -106,6 +106,7 @@ const Hero = () => {
             radius='xl'
             component='a'
             href='https://presemo.uef.fi/ytp/'
+            target='_blank'
             rightIcon={<IconMessageCircleQuestion />}
             styles={() => ({
               root: {

@@ -2,6 +2,15 @@ import { useState } from 'react';
 import { IconInfoCircleFilled } from '@tabler/icons-react';
 import { Divider } from '@mantine/core';
 import { nanoid } from 'nanoid';
+import IconMarker from '../../../assets/icons/Icon_3.gif';
+import IconDiner from '../../../assets/icons/Icon_17.gif';
+import IconSave from '../../../assets/icons/Icon_35.gif';
+import IconSchool from '../../../assets/icons/Icon_36.gif';
+import IconQuestionmark from '../../../assets/icons/Icon_37.gif';
+import IconBar from '../../../assets/icons/Icon_49.gif';
+import IconEtkot from '../../../assets/icons/Icon_31.gif';
+import IconJatkot from '../../../assets/icons/Icon_48.gif';
+import IconKyyti from '../../../assets/icons/Icon_55.gif';
 
 const Legend = () => {
   const [showLegend, setShowLegend] = useState(false);
@@ -49,19 +58,35 @@ const Legend = () => {
   const types = [
     {
       type: 'Majoitus',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/4/41/Icon_35.gif',
+      iconUrl: IconSave,
     },
     {
       type: 'Baari',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/a/a4/Icon_49.gif',
+      iconUrl: IconBar,
     },
     {
       type: 'Ravintola',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/3/3a/Icon_50.gif',
+      iconUrl: IconDiner,
     },
     {
       type: 'Luentosali',
-      iconUrl: 'https://sampwiki.blast.hk/wroot/images2/7/7b/Icon_36.gif',
+      iconUrl: IconSchool,
+    },
+    {
+      type: 'Etkopaikka',
+      iconUrl: IconEtkot,
+    },
+    {
+      type: 'Jatkopaikka',
+      iconUrl: IconJatkot,
+    },
+    {
+      type: 'Etkobussi',
+      iconUrl: IconKyyti,
+    },
+    {
+      type: 'Side-Quest',
+      iconUrl: IconQuestionmark,
     },
   ];
 

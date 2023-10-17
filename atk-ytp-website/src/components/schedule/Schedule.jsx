@@ -35,7 +35,7 @@ export default function Schedule() {
     {
       time: 13,
       activity: 'Milja Köpsi',
-      description: 'Verkostoituminen ja työelämän taidot IT-alalla',
+      description: t('schedule.kopsi'),
       main: true,
     },
     {
@@ -116,7 +116,7 @@ export default function Schedule() {
     {
       time: 13,
       activity: 'Koeda Consulting',
-      description: 'Kuinka kannattaa lähteä rakentamaan omaa yritystä? Mitä Koeda tekee? Mitä kannattaa opiskella jos haluaa tulevaisuudessa datan pariin töihin? Näihin ja useisiin muihin kysymyksiin lähdetaan hakemaan vastauksia kun Koedan co-founder ja entinen järjestöaktiivi Paavo Koivistoinen palaa opiskelijoiden keskuuteen Skripti ry:n järjestämillä ATK-yhteistoimintapäivillä.',
+      description: t('schedule.koeda'),
       main: true,
     },
     {
