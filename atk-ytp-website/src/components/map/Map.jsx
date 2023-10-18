@@ -166,9 +166,7 @@ function LocationMarker() {
 export default function MapComponent() {
   const map = useRef(null);
   const isMapVisible = useIntersectionObserver(map);
-  const tile = `https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${
-    import.meta.env.VITE_API_KEY
-  }`;
+  const tile = "https://tile.openstreetmap.org/${z}/${x}/${y}.png";
   const { t } = useTranslation();
   return (
     <div id='kartta' ref={map}>
