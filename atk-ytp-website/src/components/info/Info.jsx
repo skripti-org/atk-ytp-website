@@ -10,6 +10,7 @@ export default function Info() {
   return (
     <div id='info'>
       <PageSection title='Info'>
+        {/*
         <Alert
           radius={0}
           icon={<IconAlertCircle />}
@@ -18,7 +19,7 @@ export default function Info() {
         >
           {t('info.siteInformation')}
         </Alert>
-
+        */}
         <Paragraph title={t('info.whatToBring')}>
           <List type='ordered' withPadding size='lg'>
             <List.Item>{t('info.listItems.item1')}</List.Item>
