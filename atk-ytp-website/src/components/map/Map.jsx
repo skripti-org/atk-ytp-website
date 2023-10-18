@@ -70,10 +70,10 @@ function Markers() {
       info: 'Täällä sitten etkoillaan oikein kunnolla molempina iltoina. Bussit kulkee ees taas vrumvrum.',
     },
     {
-      coordinates: [62.60120512377709, 29.755255871403953],
+      coordinates: [62.601215324538146, 29.758909902956763],
       label: 'Etkojen bussikuljetus',
       iconUrl: IconKyyti,
-      info: 'Etkojen bussit lähtevät Koskikadulta Taidekeskus Ahjon vierestä. Bussit kulkevat sitä mukaa kun kyydit ovat täynnä.',
+      info: 'Etkojen bussit lähtevät Kirkkokadulta Taidekeskus Ahjon vierestä. Bussit kulkevat sitä mukaa kun kyydit ovat täynnä.',
     },
     {
       coordinates: [62.59936371611705, 29.771264912952883],
