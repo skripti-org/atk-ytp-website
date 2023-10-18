@@ -166,7 +166,7 @@ function LocationMarker() {
 export default function MapComponent() {
   const map = useRef(null);
   const isMapVisible = useIntersectionObserver(map);
-  const tile = "https://tile.openstreetmap.org/${z}/${x}/${y}.png";
+  const tile = "https://{s}.tile-cyclosm.openstreetmap.fr/[cyclosm|cyclosm-lite]/{z}/{x}/{y}.png";
   const { t } = useTranslation();
   return (
     <div id='kartta' ref={map}>
