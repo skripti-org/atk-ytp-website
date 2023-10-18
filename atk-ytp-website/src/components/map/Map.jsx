@@ -181,10 +181,7 @@ export default function MapComponent() {
               zoomControl={true}
               style={{ flex: 1, width: '100%' }}
             >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url={tile}
-              />
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="&copy; <a href=&quot;https://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors" />
               {isMapVisible && <LocationMarker />}
 
               <GeoJSON data={CampusGeo}>
