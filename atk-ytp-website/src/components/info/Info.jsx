@@ -183,7 +183,7 @@ export default function Info() {
             {t('info.publicTransportJoJo')}
           </Anchor>
           <br />
-          <Anchor href='https://t.me/+EOI-Do9oS6Q0YzJk' target='_blank'>
+          <Anchor href='https://t.me/+xdHoimgpguk0MDNk' target='_blank'>
             ATK-YTP Telegram
           </Anchor>
           <br />
