@@ -39,6 +39,12 @@ export default function Schedule() {
       main: true,
     },
     {
+      time: 13,
+      activity: 'Titol liittokokous',
+      description: 'AU206 salissa',
+      main: true,
+    },
+    {
       time: 14,
       activity: 'Nordea',
       description: '',
