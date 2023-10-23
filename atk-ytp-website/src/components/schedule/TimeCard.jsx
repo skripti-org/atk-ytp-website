@@ -1,5 +1,11 @@
 import { Divider, Paper, Text, Table, Popover } from '@mantine/core';
-import { IconInfoCircle, IconInfoHexagon, IconInfoHexagonFilled, IconInfoSmall, IconTooltip } from '@tabler/icons-react';
+import {
+  IconInfoCircle,
+  IconInfoHexagon,
+  IconInfoHexagonFilled,
+  IconInfoSmall,
+  IconTooltip,
+} from '@tabler/icons-react';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -14,7 +20,6 @@ export default function TimeCard({ dayString, scheduleDay }) {
     return `${hours}:${minutes}`;
   }
 
-  
   const [currentEventIndex, setCurrentEventIndex] = useState(-1);
 
   /* Otetaan käyttöön tapahtuman alkaessa
@@ -32,7 +37,7 @@ export default function TimeCard({ dayString, scheduleDay }) {
     setCurrentEventIndex(currentIndex);
   }, [scheduleDay, currentHour, currentMinutes]);
   */
-  
+
   function getProgram(day) {
     return (
       <Table highlightOnHover withColumnBorders withBorder>
@@ -43,28 +48,28 @@ export default function TimeCard({ dayString, scheduleDay }) {
           </tr>
         </thead>
         <tbody>
-        {day.map((event, index) => (
-          <tr key={nanoid()} className={currentEventIndex === index ? 'glowing-outline' : ''}>
-            <td>{timeToString(event.time)}</td>
-            {event.description ? (
-              <Popover width="target" position="top-end" withArrow shadow="sm" >
-                <Popover.Target >
-                  <td className="grid grid-cols-4 justify-center items-center cursor-pointer">
-                    <div className="col-span-3">{event.activity}</div>
-                    <IconInfoCircle className="justify-self-end" />
-                  </td>
-                </Popover.Target>
-                <Popover.Dropdown >
-                  <Text size="sm">{event.description}</Text>
-                </Popover.Dropdown>
-              </Popover>
-            ) : (
-              <td className="grid grid-cols-4 justify-center items-center">
-                <div className="col-span-3">{event.activity}</div>
-              </td>
-            )}
-          </tr>
-        ))}
+          {day.map((event, index) => (
+            <tr key={nanoid()} className={currentEventIndex === index ? 'glowing-outline' : ''}>
+              <td>{timeToString(event.time)}</td>
+              {event.description ? (
+                <Popover width='target' position='top-end' withArrow shadow='sm'>
+                  <Popover.Target>
+                    <td className='grid cursor-pointer grid-cols-4 items-center justify-center'>
+                      <div className='col-span-3'>{event.activity}</div>
+                      <IconInfoCircle className='justify-self-end' />
+                    </td>
+                  </Popover.Target>
+                  <Popover.Dropdown>
+                    <Text size='sm'>{event.description}</Text>
+                  </Popover.Dropdown>
+                </Popover>
+              ) : (
+                <td className='grid grid-cols-4 items-center justify-center'>
+                  <div className='col-span-3'>{event.activity}</div>
+                </td>
+              )}
+            </tr>
+          ))}
         </tbody>
       </Table>
     );

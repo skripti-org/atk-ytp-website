@@ -21,6 +21,13 @@ export default function Main() {
   return (
     <Container className={classes.wrapper}>
       <Title order={2} pt={20} pb={20} className={classes.title}>
+        <Text className='text-xl text-gray-300' fw={900}>
+          Kiitos kaikille tapahtumaan osallistuneille! ATK-YTP palaa jälleen ensi vuonna, silloin
+          kohteena on Jyväskylä!
+        </Text>
+      </Title>
+
+      <Title order={2} pt={20} pb={20} className={classes.title}>
         <Text className='text-5xl text-gray-300' fw={900}>
           Ah shit,
           <br /> here we go again
